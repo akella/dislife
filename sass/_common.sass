@@ -46,20 +46,25 @@ table
 	height: 100%
 	margin: 0 auto -225px
 .wrap__in
+	position: relative
 	width: 1020px
 	margin: 0 auto
 	padding-top: 35px
 	background: #FFF 
 	box-shadow: 0 0 5px rgba(0,0,0,.2)
+	z-index: 10 
 .push
 	height: 225px
 	clear: both
 .h2
+	font-size: 22px
+.h3
+	font-size: 17px
+.h2, .h3
 	margin-bottom: 15px
 	+font
-	font-size: 17px
 	text-transform: uppercase
-.h2_yellow, .h2_blue, .h2_green, .h2_red
+.h3_yellow, .h3_blue, .h3_green, .h3_red
 	position: relative
 	padding-left: 20px
 	overflow: hidden
@@ -72,16 +77,16 @@ table
 		margin-top: 3px
 		text-transform: lowercase
 		font-weight: normal
-.h2_yellow
+.h3_yellow
 	i
 		+s(h2-yellow)
-.h2_blue
+.h3_blue
 	i
 		+s(h2-blue)
-.h2_green
+.h3_green
 	i
 		+s(h2-green) 
-.h2_red
+.h3_red
 	i
 		+s(h2-red)		
 .title
@@ -99,11 +104,10 @@ table
 		font-size: 12px
 		font-weight: bold
 		color: $red 
-		i
+		.ico-arr-l
 			position: absolute
 			top: -1px
 			left: 0
-			+s(arr-1)
 		&:hover
 			text-decoration: underline
 .title_yellow
@@ -115,8 +119,9 @@ table
 .title_red
 	border-bottom: 3px solid #ff6b3d
 .label
-	min-width: 60px
 	display: block
+	min-width: 50px	
+	padding: 0 5px
 	background: #f56c7c 
 	text-align: center
 	font-size: 10px
@@ -124,7 +129,31 @@ table
 	color: #FFF  
 	text-transform: uppercase
 	&:hover
-		color: #FFF 
+		color: #FFF
+.radio
+	position: relative
+	display: block
+	padding-left: 25px
+	input, i
+		position: absolute
+		top: 1px
+		left: 0
+		width: 14px
+		height: 14px
+		border-radius: 50%
+		border: 1px solid #989898
+	input
+		opacity: 0
+	input[type="radio"]:checked + i
+		&:after
+			content: "" 
+			position: absolute
+			top: 2px
+			left: 2px
+			right: 2px
+			bottom: 2px
+			border-radius: 50%
+			background: $red 
 .meta
 	padding-top: 10px
 	overflow: hidden
@@ -152,10 +181,14 @@ table
 	+s(view-gray)
 .ico-plus
 	+s(ico-plus)
+.ico-ok
+	+s(ico-ok)
 .ico-arr
 	+s(ico-arr)
 .ico-arr-d
 	+s(ico-arr-d)
+.ico-arr-l
+	+s(ico-arr-l)
 //slider
 .slider
 	height: 81px
@@ -165,7 +198,8 @@ table
 		position: relative
 		width: 40px
 		height: 81px
-		background: none 
+		background: none
+		overflow: visible 
 		i
 			position: absolute
 			top: 50%
@@ -217,8 +251,7 @@ table
 	position: relative
 	width: 772px
 	height: 120px
-	margin: 0 auto
-	border-bottom: 3px solid $red 
+	margin: 0 auto	
 .logo
 	position: absolute
 	top: 44px
@@ -283,13 +316,17 @@ table
 			+s(search)
 //nav
 .nav
-	width: 772px
-	margin: 0 auto
-	padding: 24px 0
-	ul
-		overflow: hidden
+	min-width: 772px
+	max-width: 940px
+	margin: 0 auto		
+	ul		
+		text-align: center
+		font-size: 0
 	li
-		float: left
+		display: inline-block
+		padding: 24px 0
+		border-top: 3px solid $red 
+		vertical-align: top
 		&:first-child
 			span
 				display: none
@@ -300,6 +337,7 @@ table
 		text-transform: uppercase
 	span
 		padding: 0 13px
+		font-size: 14px
 		font-weight: bold
 		color: $red 
 //link
@@ -317,6 +355,62 @@ table
 		top: 6px
 		left: 0
 		+s(arr-link) 
+//footer
+.footer
+	width: 1020px
+	height: 225px
+	margin: 0 auto
+	background: #FFF 
+	box-shadow: 0 0 5px rgba(0,0,0,.2)
+.footer__in
+	position: relative
+	padding: 40px
+	.btn
+		.btn__item
+			margin-right: 25px
+		span
+			float: left
+			margin-top: 6px
+			font-style: italic
+			color: #959595 
+.copyright
+	margin-bottom: 15px
+	font-size: 13px
+	color: #959595 
+	line-height: 1.3
+.footer__links
+	margin-bottom: 20px
+	overflow: hidden
+	li
+		float: left
+		font-style: italic
+		&:first-child
+			span
+				display: none
+	span
+		margin: 0 5px
+.footer__social
+	position: absolute
+	top: 40px
+	right: 40px
+	span, a
+		float: left
+	span
+		margin: 2px 5px 0 0
+	a
+		margin-left: 6px
+.footer__vk
+	+s(vk)
+.footer__ok
+	+s(ok)
+.footer__18plus
+	position: absolute
+	top: 55px
+	right: 40px
+	font-size: 82px 
+	font-weight: bold
+	letter-spacing: -4px
+	color: #ececec 
 //btn
 .btn
 	overflow: hidden
@@ -326,19 +420,20 @@ table
 .btn__item
 	position: relative
 	float: left
-	height: 30px
+	height: 28px
 	margin-right: 10px
 	padding: 0 40px 0 15px
 	background: #2c2c2c 
 	border-radius: 0 15px 15px 0
-	line-height: 30px
+	border: 1px solid #2c2c2c
+	line-height: 28px
 	font-style: italic 
 	font-weight: bold
 	color: #FFF 
 	& > i		
 		position: absolute
-		top: 4px
-		right: 4px
+		top: 3px
+		right: 3px
 		width: 22px
 		height: 22px
 		background: $red
@@ -346,13 +441,13 @@ table
 		i
 			display: block
 	&:hover
-		color: #FFF 
-		text-decoration: underline
-button
+		color: #000
+		background: #FFF 
+button	
 	&.btn__item
+		height: 30px
 		line-height: 1
-	
-
+		overflow: visible
 //select
 .select	
 	width: 273px
@@ -377,6 +472,9 @@ button
 			border-radius: 50% 
 			i
 				display: block
+		&:hover
+			& > i
+				background: $red 
 //banners
 .banner-top
 	width: 940px
