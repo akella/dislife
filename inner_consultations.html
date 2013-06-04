@@ -1,0 +1,388 @@
+<!doctype html>
+<!--[if IE 8]><html lang="ru-RU" class="ie8"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="ru-RU"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<link rel="stylesheet" media="screen" href="css/screen.css" >	
+	<!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.cycle2.min.js"></script>	
+	<script src="js/jquery.cycle2.carousel.min.js"></script>	
+	<script src="js/common.js"></script>
+</head>
+<body>
+<!-- BEGIN .wrap -->
+<section class="wrap">
+	<div class="wrap__in">
+		<div class="banner-top"><img src="img/banner-top.jpg" alt=""></div>
+		<!-- BEGIN .header -->
+		<header class="header">
+			<h1 class="logo"><a href="#">DISLIFE</a></h1>
+			<a class="version" href="#">Версия для слабовидящих</a>
+			<div class="links">
+				<a class="links__enter" href="#">Вход<i></i></a>
+				<span>или</span>
+				<a class="links__reg" href="#">Регистрация</a>
+			</div>
+			<form class="header__search" action="/">
+				<input type="text" placeholder="поиск">
+				<button type="submit"><i></i></button>
+			</form>			
+		</header>
+		<!-- END .header -->
+		<!-- BEGIN .nav -->
+		<nav class="nav nav_inner">
+			<ul>
+				<li><span>/</span><a href="#">Новости</a></li>
+				<li><span>/</span><a href="#">Статьи</a></li>
+				<li class="is-active"><span>/</span><a href="#">События</a></li>
+				<li><span>/</span><a href="#">Консультации</a></li>
+				<li><span>/</span><a href="#">Законодательство</a></li>
+				<li><span>/</span><a href="#">Работа</a></li>
+				<li><span>/</span><a href="#">Карта услуг</a></li>
+			</ul>
+		</nav>
+		<!-- END .nav -->
+		<!-- BEGIN .l -->
+		<div class="l">
+			<div class="l__col-1">
+				<div class="title-big">
+					<h2 class="h2">Консультации</h2>
+					<a class="link-plus" href="#">Задать вопрос<i><i class="ico-plus"></i></i></a>
+				</div>
+				<!-- BEGIN .cats -->
+				<div class="cats">
+					<h3 class="h3 h3_red">Выберите категорию<i></i></h3>
+					<ul class="cats__tabs js-tab">
+						<li data-tab="cat-list-1">Все</li>
+						<li data-tab="cat-list-2">Юридическая</li>
+						<li class="is-active" data-tab="cat-list-3">Медицинская</li>
+					</ul>
+					<div id="cat-list-1" class="cats__list js-tab-cnt" style="display: block">
+						<ul>
+							<li><a href="#">Врач ЛФК</a></li>
+							<li><a href="#">Врач по восстановительной медицине</a></li>
+							<li><a href="#">Отоларинголог</a></li>
+							<li><a href="#">Офтальмолог</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">Психолог</a></li>
+							<li><a href="#">Психотерапевт</a></li>
+							<li><a href="#">Сексолог</a></li>
+							<li><a href="#">Терапевт</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">Травматолог-ортопед</a></li>
+							<li><a href="#">Уролог</a></li>
+							<li><a href="#">Хирург</a></li>
+						</ul> 
+					</div>
+					<div id="cat-list-2" class="cats__list js-tab-cnt">						
+						<ul>
+							<li><a href="#">Психолог</a></li>
+							<li><a href="#">Психотерапевт</a></li>
+							<li><a href="#">Сексолог</a></li>
+							<li><a href="#">Терапевт</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">Врач ЛФК</a></li>
+							<li><a href="#">Врач по восстановительной медицине</a></li>
+							<li><a href="#">Отоларинголог</a></li>
+							<li><a href="#">Офтальмолог</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">Травматолог-ортопед</a></li>
+							<li><a href="#">Уролог</a></li>
+							<li><a href="#">Хирург</a></li>
+						</ul> 
+					</div>
+					<div id="cat-list-3" class="cats__list js-tab-cnt">
+						<ul>
+							<li><a href="#">Травматолог-ортопед</a></li>
+							<li><a href="#">Уролог</a></li>
+							<li><a href="#">Хирург</a></li>
+						</ul> 
+						<ul>
+							<li><a href="#">Врач ЛФК</a></li>
+							<li><a href="#">Врач по восстановительной медицине</a></li>
+							<li><a href="#">Отоларинголог</a></li>
+							<li><a href="#">Офтальмолог</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">Психолог</a></li>
+							<li><a href="#">Психотерапевт</a></li>
+							<li><a href="#">Сексолог</a></li>
+							<li><a href="#">Терапевт</a></li>
+						</ul>						
+					</div>
+				</div>
+				<!-- END .cats -->
+				<!-- BEGIN .consult -->
+				<ul class="consult">
+					<li class="consult__item">
+						<div class="consult__wrap">
+							<div class="consult__title">Вопрос</div>
+							<div class="consult__text">
+								<p>Болезнь Рейно,следствие чего?</p>
+							</div>
+						</div>
+						<div class="consult__wrap">
+							<div class="consult__title">Ответ</div>
+							<div class="consult__text">
+								<p>Здравствуйте! Болезнь Рейно – заболевание, характеризующееся приступообразной ишемией пальцев кистей или стоп вследствие нарушения регуляции сосудистого тонуса. До сих пор точная причина болезни неизвестна. В возникновении заболевания опреде­ленное значение имеют инфекции, наследственная предрасположенность, эндокринные нарушения, хроническая травматизация пальцев, а также тяжелые эмоциональные стрессы, хроническая интоксикация никотином, алкоголем, в ряде случаев выявляется связь возникновения заболевания с переохлаждением</p>
+								<div class="consult__detail">
+									<a href="#"><span>#</span>ссылка</a>
+									<div class="rating">
+										<button class="rating__up is-voted"><i></i></button>
+										<span>5</span>
+										<button class="rating__down"><i></i></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="consult__item">
+						<div class="consult__wrap">
+							<div class="consult__title">Вопрос</div>
+							<div class="consult__text">
+								<p>Болезнь Рейно,следствие чего?</p>
+							</div>
+						</div>
+						<div class="consult__wrap">
+							<div class="consult__title">Ответ</div>
+							<div class="consult__text">
+								<p>Здравствуйте! Болезнь Рейно – заболевание, характеризующееся приступообразной ишемией пальцев кистей или стоп вследствие нарушения регуляции сосудистого тонуса. До сих пор точная причина болезни неизвестна. В возникновении заболевания опреде­ленное значение имеют инфекции, наследственная предрасположенность, эндокринные нарушения, хроническая травматизация пальцев, а также тяжелые эмоциональные стрессы, хроническая интоксикация никотином, алкоголем, в ряде случаев выявляется связь возникновения заболевания с переохлаждением</p>
+								<div class="consult__detail">
+									<a href="#"><span>#</span>ссылка</a>
+									<div class="rating">
+										<button class="rating__up"><i></i></button>
+										<span>5</span>
+										<button class="rating__down"><i></i></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="consult__item">
+						<div class="consult__wrap">
+							<div class="consult__title">Вопрос</div>
+							<div class="consult__text">
+								<p>Болезнь Рейно,следствие чего?</p>
+							</div>
+						</div>
+						<div class="consult__wrap">
+							<div class="consult__title">Ответ</div>
+							<div class="consult__text">
+								<p>Здравствуйте! Болезнь Рейно – заболевание, характеризующееся приступообразной ишемией пальцев кистей или стоп вследствие нарушения регуляции сосудистого тонуса. До сих пор точная причина болезни неизвестна. В возникновении заболевания опреде­ленное значение имеют инфекции, наследственная предрасположенность, эндокринные нарушения, хроническая травматизация пальцев, а также тяжелые эмоциональные стрессы, хроническая интоксикация никотином, алкоголем, в ряде случаев выявляется связь возникновения заболевания с переохлаждением</p>
+								<div class="consult__detail">
+									<a href="#"><span>#</span>ссылка</a>
+									<div class="rating">
+										<button class="rating__up is-voted"><i></i></button>
+										<span>5</span>
+										<button class="rating__down"><i></i></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="consult__item">
+						<div class="consult__wrap">
+							<div class="consult__title">Вопрос</div>
+							<div class="consult__text">
+								<p>Болезнь Рейно,следствие чего?</p>
+							</div>
+						</div>
+						<div class="consult__wrap">
+							<div class="consult__title">Ответ</div>
+							<div class="consult__text">
+								<p>Здравствуйте! Болезнь Рейно – заболевание, характеризующееся приступообразной ишемией пальцев кистей или стоп вследствие нарушения регуляции сосудистого тонуса. До сих пор точная причина болезни неизвестна. В возникновении заболевания опреде­ленное значение имеют инфекции, наследственная предрасположенность, эндокринные нарушения, хроническая травматизация пальцев, а также тяжелые эмоциональные стрессы, хроническая интоксикация никотином, алкоголем, в ряде случаев выявляется связь возникновения заболевания с переохлаждением</p>
+								<div class="consult__detail">
+									<a href="#"><span>#</span>ссылка</a>
+									<div class="rating">
+										<button class="rating__up"><i></i></button>
+										<span>5</span>
+										<button class="rating__down"><i></i></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<!-- END .consult -->
+				<!-- BEGIN .pagination -->
+				<div class="pagination">
+					<a class="pagination__prev" href="#">Предыдущая<i></i></a>
+					<div class="pagination__list">
+						<a href="#">1</a>
+						<a class="is-current" href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						<a href="#">5</a>
+						<a href="#">...</a>
+						<a href="#">255</a>
+					</div>
+					<a class="pagination__next" href="#">Следующая<i></i></a>
+				</div>
+				<!-- END .pagination -->
+			</div>
+			<div class="l__col-2">
+				<!-- BEGIN .s-community -->
+				<div class="s-community">
+					<h2 class="h2">Комьюнити</h2>
+					<ul class="s-community__links">
+						<li><a href="#">Знакомства</a></li>
+						<li><a href="#">Лица</a></li>
+						<li><a href="#">Друг другу</a></li>
+						<li><a href="#">Форум</a></li>
+						<li><a href="#">Блоги</a></li>
+					</ul>
+				</div>
+				<!-- END .s-community -->
+				<!-- BEGIN .s-banner -->
+				<div class="s-banner">
+					<div class="s-banner__in">
+						<img src="img/pic4.jpg" alt="">
+					</div>
+				</div>
+				<!-- END .s-banner -->
+				<!-- BEGIN .s-news -->
+				<div class="s-news">
+					<h3 class="h3 h3_red">Последние новости<i></i></h3>
+					<ul class="s-news__list">
+						<li>
+							<a href="#">В 2013 году на рынок труда выведут инвалидов и пенсионеров</a>
+							<div class="meta">
+								<span>23 ноября 2012</span>
+								<span><i class="ico-comm"></i>23</span>
+								<span><i class="ico-view"></i>2323</span>
+							</div>
+						</li>
+						<li>
+							<a href="#">В 2013 году на рынок труда выведут инвалидов и пенсионеров</a>
+							<div class="meta">
+								<span>23 ноября 2012</span>
+								<span><i class="ico-comm"></i>23</span>
+								<span><i class="ico-view"></i>2323</span>
+							</div>
+						</li>
+						<li>
+							<a href="#">В 2013 году на рынок труда выведут инвалидов и пенсионеров</a>
+							<div class="meta">
+								<span>23 ноября 2012</span>
+								<span><i class="ico-comm"></i>23</span>
+								<span><i class="ico-view"></i>2323</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- END .s-news -->
+				<!-- BEGIN .s-vacancy -->
+				<div class="s-vacancy">
+					<h3 class="h3 h3_red">Лучшие вакансии<i></i></h3>
+					<ul class="s-vacancy__list">
+						<li>
+							<a href="#">Заместитель главного бухгалтера<span>45000 руб.</span></a>							
+							<div class="meta">
+								<span>23 ноября 2012</span>
+							</div>
+						</li>
+						<li>
+							<a href="#">Программист 1С<span>30000 руб.</span></a>							
+							<div class="meta">
+								<span>23 ноября 2012</span>
+							</div>
+						</li>
+						<li>
+							<a href="#">Заместитель главного бухгалтера<span>от 45000 руб. до 50000 руб.</span></a>							
+							<div class="meta">
+								<span>23 ноября 2012</span>
+							</div>
+						</li>
+						<li>
+							<a href="#">Программист 1С<span>30000 руб.</span></a>							
+							<div class="meta">
+								<span>23 ноября 2012</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- END .s-vacancy -->
+				<!-- BEGIN .s-online -->
+				<div class="s-online">
+					<h3 class="h3 h3_red">прямой эфир<i></i></h3>
+					<div class="s-online__list">
+						<div class="wtf">
+							<a href="#">scher1956</a>
+							<span>пишет</span>
+							<strong>/</strong>
+							<em>мы бы все вышли))) на Хэллоуин,...</em>
+							<a class="link" href="#">Эндопротезирование тазобедренного сустава.</a>
+							<span>в разделе</span>
+							<a class="link" href="#">Эндопротезирование</a>
+							<i>31 октября 2012</i>							
+						</div>
+						<div class="wtf">
+							<a href="#">scher1956</a>
+							<span>пишет</span>
+							<strong>/</strong>
+							<em>мы бы все вышли))) на Хэллоуин,...</em>
+							<a class="link" href="#">Эндопротезирование тазобедренного сустава.</a>
+							<span>в разделе</span>
+							<a class="link" href="#">Эндопротезирование</a>
+							<i>31 октября 2012</i>							
+						</div>
+						<div class="wtf">
+							<a href="#">scher1956</a>
+							<span>пишет</span>
+							<strong>/</strong>
+							<em>мы бы все вышли))) на Хэллоуин,...</em>
+							<a class="link" href="#">Эндопротезирование тазобедренного сустава.</a>
+							<span>в разделе</span>
+							<a class="link" href="#">Эндопротезирование</a>
+							<i>31 октября 2012</i>							
+						</div>
+					</div>
+				</div>
+				<!-- END .s-online -->
+				<!-- BEGIN .s-banner -->
+				<div class="s-banner">
+					<div class="s-banner__in">
+						<img src="img/pic4.jpg" alt="">
+					</div>
+				</div>
+				<!-- END .s-banner -->
+			</div>
+		</div>
+		<!-- END .l -->
+	</div>
+	<div class="push"></div>
+</section>
+<!-- END .wrap -->
+<!-- BEGIN .footer -->
+<footer class="footer">
+	<div class="footer__in">
+		<div class="copyright">
+			<p>© 2008 - 2012  При поддержке Департамента семейной и молодежной политики города Москвы.</p>
+			<p>Свидетельство о регистрации СМИ № ФС77-46066, выдано Роскомнадзором.</p>
+		</div>
+		<ul class="footer__links">
+			<li><span>/</span><a href="#">Условия использования</a></li>
+			<li><span>/</span><a href="#">Ответы на вопросы</a></li>
+			<li><span>/</span><a href="#">Контакты</a></li>
+		</ul>
+		<div class="btn">
+			<button class="btn__item">Обратная связь<i><i class="ico-arr"></i></i></button>
+			<span>Сделано в <a href="#">Смарт-арт</a></span>
+		</div>
+		<div class="footer__social">
+			<span>Мы в сети:</span>
+			<a class="footer__vk" href="#"></a>
+			<a class="footer__ok" href="#"></a>
+		</div>
+		<div class="footer__18plus">18+</div>
+	</div>
+</footer>
+<!-- END .footer -->
+</body>
+</html>

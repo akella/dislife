@@ -118,6 +118,19 @@ table
 	border-bottom: 3px solid #8dc11c
 .title_red
 	border-bottom: 3px solid #ff6b3d
+.title-big
+	position: relative
+	padding: 0 0 0 112px
+	.h2
+		margin-bottom: 20px
+		+font	
+		text-transform: uppercase
+		font-size: 45px 
+		line-height: 1
+	a
+		position: absolute
+		top: 14px
+		right: 0		
 .label
 	display: block
 	min-width: 50px	
@@ -154,6 +167,7 @@ table
 			bottom: 2px
 			border-radius: 50%
 			background: $red 
+//meta
 .meta
 	padding-top: 10px
 	overflow: hidden
@@ -189,8 +203,61 @@ table
 	+s(ico-arr-d)
 .ico-arr-l
 	+s(ico-arr-l)
-//slider
-.slider
+.ico-question
+	+s(ico-question)
+.ico-back
+	+s(ico-back)
+//wtf
+.wtf
+	overflow: hidden		
+	font-size: 14px
+	color: #9f9f9f 
+	line-height: 1.3
+	& > a			
+		+font-c
+		color: #343434 
+		&:hover
+			color: $red
+			text-decoration: none 
+	a, span, em, strong
+		margin-right: 5px
+	a	
+		font-weight: bold
+	span
+		+font-c
+	i
+		font-size: 12px
+	em
+		color: #2c2c2c
+	strong
+		color: $red  
+	.link
+		font-size: 14px
+		&:before
+			top: 5px
+//rating
+.rating
+	float: left
+	button, span
+		float: left
+	button
+		border-radius: 50%
+		background: #2c2c2c
+		&:hover, &.is-voted
+			background: $red 
+	span
+		padding: 0 6px
+		color: #9f9f9f 
+	i
+		display: block
+.rating__up
+	i
+		+s(btn-up)
+.rating__down
+	i
+		+s(btn-down)
+//experts-slider
+.experts-slider
 	height: 81px
 	background: url(../img/bg-dark.jpg) 
 	overflow: hidden
@@ -210,7 +277,7 @@ table
 			&.disabled
 				background: none
 				cursor: default 
-.slider__prev
+.experts-slider__prev
 	float: left
 	border-right: 1px solid #413f3f
 	i
@@ -218,7 +285,7 @@ table
 	&.disabled
 		i
 			+s(arr-prev-dis)
-.slider__next
+.experts-slider__next
 	float: right
 	border-left: 1px solid #413f3f 
 	i
@@ -226,9 +293,9 @@ table
 	&.disabled
 		i
 			+s(arr-next-dis)
-.slider__in
+.experts-slider__in
 	width: 230px
-.slider__item
+.experts-slider__item
 	padding: 13px
 	white-space: normal
 	img
@@ -315,21 +382,25 @@ table
 			display: block
 			+s(search)
 //nav
-.nav
-	min-width: 772px
+.nav	
 	max-width: 940px
-	margin: 0 auto		
-	ul		
-		text-align: center
-		font-size: 0
-	li
+	margin: 0 auto	
+	text-align: center
+	font-size: 0	
+	ul, li	
 		display: inline-block
-		padding: 24px 0
-		border-top: 3px solid $red 
 		vertical-align: top
+	ul
+		min-width: 772px
+		border-top: 3px solid $red 
+	li		
+		padding: 24px 0				
 		&:first-child
 			span
 				display: none
+		&.is-active
+			a
+				color: $red 
 	a
 		+font
 		font-size: 15px
@@ -340,21 +411,38 @@ table
 		font-size: 14px
 		font-weight: bold
 		color: $red 
+.nav_inner
+	margin-bottom: 35px 
+	ul
+		border-bottom: 1px solid #b6b6b6 
 //link
-.link
+.link, .link-plus
 	position: relative
-	padding-left: 10px 
-	font-size: 13px
 	font-style: italic
-	color: $red 
+	color: $red 	 
 	&:hover
 		text-decoration: underline 
+.link	
+	padding-left: 10px 
+	font-size: 13px	
 	&:before
 		content: ""
 		position: absolute
-		top: 6px
 		left: 0
-		+s(arr-link) 
+		top: 6px		
+		+s(arr-link)		
+.link-plus
+	padding-left: 30px
+	font-size: 14px
+	font-weight: bold
+	& > i
+		position: absolute
+		top: -2px
+		left: 0
+		background: $red
+		border-radius: 50% 
+		i
+			display: block
 //footer
 .footer
 	width: 1020px
@@ -480,3 +568,116 @@ button
 	width: 940px
 	height: 85px
 	margin: 0 auto
+//back
+.back
+	margin-bottom: 20px
+	padding-left: 75px
+	a
+		position: relative
+		font-weight: bold
+		font-style: italic
+		padding-left: 30px 
+		& > i
+			position: absolute
+			top: -4px
+			left: 0
+			background: $red
+			border-radius: 50% 
+	.ico-back
+		display: block
+//slider
+.slider
+	position: relative
+	margin-bottom: 30px
+.slider__item
+	width: 1020px
+.slider__item-in
+	position: relative
+	overflow: hidden
+.slider__bg, .slider__detail
+	background: url(../img/bg-dark.jpg) 
+.slider__bg
+	float: left
+	width: 125px
+	height: 180px	
+	margin-top: 40px
+.slider__pic
+	float: left
+	img
+		display: block
+.slider__detail
+	position: absolute
+	top: 40px
+	right: 0
+	width: 310px
+	height: 150px 
+	padding: 30px 140px 0 65px
+	a
+		position: relative
+		display: block
+		min-height: 100px
+		border-bottom: 1px solid #404148 
+		white-space: normal
+		font-size: 22px
+		font-style: italic
+		font-weight: bold 
+		color: #FFF
+		&:before
+			content: ""
+			position: absolute
+			top: 2px
+			left: -35px
+			+s(arr-next-red) 
+		&:hover
+			&:before
+				+s(arr-next) 
+	.meta
+		padding-top: 14px
+		opacity: .5
+.slider__prev, .slider__next
+	position: absolute
+	top: 150px
+	z-index: 10 
+.slider__prev
+	right: 90px
+	+s(arr-prev-big)
+	&:hover
+		+s(arr-prev-big-h)
+.slider__next
+	right: 40px
+	+s(arr-next-big)
+	&:hover
+		+s(arr-next-big-h)
+.slider__count
+	position: absolute
+	top: 157px
+	right: 5px
+	z-index: 10
+	font-size: 18px
+	font-style: italic
+	color: #767676 		
+	span
+		color: #2c2c2c 
+.slider_inner
+	margin: 0 0 50px -20px 
+	.slider__prev
+		right: 110px
+		+s(arr-prev-big-b)
+		&:hover
+			+s(arr-prev-big-h)
+	.slider__next 
+		right: 60px
+		+s(arr-next-big-b)
+		&:hover
+			+s(arr-next-big-h)
+	.slider__bg, .slider__detail
+		background: rgba(245,245,245,.9)
+	.slider__detail
+		width: 140px 
+		padding: 30px 310px 0 65px
+		white-space: normal
+		line-height: 1
+		em
+			font-size: 12px			
+
+		

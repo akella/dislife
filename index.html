@@ -44,18 +44,18 @@
 			</ul>
 		</nav>
 		<!-- END .nav -->
-		<!-- BEGIN .m-slider -->
-		<div class="m-slider">
-			<button id="m-slider-prev" class="m-slider__prev"></button>
-			<button id="m-slider-next" class="m-slider__next"></button>
-			<div class="cycle-slideshow" data-cycle-fx="carousel" data-cycle-timeout="0" data-cycle-next="#m-slider-next" data-cycle-prev="#m-slider-prev" data-cycle-slides="> div" data-cycle-carousel-visible="1" data-allow-wrap="true">
-				<div class="m-slider__item">
-					<div class="m-slider__item-in">
-						<div class="m-slider__bg"></div>
-						<div class="m-slider__pic">
+		<!-- BEGIN .slider -->
+		<div class="slider">
+			<button id="slider-prev" class="slider__prev"></button>
+			<button id="slider-next" class="slider__next"></button>
+			<div class="cycle-slideshow" data-cycle-fx="carousel" data-cycle-timeout="0" data-cycle-next="#slider-next" data-cycle-prev="#slider-prev" data-cycle-slides="> div" data-cycle-carousel-visible="1" data-allow-wrap="true">
+				<div class="slider__item">
+					<div class="slider__item-in">
+						<div class="slider__bg"></div>
+						<div class="slider__pic">
 							<a href="#"><img src="img/pic7.jpg" width="420" height="260" alt=""></a>
 						</div>
-						<div class="m-slider__detail">
+						<div class="slider__detail">
 							<a href="#">Закон Димы Яковлева: обзор зарубежных СМИ</a>
 							<div class="meta">
 								<span>23 ноября 2012</span>
@@ -65,13 +65,13 @@
 						</div>
 					</div>
 				</div>
-				<div class="m-slider__item">
-					<div class="m-slider__item-in">
-						<div class="m-slider__bg"></div>
-						<div class="m-slider__pic">
+				<div class="slider__item">
+					<div class="slider__item-in">
+						<div class="slider__bg"></div>
+						<div class="slider__pic">
 							<a href="#"><img src="img/pic7.jpg" width="420" height="260" alt=""></a>
 						</div>
-						<div class="m-slider__detail">
+						<div class="slider__detail">
 							<a href="#">Закон Димы Яковлева: обзор зарубежных СМИ</a>
 							<div class="meta">
 								<span>23 ноября 2012</span>
@@ -81,13 +81,13 @@
 						</div>
 					</div>
 				</div>
-				<div class="m-slider__item">
-					<div class="m-slider__item-in">
-						<div class="m-slider__bg"></div>
-						<div class="m-slider__pic">
+				<div class="slider__item">
+					<div class="slider__item-in">
+						<div class="slider__bg"></div>
+						<div class="slider__pic">
 							<a href="#"><img src="img/pic7.jpg" width="420" height="260" alt=""></a>
 						</div>
-						<div class="m-slider__detail">
+						<div class="slider__detail">
 							<a href="#">Закон Димы Яковлева: обзор зарубежных СМИ</a>
 							<div class="meta">
 								<span>23 ноября 2012</span>
@@ -99,7 +99,7 @@
 				</div>
 			</div>
 		</div>
-		<!-- END .m-slider -->
+		<!-- END .slider -->
 		<!-- BEGIN .l -->
 		<div class="l">
 			<div class="l__col-1">
@@ -172,24 +172,24 @@
 						<!-- BEGIN .m-experts -->
 						<div class="m-experts">
 							<h3 class="h3 h3_yellow">эксперты раздела<i></i></h3>
-							<!-- BEGIN .slider -->
-							<div class="slider">
-								<button id="sl-prev-1" class="slider__prev"><i></i></button>
-								<button id="sl-next-1" class="slider__next"><i></i></button>
-								<div class="slider__in cycle-slideshow" data-cycle-fx="carousel" data-cycle-timeout="0" data-cycle-next="#sl-next-1" data-cycle-prev="#sl-prev-1" data-cycle-slides="> div" data-allow-wrap="false">
-							   	<div class="slider__item">
+							<!-- BEGIN .experts-slider -->
+							<div class="experts-slider">
+								<button id="sl-prev-1" class="experts-slider__prev"><i></i></button>
+								<button id="sl-next-1" class="experts-slider__next"><i></i></button>
+								<div class="experts-slider__in cycle-slideshow" data-cycle-fx="carousel" data-cycle-timeout="0" data-cycle-next="#sl-next-1" data-cycle-prev="#sl-prev-1" data-cycle-slides="> div" data-allow-wrap="false">
+							   	<div class="experts-slider__item">
 										<a href="#"><img src="img/pic3.jpg" width="53" height="53" alt=""></a>
 										<a href="#">Василий Шевченко</a>
 										<span>знает все о безбарьерной среде</span>
 									</div>
 								</div>					
 							</div>
-							<!-- END .slider -->
+							<!-- END .experts-slider -->
 						</div>
 						<!-- END .experts -->		
 						<!-- BEGIN .m-places -->
 						<div class="m-places">
-							<h3 class="h3 h3_yellow">Новые места<i></i><a class="link link_arr" href="#">на карте доступности</a></h3>
+							<h3 class="h3 h3_yellow">Новые места<i></i><a class="link" href="#">на карте доступности</a></h3>
 							<ul class="m-places__list">
 								<li>
 									<a href="#">Шоколадница</a><span>кафе</span>
@@ -274,34 +274,34 @@
 						<!-- BEGIN .m-experts -->
 						<div class="m-experts">
 							<h3 class="h3 h3_blue">эксперты раздела<i></i></h3>
-							<!-- BEGIN .slider -->
-							<div class="slider">
-								<button id="sl-prev-2" class="slider__prev"><i></i></button>
-								<button id="sl-next-2" class="slider__next"><i></i></button>
-								<div class="slider__in cycle-slideshow" data-cycle-fx="carousel" data-cycle-timeout="0" data-cycle-next="#sl-next-2" data-cycle-prev="#sl-prev-2" data-cycle-slides="> div" data-allow-wrap="false">
-							   	<div class="slider__item">
+							<!-- BEGIN .experts-slider -->
+							<div class="experts-slider">
+								<button id="sl-prev-2" class="experts-slider__prev"><i></i></button>
+								<button id="sl-next-2" class="experts-slider__next"><i></i></button>
+								<div class="experts-slider__in cycle-slideshow" data-cycle-fx="carousel" data-cycle-timeout="0" data-cycle-next="#sl-next-2" data-cycle-prev="#sl-prev-2" data-cycle-slides="> div" data-allow-wrap="false">
+							   	<div class="experts-slider__item">
 										<a href="#"><img src="img/pic3.jpg" width="53" height="53" alt=""></a>
 										<a href="#">Василий Шевченко</a>
 										<span>знает все о безбарьерной среде</span>
 									</div>
-									<div class="slider__item">
+									<div class="experts-slider__item">
 										<a href="#"><img src="img/pic3.jpg" width="53" height="53" alt=""></a>
 										<a href="#">Василий Шевченко</a>
 										<span>знает все о безбарьерной среде</span>
 									</div>
-									<div class="slider__item">
+									<div class="experts-slider__item">
 										<a href="#"><img src="img/pic3.jpg" width="53" height="53" alt=""></a>
 										<a href="#">Василий Шевченко</a>
 										<span>знает все о безбарьерной среде</span>
 									</div>
-									<div class="slider__item">
+									<div class="experts-slider__item">
 										<a href="#"><img src="img/pic3.jpg" width="53" height="53" alt=""></a>
 										<a href="#">Василий Шевченко</a>
 										<span>знает все о безбарьерной среде</span>
 									</div>
 								</div>					
 							</div>
-							<!-- END .slider -->
+							<!-- END .experts-slider -->
 						</div>
 						<!-- END .m-experts -->
 						<!-- BEGIN .m-school -->
@@ -318,7 +318,7 @@
 							</div>
 							<div class="btn">
 								<button class="btn__item">Показать<i><i class="ico-arr"></i></i></button>
-								<a class="link link_arr" href="#">на карте доступности</a>
+								<a class="link" href="#">на карте доступности</a>
 							</div>
 						</div>
 						<!-- END .m-school -->
@@ -340,10 +340,10 @@
 									<img src="img/pic3.jpg" alt="">
 								</a>								
 							</div>
-							<div class="m-talks__desc">
+							<div class="wtf">
 								<a href="#">scher1956</a>
 								<span>пишет в тему</span>
-								<a class="link link_arr" href="#">Эндопротезирование тазобедренного сустава. Из личного опыта.</a>
+								<a class="link" href="#">Эндопротезирование тазобедренного сустава. Из личного опыта.</a>
 								<i>31 октября 2012</i>							
 							</div>
 						</li>
@@ -356,14 +356,14 @@
 									<img src="img/pic3.jpg" alt="">
 								</a>								
 							</div>
-							<div class="m-talks__desc">
+							<div class="wtf">
 								<a href="#">scher1956</a>
 								<span>пишет</span>
 								<strong>/</strong>
 								<em>мы бы все вышли))) на Хэллоуин,...</em>
-								<a class="link link_arr" href="#">Эндопротезирование тазобедренного сустава.</a>
+								<a class="link" href="#">Эндопротезирование тазобедренного сустава.</a>
 								<span>в разделе</span>
-								<a class="link link_arr" href="#">Эндопротезирование</a>
+								<a class="link" href="#">Эндопротезирование</a>
 								<i>31 октября 2012</i>							
 							</div>
 						</li>
@@ -376,10 +376,10 @@
 									<img src="img/pic3.jpg" alt="">
 								</a>								
 							</div>
-							<div class="m-talks__desc">
+							<div class="wtf">
 								<a href="#">scher1956</a>
 								<span>пишет в тему</span>
-								<a class="link link_arr" href="#">Эндопротезирование тазобедренного сустава. Из личного опыта.</a>
+								<a class="link" href="#">Эндопротезирование тазобедренного сустава. Из личного опыта.</a>
 								<i>31 октября 2012</i>							
 							</div>
 						</li>
@@ -392,14 +392,14 @@
 									<img src="img/pic3.jpg" alt="">
 								</a>								
 							</div>
-							<div class="m-talks__desc">
+							<div class="wtf">
 								<a href="#">scher1956</a>
 								<span>пишет</span>
 								<strong>/</strong>
 								<em>мы бы все вышли))) на Хэллоуин,...</em>
-								<a class="link link_arr" href="#">Эндопротезирование тазобедренного сустава.</a>
+								<a class="link" href="#">Эндопротезирование тазобедренного сустава.</a>
 								<span>в разделе</span>
-								<a class="link link_arr" href="#">Эндопротезирование</a>
+								<a class="link" href="#">Эндопротезирование</a>
 								<i>31 октября 2012</i>							
 							</div>
 						</li>
@@ -463,24 +463,24 @@
 						<!-- BEGIN .m-experts -->
 						<div class="m-experts">
 							<h3 class="h3 h3_green">эксперты раздела<i></i></h3>
-							<!-- BEGIN .slider -->
-							<div class="slider">
-								<button id="sl-prev-3" class="slider__prev"><i></i></button>
-								<button id="sl-next-3" class="slider__next"><i></i></button>
-								<div class="slider__in cycle-slideshow" data-cycle-fx="carousel" data-cycle-timeout="0" data-cycle-next="#sl-next-3" data-cycle-prev="#sl-prev-3" data-cycle-slides="> div" data-allow-wrap="false">
-							   	<div class="slider__item">
+							<!-- BEGIN .experts-slider -->
+							<div class="experts-slider">
+								<button id="sl-prev-3" class="experts-slider__prev"><i></i></button>
+								<button id="sl-next-3" class="experts-slider__next"><i></i></button>
+								<div class="experts-slider__in cycle-slideshow" data-cycle-fx="carousel" data-cycle-timeout="0" data-cycle-next="#sl-next-3" data-cycle-prev="#sl-prev-3" data-cycle-slides="> div" data-allow-wrap="false">
+							   	<div class="experts-slider__item">
 										<a href="#"><img src="img/pic3.jpg" width="53" height="53" alt=""></a>
 										<a href="#">Василий Шевченко</a>
 										<span>знает все о безбарьерной среде</span>
 									</div>
 								</div>					
 							</div>
-							<!-- END .slider -->
+							<!-- END .experts-slider -->
 						</div>
 						<!-- END .experts -->		
 						<!-- BEGIN .m-ivents -->
 						<div class="m-ivents">
-							<h3 class="h3 h3_green">Афиша<i></i><a class="link link_arr" href="#">все событие</a></h3>
+							<h3 class="h3 h3_green">Афиша<i></i><a class="link" href="#">все событие</a></h3>
 							<ul class="m-ivents__list">
 								<li>
 									<a href="#">Открытый мастер-класс по глиняной керамике Новогодний сувенир</a>
@@ -550,34 +550,34 @@
 						<!-- BEGIN .m-experts -->
 						<div class="m-experts">
 							<h3 class="h3 h3_red">эксперты раздела<i></i></h3>
-							<!-- BEGIN .slider -->
-							<div class="slider">
-								<button id="sl-prev-4" class="slider__prev"><i></i></button>
-								<button id="sl-next-4" class="slider__next"><i></i></button>
-								<div class="slider__in cycle-slideshow" data-cycle-fx="carousel" data-cycle-timeout="0" data-cycle-next="#sl-next-4" data-cycle-prev="#sl-prev-4" data-cycle-slides="> div" data-allow-wrap="false">
-							   	<div class="slider__item">
+							<!-- BEGIN .experts-slider -->
+							<div class="experts-slider">
+								<button id="sl-prev-4" class="experts-slider__prev"><i></i></button>
+								<button id="sl-next-4" class="experts-slider__next"><i></i></button>
+								<div class="experts-slider__in cycle-slideshow" data-cycle-fx="carousel" data-cycle-timeout="0" data-cycle-next="#sl-next-4" data-cycle-prev="#sl-prev-4" data-cycle-slides="> div" data-allow-wrap="false">
+							   	<div class="experts-slider__item">
 										<a href="#"><img src="img/pic3.jpg" width="53" height="53" alt=""></a>
 										<a href="#">Василий Шевченко</a>
 										<span>знает все о безбарьерной среде</span>
 									</div>
-									<div class="slider__item">
+									<div class="experts-slider__item">
 										<a href="#"><img src="img/pic3.jpg" width="53" height="53" alt=""></a>
 										<a href="#">Василий Шевченко</a>
 										<span>знает все о безбарьерной среде</span>
 									</div>
-									<div class="slider__item">
+									<div class="experts-slider__item">
 										<a href="#"><img src="img/pic3.jpg" width="53" height="53" alt=""></a>
 										<a href="#">Василий Шевченко</a>
 										<span>знает все о безбарьерной среде</span>
 									</div>
-									<div class="slider__item">
+									<div class="experts-slider__item">
 										<a href="#"><img src="img/pic3.jpg" width="53" height="53" alt=""></a>
 										<a href="#">Василий Шевченко</a>
 										<span>знает все о безбарьерной среде</span>
 									</div>
 								</div>					
 							</div>
-							<!-- END .slider -->
+							<!-- END .experts-slider -->
 						</div>
 						<!-- END .m-experts -->
 						<!-- BEGIN .m-work -->
@@ -594,7 +594,7 @@
 							</div>
 							<div class="btn">
 								<button class="btn__item">Показать<i><i class="ico-arr"></i></i></button>
-								<a class="link link_arr" href="#">расширенный поиск</a>
+								<a class="link" href="#">расширенный поиск</a>
 							</div>
 						</div>
 						<!-- END .m-work -->
@@ -672,7 +672,7 @@
 					<label class="radio"><input type="radio" name="vote" checked><i></i>Голосуй не госуй, все равно получишь...</label>
 					<div class="btn">
 						<button class="btn__item">Голосовать<i><i class="ico-ok"></i></i></button>
-						<a class="link link_arr" href="#">воздержаться</a>
+						<a class="link" href="#">воздержаться</a>
 					</div>
 				</form>
 				<!-- END .s-vote -->
