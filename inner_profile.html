@@ -1,0 +1,337 @@
+<!doctype html>
+<!--[if IE 8]><html lang="ru-RU" class="ie8"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="ru-RU"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<link rel="stylesheet" media="screen" href="css/jquery.fancybox.css" >
+	<!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.cycle2.min.js"></script>	
+	<script src="js/jquery.cycle2.carousel.min.js"></script>	
+	<script src="js/jquery.fancybox.pack.js"></script>	
+	<script src="js/common.js"></script>
+</head>
+<body>
+<!-- BEGIN .wrap -->
+<section class="wrap">
+	<div class="wrap__in">
+		<div class="banner-top"><img src="img/banner-top.jpg" alt=""></div>
+		<!-- BEGIN .header -->
+		<header class="header">
+			<h1 class="logo"><a href="#">DISLIFE</a></h1>
+			<a class="version" href="#">Версия для слабовидящих</a>
+			<div class="links">
+				<a class="links__enter" href="#">Вход<i></i></a>
+				<span>или</span>
+				<a class="links__reg" href="#">Регистрация</a>
+			</div>
+			<form class="header__search" action="/">
+				<input type="text" placeholder="поиск">
+				<button type="submit"><i></i></button>
+			</form>			
+		</header>
+		<!-- END .header -->
+		<!-- BEGIN .nav -->
+		<nav class="nav nav_inner">
+			<ul>
+				<li><span>/</span><a href="#">Новости</a></li>
+				<li><span>/</span><a href="#">Статьи</a></li>
+				<li class="is-active"><span>/</span><a href="#">События</a></li>
+				<li><span>/</span><a href="#">Консультации</a></li>
+				<li><span>/</span><a href="#">Законодательство</a></li>
+				<li><span>/</span><a href="#">Работа</a></li>
+				<li><span>/</span><a href="#">Карта услуг</a></li>
+			</ul>
+		</nav>
+		<!-- END .nav -->
+		<!-- BEGIN .l -->
+		<div class="l">
+			<div class="l__col-1">				
+				<!-- BEGIN .profile -->
+				<div class="profile">
+					<div class="profile__name">
+						<h2 class="h2">Анна Торина, <span>23 года</span></h2>
+						<div class="was-online">была на сайте 8 мая 18:09</div>
+						<a class="link" href="#">написать сообщение</a>
+						<div class="btn">
+							<button class="btn__item">Добавить в друзья<i><i class="ico-plus"></i></i></button>
+						</div>
+					</div>
+					<div class="profile__data">
+						<div class="profile__pics">
+							<button id="pics-top" class="profile__pics-top"></button>
+							<button id="pics-bottom" class="profile__pics-bottom"></button>
+							<div class="cycle-slideshow" data-cycle-fx="carousel" data-cycle-timeout="0" data-cycle-prev="#pics-top" data-cycle-next="#pics-bottom" data-cycle-carousel-visible="3" data-cycle-carousel-vertical="true" data-cycle-slides="> a" data-allow-wrap="false">
+								<a class="js-fb" rel="gallery" href="img/pic4.jpg" title="title1"><img src="img/pic9.jpg" width="57" height="57" alt=""></a>
+								<a class="js-fb" rel="gallery" href="img/pic4.jpg" title="title2"><img src="img/pic9.jpg" width="57" height="57" alt=""></a>
+								<a class="js-fb" rel="gallery" href="img/pic4.jpg" title="title3"><img src="img/pic9.jpg" width="57" height="57" alt=""></a>
+								<a class="js-fb" rel="gallery" href="img/pic4.jpg" title="title4"><img src="img/pic9.jpg" width="57" height="57" alt=""></a>
+								<a class="js-fb" rel="gallery" href="img/pic4.jpg" title="title5"><img src="img/pic9.jpg" width="57" height="57" alt=""></a>
+							</div>
+						</div>
+						<div class="profile__photo">
+							<img src="img/pic10.jpg" alt="">
+							<i class="cube"></i>
+							<a class="link-arr" href="#">все фотографии<i class="ico-arr-l"></i></a>
+						</div>
+						<div class="profile__info">
+							<strong>Россия, Москва</strong>
+							<i>О себе: </i>
+							<p>Работающий инвалид 2 группы.</p>
+						</div>
+					</div>					
+				</div>
+				<!-- END .profile -->
+				<!-- BEGIN .friends -->
+				<div class="friends">
+					<h3 class="h3 h3_red-big">Друзья<i></i></h3>
+					<div class="friends__types friends__types_mod">
+						<div class="label-count">взаимные<span>(150)</span></div>
+						<div class="friends__list">
+							<ul>
+								<li>
+									<a href="#"><img src="img/pic9.jpg" alt=""></a>
+									<a href="#">Василий Шевченко</a>
+								</li>
+								<li>
+									<a href="#"><img src="img/pic9.jpg" alt=""></a>
+									<a href="#">Василий Шевченко</a>
+								</li>
+								<li>
+									<a href="#"><img src="img/pic9.jpg" alt=""></a>
+									<a href="#">Василий Шевченко</a>
+								</li>
+								<li>
+									<a href="#"><img src="img/pic9.jpg" alt=""></a>
+									<a href="#">Василий Шевченко</a>
+								</li>
+								<li>
+									<a href="#"><img src="img/pic9.jpg" alt=""></a>
+									<a href="#">Василий Шевченко</a>
+								</li>
+							</ul>
+							<a class="link-arr" href="#">показать всех<i class="ico-arr-l"></i></a>
+						</div>
+					</div>
+					<div class="friends__types">
+						<div class="label-count">Подписчики<span>(10)</span></div>
+						<div class="friends__list">
+							<ul>
+								<li>
+									<a href="#"><img src="img/pic9.jpg" alt=""></a>
+									<a href="#">Василий Шевченко</a>
+								</li>
+								<li>
+									<a href="#"><img src="img/pic9.jpg" alt=""></a>
+									<a href="#">Василий Шевченко</a>
+								</li>
+								<li>
+									<a href="#"><img src="img/pic9.jpg" alt=""></a>
+									<a href="#">Василий Шевченко</a>
+								</li>
+								<li>
+									<a href="#"><img src="img/pic9.jpg" alt=""></a>
+									<a href="#">Василий Шевченко</a>
+								</li>
+								<li>
+									<a href="#"><img src="img/pic9.jpg" alt=""></a>
+									<a href="#">Василий Шевченко</a>
+								</li>
+							</ul>
+							<a class="link-arr" href="#">показать всех<i class="ico-arr-l"></i></a>
+						</div>
+					</div>
+				</div>
+				<!-- END .friends -->
+				<!-- BEGIN .activity -->
+				<div class="activity">
+					<h3 class="h3 h3_red-big">Активность<i></i></h3>
+					<div class="activity__comms">
+						<div class="label-count">Комментарии<span>(10)</span></div>
+						<ul class="activity__list">
+							<li><i>23 ноября 2012</i><span>в публикации</span><a href="#">Эндопротезирование тазобедренного сустава. Из личного опыта.</a></li>
+							<li><i>23 ноября 2012</i><span>в публикации</span><a href="#">«Жилые дома Красноярска проверят на доступность для инвалидов и детских колясок»</a></li>
+							<li><i>23 ноября 2012</i><span>в публикации</span><a href="#">Эндопротезирование тазобедренного сустава. Из личного опыта.</a></li>
+							<li><i>23 ноября 2012</i><span>в публикации</span><a href="#">«Жилые дома Красноярска проверят на доступность для инвалидов и детских колясок»</a></li>
+							<li><i>23 ноября 2012</i><span>в публикации</span><a href="#">Эндопротезирование тазобедренного сустава. Из личного опыта.</a></li>
+							<li><i>23 ноября 2012</i><span>в публикации</span><a href="#">«Жилые дома Красноярска проверят на доступность для инвалидов и детских колясок»</a></li>
+							<li><i>23 ноября 2012</i><span>в публикации</span><a href="#">Эндопротезирование тазобедренного сустава. Из личного опыта.</a></li>
+							<li><i>23 ноября 2012</i><span>в публикации</span><a href="#">«Жилые дома Красноярска проверят на доступность для инвалидов и детских колясок»</a></li>
+						</ul>
+					</div>
+					<div class="activity__likes">
+						<div class="label-count">Комментарии<span>(10)</span></div>
+						<ul class="activity__list">
+							<li><i>23 ноября 2012</i><span>в публикации</span><a href="#">Эндопротезирование тазобедренного сустава. Из личного опыта.</a><img src="img/pic11.jpg" alt=""></li>
+							<li><i>23 ноября 2012</i><span>в публикации</span><a href="#">«Жилые дома Красноярска проверят на доступность для инвалидов и детских колясок»</a></li>
+							<li><i>23 ноября 2012</i><span>в публикации</span><a href="#">Эндопротезирование тазобедренного сустава. Из личного опыта.</a></li>
+							<li><i>23 ноября 2012</i><span>в публикации</span><a href="#">«Жилые дома Красноярска проверят на доступность для инвалидов и детских колясок»</a></li>
+							<li><i>23 ноября 2012</i><span>в публикации</span><a href="#">Эндопротезирование тазобедренного сустава. Из личного опыта.</a></li>
+							<li><i>23 ноября 2012</i><span>в публикации</span><a href="#">«Жилые дома Красноярска проверят на доступность для инвалидов и детских колясок»</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- END .activity -->
+			</div>
+			<div class="l__col-2">
+				<!-- BEGIN .s-community -->
+				<div class="s-community">
+					<h2 class="h2">Комьюнити</h2>
+					<ul class="s-community__links">
+						<li><a href="#">Знакомства</a></li>
+						<li><a href="#">Лица</a></li>
+						<li><a href="#">Друг другу</a></li>
+						<li><a href="#">Форум</a></li>
+						<li><a href="#">Блоги</a></li>
+					</ul>
+				</div>
+				<!-- END .s-community -->
+				<!-- BEGIN .s-banner -->
+				<div class="s-banner">
+					<div class="s-banner__in">
+						<img src="img/pic4.jpg" alt="">
+					</div>
+				</div>
+				<!-- END .s-banner -->
+				<!-- BEGIN .s-news -->
+				<div class="s-news">
+					<h3 class="h3 h3_red">Последние новости<i></i></h3>
+					<ul class="s-news__list">
+						<li>
+							<a href="#">В 2013 году на рынок труда выведут инвалидов и пенсионеров</a>
+							<div class="meta">
+								<span>23 ноября 2012</span>
+								<span><i class="ico-comm"></i>23</span>
+								<span><i class="ico-view"></i>2323</span>
+							</div>
+						</li>
+						<li>
+							<a href="#">В 2013 году на рынок труда выведут инвалидов и пенсионеров</a>
+							<div class="meta">
+								<span>23 ноября 2012</span>
+								<span><i class="ico-comm"></i>23</span>
+								<span><i class="ico-view"></i>2323</span>
+							</div>
+						</li>
+						<li>
+							<a href="#">В 2013 году на рынок труда выведут инвалидов и пенсионеров</a>
+							<div class="meta">
+								<span>23 ноября 2012</span>
+								<span><i class="ico-comm"></i>23</span>
+								<span><i class="ico-view"></i>2323</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- END .s-news -->
+				<!-- BEGIN .s-vacancy -->
+				<div class="s-vacancy">
+					<h3 class="h3 h3_red">Лучшие вакансии<i></i></h3>
+					<ul class="s-vacancy__list">
+						<li>
+							<a href="#">Заместитель главного бухгалтера<span>45000 руб.</span></a>							
+							<div class="meta">
+								<span>23 ноября 2012</span>
+							</div>
+						</li>
+						<li>
+							<a href="#">Программист 1С<span>30000 руб.</span></a>							
+							<div class="meta">
+								<span>23 ноября 2012</span>
+							</div>
+						</li>
+						<li>
+							<a href="#">Заместитель главного бухгалтера<span>от 45000 руб. до 50000 руб.</span></a>							
+							<div class="meta">
+								<span>23 ноября 2012</span>
+							</div>
+						</li>
+						<li>
+							<a href="#">Программист 1С<span>30000 руб.</span></a>							
+							<div class="meta">
+								<span>23 ноября 2012</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- END .s-vacancy -->
+				<!-- BEGIN .s-online -->
+				<div class="s-online">
+					<h3 class="h3 h3_red">прямой эфир<i></i></h3>
+					<div class="s-online__list">
+						<div class="wtf">
+							<a href="#">scher1956</a>
+							<span>пишет</span>
+							<strong>/</strong>
+							<em>мы бы все вышли))) на Хэллоуин,...</em>
+							<a class="link" href="#">Эндопротезирование тазобедренного сустава.</a>
+							<span>в разделе</span>
+							<a class="link" href="#">Эндопротезирование</a>
+							<i>31 октября 2012</i>							
+						</div>
+						<div class="wtf">
+							<a href="#">scher1956</a>
+							<span>пишет</span>
+							<strong>/</strong>
+							<em>мы бы все вышли))) на Хэллоуин,...</em>
+							<a class="link" href="#">Эндопротезирование тазобедренного сустава.</a>
+							<span>в разделе</span>
+							<a class="link" href="#">Эндопротезирование</a>
+							<i>31 октября 2012</i>							
+						</div>
+						<div class="wtf">
+							<a href="#">scher1956</a>
+							<span>пишет</span>
+							<strong>/</strong>
+							<em>мы бы все вышли))) на Хэллоуин,...</em>
+							<a class="link" href="#">Эндопротезирование тазобедренного сустава.</a>
+							<span>в разделе</span>
+							<a class="link" href="#">Эндопротезирование</a>
+							<i>31 октября 2012</i>							
+						</div>
+					</div>
+				</div>
+				<!-- END .s-online -->
+				<!-- BEGIN .s-banner -->
+				<div class="s-banner">
+					<div class="s-banner__in">
+						<img src="img/pic4.jpg" alt="">
+					</div>
+				</div>
+				<!-- END .s-banner -->
+			</div>
+		</div>
+		<!-- END .l -->
+	</div>
+	<div class="push"></div>
+</section>
+<!-- END .wrap -->
+<!-- BEGIN .footer -->
+<footer class="footer">
+	<div class="footer__in">
+		<div class="copyright">
+			<p>© 2008 - 2012  При поддержке Департамента семейной и молодежной политики города Москвы.</p>
+			<p>Свидетельство о регистрации СМИ № ФС77-46066, выдано Роскомнадзором.</p>
+		</div>
+		<ul class="footer__links">
+			<li><span>/</span><a href="#">Условия использования</a></li>
+			<li><span>/</span><a href="#">Ответы на вопросы</a></li>
+			<li><span>/</span><a href="#">Контакты</a></li>
+		</ul>
+		<div class="btn">
+			<button class="btn__item">Обратная связь<i><i class="ico-arr"></i></i></button>
+			<span>Сделано в <a href="#">Смарт-арт</a></span>
+		</div>
+		<div class="footer__social">
+			<span>Мы в сети:</span>
+			<a class="footer__vk" href="#"></a>
+			<a class="footer__ok" href="#"></a>
+		</div>
+		<div class="footer__18plus">18+</div>
+	</div>
+</footer>
+<!-- END .footer -->
+</body>
+</html>

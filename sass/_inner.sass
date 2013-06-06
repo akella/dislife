@@ -137,7 +137,31 @@
 	margin-bottom: 45px
 	padding: 30px 20px
 	border-top: 1px solid #dfdfdf 
-	background: #f5f5f5 
+	background: #f5f5f5
+	.h3
+		padding: 0 0 15px 20px
+		border-bottom: 1px solid #e0e0e0  
+.cats_tabs
+	.h3
+		padding: 0 0 0 20px
+		border: none
+	.cats__list
+		display: none
+.cats__select
+	position: relative
+	padding: 0 0 40px 20px
+.cats__arhive
+	position: absolute
+	top: 7px
+	right: 0
+	padding-left: 24px 
+	font-weight: bold
+	font-style: italic
+	i
+		position: absolute
+		top: -1px
+		left: 0
+		+s(arhive)
 .cats__tabs
 	margin-bottom: 30px
 	padding: 5px 20px 20px 20px
@@ -169,7 +193,6 @@
 				bottom: -25px
 				border-color: #f5f5f5 transparent transparent transparent
 .cats__list
-	display: none
 	padding: 0 0 0 20px
 	overflow: hidden
 	ul
@@ -181,9 +204,12 @@
 	li
 		margin-bottom: 10px
 		line-height: 1
+		&.is-active
+			a
+				color: $red 
 	a
 		font-size: 14px
-		font-style: italic
+		font-style: italic		
 //consult
 .consult
 	margin-bottom: 40px
@@ -225,6 +251,7 @@
 			color: $red
 //pagination
 .pagination
+	margin-bottom: 40px
 	padding: 0 10px
 	+font-c
 	font-weight: bold
@@ -351,24 +378,11 @@
 		font-size: 14px
 		font-weight: normal
 		color: #9f9f9f
-.article__detail
-	padding: 0 0 50px 104px
-	font-style: italic
-	strong
-		font-size: 17px
-		font-weight: normal
-		color: #9f9f9f 
-	p
-		font-weight: bold
-		font-size: 13px 
-		color: #9f9f9f 
-		a
-			margin-left: 3px
-.article__info
-	
 //content
 .content
 	padding-left: 104px 
+	.slider
+		margin: 50px 0 50px -124px
 	p
 		margin-bottom: 20px
 	a
@@ -500,8 +514,544 @@
 		padding-top: 5px 
 		border-top: 1px solid #dadada
 		font-size: 12px 
-
-
-
-	
+//comments
+.comm
+	padding-left: 104px
+	.pagination
+		margin-bottom: 20px
+		padding: 0
+.comm__top
+	margin-bottom: 25px
+	overflow: hidden
+	.h2
+		float: left
+		margin: 0
+	.checkbox
+		float: left
+		margin: 6px 0 0 17px
+		font-style: italic
+.comm__sum
+	float: right
+	margin-top: 8px
+	font-size: 12px
+	font-style: italic
+	color: #9f9f9f 
+.comm__post
+	position: relative
+	@extend %clr
+	&:hover
+		.comm__complains
+			display: block
+.comm__pic
+	position: relative
+	float: left
+	margin-right: 20px
+	img
+		display: block
+		border: 1px solid #f5f5f5
+.comm__data
+	overflow: hidden
+.comm__author
+	padding-top: 5px
+	strong, span, i
+		display: inline-block
+		margin-right: 5px
+	i
+		a
+			color: $red 
+	strong
+		a
+			+font-c
+			font-size: 15px
+			font-weight: bold
+	span
+		font-style: italic
+		font-size: 12px
+		color: #9f9f9f 
+	.ico-arr-top
+		position: relative
+		top: 1px
+.comm__links
+	padding: 15px 0 20px 0
+	a
+		margin-right: 15px
+		font-size: 12px
+		font-style: italic
+		span
+			margin-left: 3px
+			color: #9f9f9f 
+.comm__complains
+	display: none
+	position: absolute
+	top: 0
+	right: 0
+	.ico-complains
+		display: block
+	ul
+		display: none
+		position: absolute
+		top: 5px
+		right: 13px
+		padding: 12px
+		border: 1px solid $red
+		background: #FFF 
+	li
+		padding: 0 0 0 10px
+		white-space: nowrap
+		font-style: italic
+		font-size: 13px
+		&:first-child
+			padding: 0 0 5px 0
+		a
+			font-weight: bold
+			text-decoration: underline
+			&:hover
+				text-decoration: none
+	&:hover
+		ul
+			display: block
+.comm__reply
+	padding-left: 79px 
+.comm__form
+	padding-bottom: 20px
+	.btn
+		padding-top: 17px
+.comm__add
+	.h2
+		margin-bottom: 10px
+		text-transform: none
+.comm__need-auth
+	width: 340px 
+	margin-bottom: 20px
+	padding: 20px
+	background: #f4f4f4 
+	+font-c
+	font-size: 16px
+	a
+		color: $red
+		&:hover
+			text-decoration: underline
+//profile
+.profile
+	margin-bottom: 45px
+	padding-left: 104px 
+.profile__name
+	position: relative
+	margin-bottom: 55px
+	padding-right: 180px
+	.h2
+		margin-bottom: 4px
+		+font-c
+		font-size: 27px
+		text-transform: none
+		span
+			color: #9f9f9f
+	.link
+		position: absolute
+		top: 12px
+		right: 0
+	i
+		display: block
+		margin-bottom: 25px
+		font-size: 15px
+		color: #9f9f9f 
+.profile__data
+	margin-left: -72px
+	@extend %clr
+.profile__pics
+	position: relative
+	float: left
+	width: 57px
+	margin-right: 15px
+	img
+		display: block
+		padding-bottom: 10px
+	button
+		position: absolute
+		left: 50%
+		margin-left: -13px
+		z-index: 10 
+.profile__pics-top
+	top: -37px
+	+s(arr-top)
+	&.disabled
+		+s(arr-top-dis)
+.profile__pics-bottom
+	bottom: -37px
+	+s(arr-bottom)
+	&.disabled
+		+s(arr-bottom-dis)	
+.profile__photo
+	position: relative
+	float: left
+	width: 232px 
+	margin-right: 35px
+	img
+		display: block
+		margin-bottom: 30px 
+.profile__info	
+	overflow: hidden
+	strong, i
+		display: block
+		margin-bottom: 5px
+	strong
+		font-size: 22px
+		+font-c
+	i
+		color: #9f9f9f
+	p  
+//friends & activity & albums
+.friends, .activity, .albums
+	margin-bottom: 40px
+.friends__types
+	margin-bottom: 30px
+	overflow: hidden
+	.label-count
+		float: left
+		width: 155px 
+.friends__types_mod
+	.friends__list
+		padding-bottom: 30px
+		border-bottom: 1px solid #dadada 
+.friends__list
+	overflow: hidden
+	ul
+		overflow: hidden
+	li
+		float: left
+		width: 150px
+		margin: 0 20px 20px 0
+		img
+			float: left
+			margin-right: 12px 
+		a
+			+font-c
+			font-weight: bold
+.activity
+	.label-count
+		margin-bottom: 20px
+.activity__comms, .activity__likes
+	margin-bottom: 30px
+.activity__comms
+	padding-bottom: 30px
+	border-bottom: 1px solid #dadada 
+.activity__list	
+	li
+		margin-bottom: 10px
+		padding-left: 15px
+	i, span, a
+		margin-right: 5px
+	i
+		font-size: 13px
+		color: #9f9f9f  
+	span
+		+font-c
+		color: #9f9f9f 
+	a
+		font-weight: bold
+		font-style: italic
+	img
+		display: block
+		padding: 10px 0
+.photos
+	margin-bottom: 60px
+	padding-left: 104px
+.photos__list, .albums__list
+	padding: 10px 0
+	font-size: 0
+	li
+		display: inline-block
+		vertical-align: top
+		width: 114px
+		margin: 0 20px 20px 0
+		line-height: 1
+		font-size: 14px
+	img
+		display: block
+.albums
+	padding-left: 104px
+	.h3
+		margin-left: -104px		
+.albums__list
+	img
+		margin-bottom: 10px
+	a
+		+font-c
+		font-weight: bold		
+	span
+		margin-left: 4px
+		font-weight: normal
+		color: #9f9f9f 
+//event
+.event
+	.pagination
+		margin-top: 100px
+.event__info
+	position: relative
+	margin: 0 0 50px -20px
+	padding: 35px 25px 30px 124px
+	background: url(../img/bg-dark.jpg) 
+.event__title	
+	+font-c	
+	font-size: 27px
+	font-weight: bold
+	line-height: 1.2
+	color: #FFF 
+.event__detail
+	position: relative
+	padding: 15px 170px 0 0
+	margin-top: 40px
+	border-top: 1px solid #3e3f46 
+	.btn
+		position: absolute
+		right: 0
+		bottom: 0
+		.btn__item
+			background: #FFF 	
+			color: #2c2c2c 	
+			&:hover
+				text-decoration: underline
+	li
+		margin-top: 5px
+		font-style: italic
+		color: #FFF
+		font-weight: bold
+		font-size: 13px
+	span
+		margin-right: 5px
+		font-weight: normal
+		color: #6c6d73 
+	a
+		color: #fff 
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+.event__list
+	margin-bottom: 40px
+	li
+		padding: 25px 0
+		border-top: 1px solid #cacaca 
+		overflow: hidden
+		&:first-child
+			padding: 0 0 25px 0
+			border: none
+.event__date
+	float: left
+	width: 100px
+	margin-right: 20px
+	text-align: right
+	font-style: italic
+	strong
+		display: block
+		font-size: 15px
+	span
+		color: #9f9f9f
+		font-size: 12px
+.event__pic
+	float: left
+	margin-right: 20px
+.event__desc
+	overflow: hidden
+	padding: 5px 70px 0 0
+	a
+		+font-c
+		font-size: 17px
+		font-weight: bold
+		line-height: 1.3
+	span
+		display: block
+		position: relative
+		padding-left: 25px
+		margin-top: 20px
+		font-size: 12px
+		color: #9f9f9f
+		font-style: italic 
+		i
+			position: absolute
+			top: -2px
+			left: 0
+			+s(mark)
+.event__visitors
+	float: right
+	padding: 7px 20px 0 0
+	i
+		margin-right: 5px
+		font-size: 12px
+	span
+		font-size: 14px
+.event__empty
+	margin-bottom: 40px
+	padding-left: 30px
+	+font-c
+	font-size: 17px
+	font-weight: bold
+//ask
+.ask
+	margin-bottom: 40px
+	padding-left: 104px
+	.h2
+		font-size: 27px
+		text-transform: none
+	p, blockquote
+		margin: 25px 0
+		line-height: 1.5
+		a
+			color: $red
+			&:hover
+				text-decoration: underline
+	blockquote
+		position: relative
+		padding-left: 20px
+		font-style: italic
+		&:before
+			content: ""
+			position: absolute
+			top: 0
+			left: 0
+			+s(h2-red)
+	.label
+		margin-bottom: 20px
+		em
+			width: 50px
+			padding-right: 10px
+	.jq-selectbox
+		width: 304px
+	.input-text
+		width: 290px 
+	.label_60
+		.input-text
+			width: 60px
+	.textarea
+		height: 120px
+//dating
+.dating
+.dating__stats
+	margin-bottom: 20px
+	padding-left: 104px
+	overflow: hidden	
+	ul
+		position: relative
+		float: left
+		margin-right: 90px
+		&:before
+			content: ""
+			position: absolute
+			top: 0
+			left: -17px
+			+s(h2-red)
+	li
+		font-style: italic
+		strong
+			margin-left: 3px
+.dating__user
+	margin-bottom: 70px
+	overflow: hidden
+	ul
+		margin: 0 -70px -10px 0
+		font-size: 0
+	li
+		display: inline-block
+		width: 295px
+		margin-right: 50px
+		padding: 20px 10px
+		border-bottom: 1px solid #cacaca 
+		vertical-align: top
+		overflow: hidden
+.dating__user-pic
+	position: relative
+	float: left
+	margin-right: 18px
+	img
+		display: block
+		border: 1px solid #f4f4f4
+.rating__user-name	
+	padding-top: 5px
+	margin-bottom: 15px
+	overflow: hidden
+	a
+		+font-c
+		font-size: 17px 
+		font-weight: bold
+		line-height: 1.2
+		span
+			margin-left: 5px
+			color: #9f9f9f 
+	p
+		margin: 5px 0
+		font-size: 14px
+	i
+		font-size: 12px
+		color: #9f9f9f 
+.rating__user-links
+	overflow: hidden
+	a
+		font-style: italic
+		font-size: 13px
+		&:first-child
+			position: relative
+			display: block
+			padding-left: 23px 			
+			font-weight: bold
+			font-size: 14px
+			& > i
+				position: absolute
+				top: 0
+				left: 0
+				background: #2c2c2c
+				border-radius: 50% 
+				i
+					display: block
+			&:hover
+				& > i
+					background: $red
+//filter
+.filter
+	padding: 25px 0
+	margin-bottom: 40px
+	background: #f5f5f5 
+	border-top: 1px solid #dfdfdf 
+	.jq-selectbox
+		width: 210px 
+	.label
+		margin-bottom: 20px
+		em
+			width: 95px
+			padding-right: 10px
+	.filter__sex
+		margin-right: 40px
+		.jq-selectbox
+			width: 120px
+	.filter__age
+		em
+			padding: 0
+			margin: 7px 10px 0 10px
+			width: auto
+		.input-text
+			width: 40px
+	.btn
+		margin-top: 5px
+		padding: 25px 0 0 105px
+		border-top: 1px solid #dfdfdf 
+		.checkbox
+			float: left
+			margin: 6px 0 0 30px
+			font-weight: bold
+			font-style: italic
+.filter__family
+	float: left
+	width: 380px
+.filter__target
+	overflow: hidden
+	font-style: italic
+	strong
+		display: block
+		margin-bottom: 2px
+		line-height: 1
+	ul
+		float: left
+	li
+		overflow: hidden	
+	.checkbox
+		margin-top: 5px
+		font-size: 13px
 

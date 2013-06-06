@@ -9,5 +9,14 @@ $('.js-tab li').click(function() {
   $('#' + val).fadeIn();
 });
 
+//select
+if ($('select').length > 0) {
+	$('select').styler();
+};
+
+//fancybox
+if ($('.js-fb').length > 0) {
+	$('.js-fb').fancybox();
+};
 
 });

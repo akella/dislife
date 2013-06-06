@@ -4,11 +4,12 @@
 <head>
 	<meta charset="utf-8">
 	<title>Template</title>
-	<link rel="stylesheet" media="screen" href="css/screen.css" >	
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery.cycle2.min.js"></script>	
 	<script src="js/jquery.cycle2.carousel.min.js"></script>	
+	<script src="js/jquery.formstyler.js"></script>		
 	<script src="js/common.js"></script>
 </head>
 <body>
@@ -112,7 +113,7 @@
 						<!-- BEGIN .m-articles -->				
 						<div class="m-articles">
 							<a class="m-articles__main" href="#">
-								<div class="label">Статьи</div>
+								<div class="label-cat">Статьи</div>
 								<img src="img/pic1.jpg" alt="">
 								<div class="m-articles__data">
 									<p>Закон Димы Яковлева: обзор зарубежных СМИ</p>
@@ -127,7 +128,7 @@
 								<li>
 									<div class="m-articles__pic">
 										<a href="#"><img src="img/pic2.jpg" alt=""></a>
-										<a class="label" href="#">Статьи</a>
+										<a class="label-cat" href="#">Статьи</a>
 									</div>
 									<div class="m-articles__desc">
 										<a href="#">В 2013 году на рынок труда выведут инвалидов и пенсионеров</a>
@@ -141,7 +142,7 @@
 								<li>
 									<div class="m-articles__pic">
 										<a href="#"><img src="img/pic2.jpg" alt=""></a>
-										<a class="label" href="#">Статьи</a>
+										<a class="label-cat" href="#">Статьи</a>
 									</div>
 									<div class="m-articles__desc">
 										<a href="#">В 2013 году на рынок труда выведут инвалидов и пенсионеров</a>
@@ -155,7 +156,7 @@
 								<li>
 									<div class="m-articles__pic">
 										<a href="#"><img src="img/pic2.jpg" alt=""></a>
-										<a class="label" href="#">Статьи</a>
+										<a class="label-cat" href="#">Статьи</a>
 									</div>
 									<div class="m-articles__desc">
 										<a href="#">В 2013 году на рынок труда выведут инвалидов и пенсионеров</a>
@@ -214,7 +215,7 @@
 						<!-- BEGIN .articles -->
 						<div class="m-articles">
 							<a class="m-articles__main" href="#">
-								<div class="label">Статьи</div>
+								<div class="label-cat">Статьи</div>
 								<img src="img/pic1.jpg" alt="">
 								<div class="m-articles__data">
 									<p>Закон Димы Яковлева: обзор зарубежных СМИ</p>
@@ -229,7 +230,7 @@
 								<li>
 									<div class="m-articles__pic">
 										<a href="#"><img src="img/pic2.jpg" alt=""></a>
-										<a class="label" href="#">Статьи</a>
+										<a class="label-cat" href="#">Статьи</a>
 									</div>
 									<div class="m-articles__desc">
 										<a href="#">В 2013 году на рынок труда выведут инвалидов и пенсионеров</a>
@@ -243,7 +244,7 @@
 								<li>
 									<div class="m-articles__pic">
 										<a href="#"><img src="img/pic2.jpg" alt=""></a>
-										<a class="label" href="#">Статьи</a>
+										<a class="label-cat" href="#">Статьи</a>
 									</div>
 									<div class="m-articles__desc">
 										<a href="#">В 2013 году на рынок труда выведут инвалидов и пенсионеров</a>
@@ -257,7 +258,7 @@
 								<li>
 									<div class="m-articles__pic">
 										<a href="#"><img src="img/pic2.jpg" alt=""></a>
-										<a class="label" href="#">Статьи</a>
+										<a class="label-cat" href="#">Статьи</a>
 									</div>
 									<div class="m-articles__desc">
 										<a href="#">В 2013 году на рынок труда выведут инвалидов и пенсионеров</a>
@@ -307,15 +308,24 @@
 						<!-- BEGIN .m-school -->
 						<div class="m-school">
 							<h3 class="h3 h3_blue">Выбери свой ВУЗ<i class="ico-arr-l"></i></h3>
-							<div class="select">							
-								<span>Город<i><i class="ico-arr-d"></i></i></span>
-							</div>
-							<div class="select">							
-								<span>Тип<i><i class="ico-arr-d"></i></i></span>
-							</div>
-							<div class="select">							
-								<span>Категория инвалидности<i><i class="ico-arr-d"></i></i></span>
-							</div>
+							<select>
+							  <option>Город</option>
+							  <option>Пункт 1</option>
+							  <option>Пункт 2</option>
+							  <option>Пункт 3</option>
+							</select>
+							<select>
+							  <option>Тип</option>
+							  <option>Пункт 1</option>
+							  <option>Пункт 2</option>
+							  <option>Пункт 3</option>
+							</select>
+							<select>
+							  <option>Категория инвалидности</option>
+							  <option>Пункт 1</option>
+							  <option>Пункт 2</option>
+							  <option>Пункт 3</option>
+							</select>
 							<div class="btn">
 								<button class="btn__item">Показать<i><i class="ico-arr"></i></i></button>
 								<a class="link" href="#">на карте доступности</a>
@@ -333,7 +343,7 @@
 					<ul class="m-talks__list">
 						<li>
 							<div class="m-talks__cat">
-								<a class="label" href="#">статья</a>	
+								<a class="label-cat" href="#">статья</a>	
 							</div>													
 							<div class="m-talks__pic">
 								<a href="#">
@@ -349,7 +359,7 @@
 						</li>
 						<li>
 							<div class="m-talks__cat">
-								<a class="label" href="#">статья</a>	
+								<a class="label-cat" href="#">статья</a>	
 							</div>													
 							<div class="m-talks__pic">
 								<a href="#">
@@ -369,7 +379,7 @@
 						</li>
 						<li>
 							<div class="m-talks__cat">
-								<a class="label" href="#">событие</a>	
+								<a class="label-cat" href="#">событие</a>	
 							</div>													
 							<div class="m-talks__pic">
 								<a href="#">
@@ -385,7 +395,7 @@
 						</li>
 						<li>
 							<div class="m-talks__cat">
-								<a class="label" href="#">законодательство</a>	
+								<a class="label-cat" href="#">законодательство</a>	
 							</div>													
 							<div class="m-talks__pic">
 								<a href="#">
@@ -418,7 +428,7 @@
 								<li>
 									<div class="m-articles__pic">
 										<a href="#"><img src="img/pic2.jpg" alt=""></a>
-										<a class="label" href="#">Статьи</a>
+										<a class="label-cat" href="#">Статьи</a>
 									</div>
 									<div class="m-articles__desc">
 										<a href="#">В 2013 году на рынок труда выведут инвалидов и пенсионеров</a>
@@ -432,7 +442,7 @@
 								<li>
 									<div class="m-articles__pic">
 										<a href="#"><img src="img/pic2.jpg" alt=""></a>
-										<a class="label" href="#">Статьи</a>
+										<a class="label-cat" href="#">Статьи</a>
 									</div>
 									<div class="m-articles__desc">
 										<a href="#">В 2013 году на рынок труда выведут инвалидов и пенсионеров</a>
@@ -446,7 +456,7 @@
 								<li>
 									<div class="m-articles__pic">
 										<a href="#"><img src="img/pic2.jpg" alt=""></a>
-										<a class="label" href="#">Статьи</a>
+										<a class="label-cat" href="#">Статьи</a>
 									</div>
 									<div class="m-articles__desc">
 										<a href="#">В 2013 году на рынок труда выведут инвалидов и пенсионеров</a>
@@ -505,7 +515,7 @@
 								<li>
 									<div class="m-articles__pic">
 										<a href="#"><img src="img/pic2.jpg" alt=""></a>
-										<a class="label" href="#">Статьи</a>
+										<a class="label-cat" href="#">Статьи</a>
 									</div>
 									<div class="m-articles__desc">
 										<a href="#">В 2013 году на рынок труда выведут инвалидов и пенсионеров</a>
@@ -519,7 +529,7 @@
 								<li>
 									<div class="m-articles__pic">
 										<a href="#"><img src="img/pic2.jpg" alt=""></a>
-										<a class="label" href="#">Статьи</a>
+										<a class="label-cat" href="#">Статьи</a>
 									</div>
 									<div class="m-articles__desc">
 										<a href="#">В 2013 году на рынок труда выведут инвалидов и пенсионеров</a>
@@ -533,7 +543,7 @@
 								<li>
 									<div class="m-articles__pic">
 										<a href="#"><img src="img/pic2.jpg" alt=""></a>
-										<a class="label" href="#">Статьи</a>
+										<a class="label-cat" href="#">Статьи</a>
 									</div>
 									<div class="m-articles__desc">
 										<a href="#">В 2013 году на рынок труда выведут инвалидов и пенсионеров</a>
@@ -583,15 +593,24 @@
 						<!-- BEGIN .m-work -->
 						<div class="m-work">
 							<h3 class="h3 h3_red">найди работу<i></i></h3>
-							<div class="select">							
-								<span>Город<i><i class="ico-arr-d"></i></i></span>
-							</div>
-							<div class="select">							
-								<span>Тип занятости<i><i class="ico-arr-d"></i></i></span>
-							</div>
-							<div class="select">							
-								<span>Категория инвалидности<i><i class="ico-arr-d"></i></i></span>
-							</div>
+							<select>
+							  <option>Город</option>
+							  <option>Пункт 1</option>
+							  <option>Пункт 2</option>
+							  <option>Пункт 3</option>
+							</select>
+							<select>
+							  <option>Тип  занятости</option>
+							  <option>Пункт 1</option>
+							  <option>Пункт 2</option>
+							  <option>Пункт 3</option>
+							</select>
+							<select>
+							  <option>Категория инвалидности</option>
+							  <option>Пункт 1</option>
+							  <option>Пункт 2</option>
+							  <option>Пункт 3</option>
+							</select>
 							<div class="btn">
 								<button class="btn__item">Показать<i><i class="ico-arr"></i></i></button>
 								<a class="link" href="#">расширенный поиск</a>
