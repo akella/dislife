@@ -22,9 +22,9 @@
 			<h1 class="logo"><a href="#">DISLIFE</a></h1>
 			<a class="version" href="#">Версия для слабовидящих</a>
 			<div class="links">
-				<a class="links__enter" href="#">Вход<i></i></a>
+				<a class="links__enter js-enter" href="#">Вход<i></i></a>
 				<span>или</span>
-				<a class="links__reg" href="#">Регистрация</a>
+				<a class="links__reg js-reg" href="#">Регистрация</a>
 			</div>
 			<form class="header__search" action="/">
 				<input type="text" placeholder="поиск">
@@ -727,5 +727,51 @@
 	</div>
 </footer>
 <!-- END .footer -->
+<!-- BEGIN popup -->
+<div class="overlay"></div>
+<div class="popup popup_enter  js-popup-enter">	
+	<div class="popup__title">Вход</div>
+	<form class="enter" action="/">
+		<div class="enter__social">
+			<strong>Войти через социальные сети</strong>
+			<a class="enter__vk" href="#"></a>
+			<a class="enter__fb" href="#"></a>
+			<a class="enter__mr" href="#"></a>
+			<a class="enter__gg" href="#"></a>
+			<a class="enter__yr" href="#"></a>
+		</div>
+		<fieldset class="fieldset">
+			<div class="label">
+				<em>или</em>
+				<input class="input-text" type="text" placeholder="Логин">
+			</div>
+			<div class="label">
+				<input class="input-text" type="text" placeholder="пароль">
+				<label class="checkbox"><input type="checkbox" name="vote"><i></i>Запомнить меня</label>
+			</div>
+		</fieldset>
+		<div class="btn">
+			<button class="btn__item">Войти<i><i class="ico-arr"></i></i></button>
+			<a class="link" href="#">Забыли пароль</a>
+		</div>
+	</form>
+</div>
+<div class="popup popup_reg js-popup-reg">	
+	<div class="popup__title">регистрация</div>
+	<form class="reg" action="/">
+		<fieldset class="fieldset">
+			<em>Заполните поля</em>
+			<input class="input-text" type="text" placeholder="логин">
+			<input class="input-text" type="text" placeholder="e-mail">
+			<input class="input-text" type="text" placeholder="пароль">
+			<input class="input-text" type="text" placeholder="повторите пароль">
+			<label class="checkbox"><input type="checkbox" name="vote"><i></i>Я принимаю <a href="#">пользовательское соглашение</a></label>
+		</fieldset>
+		<div class="btn">
+			<button class="btn__item">Зарегистрироваться<i><i class="ico-arr"></i></i></button>
+		</div>
+	</form>
+</div>
+<!-- END popup -->
 </body>
 </html>

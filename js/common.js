@@ -19,4 +19,17 @@ if ($('.js-fb').length > 0) {
 	$('.js-fb').fancybox();
 };
 
+//popup
+$('.js-enter').click(function() {
+	$('.js-popup-enter, .overlay').fadeIn();
+	return false;
+});
+$('.js-reg').click(function() {
+	$('.js-popup-reg, .overlay').fadeIn();
+	return false;
+});
+$('.overlay').click(function() {
+	$('.js-popup-reg, .js-popup-enter, .overlay').fadeOut();
+});
+
 });
