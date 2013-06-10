@@ -4,12 +4,14 @@
 <head>
 	<meta charset="utf-8">
 	<title>Template</title>
-	<link rel="stylesheet" media="screen" href="css/screen.css" >	
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<link rel="stylesheet" media="screen" href="css/jquery.fancybox.css" >
 	<!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
-	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-1.7.2.min.js"></script>
 	<script src="js/jquery.cycle2.min.js"></script>	
-	<script src="js/jquery.cycle2.carousel.min.js"></script>	
-	<script src="js/jquery.formstyler.js"></script>	
+	<script src="js/jquery.cycle2.carousel.min.js"></script>
+	<script src="js/jquery.selectBox.js"></script>	
+	<script src="js/jquery.fancybox.pack.js"></script>		
 	<script src="js/common.js"></script>
 </head>
 <body>
@@ -69,7 +71,7 @@
 						<fieldset class="fieldset">	
 							<div class="label filter__sex">
 								<em>Хочу найти</em>
-								<select>
+								<select class="select" style="width: 118px">
 								  <option>Пол</option>
 								  <option>Пункт 1</option>
 								  <option>Пункт 2</option>
@@ -87,7 +89,7 @@
 						</fieldset>
 						<div class="label">
 							<em>Страна/город</em>
-							<select>
+							<select class="select" style="width: 208px">
 							  <option>Выбрать город</option>
 							  <option>Пункт 1</option>
 							  <option>Пункт 2</option>
@@ -98,7 +100,7 @@
 							<div class="filter__family">
 								<div class="label">
 									<em class="label__lh">Семейное положение</em>
-									<select>
+									<select class="select" style="width: 208px">
 									  <option>Пункт 1</option>
 									  <option>Пункт 2</option>
 									  <option>Пункт 3</option>
@@ -106,7 +108,7 @@
 								</div>
 								<div class="label">
 									<em>Дети</em>
-									<select>
+									<select class="select" style="width: 208px">
 									  <option>Пункт 1</option>
 									  <option>Пункт 2</option>
 									  <option>Пункт 3</option>

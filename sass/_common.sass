@@ -216,7 +216,7 @@ table
 		&.label__lh
 			margin-top: 2px
 			line-height: 1
-	.jq-selectbox
+	.selectBox-dropdown
 		float: left
 		span
 			font-weight: normal
@@ -229,52 +229,55 @@ table
 	font-size: 14px
 .input-text_mod
 	border-radius: 15px 0 0 15px
-.jq-selectbox
+.selectBox-dropdown
+	position: relative
 	width: 273px
 	background: #FFF 
 	border: 1px solid $brd
 	border-radius: 0 15px 15px 0
-	&.opened
-		border-radius: 0 15px 0 0
-		.jq-selectbox__trigger
-			background: $red 
-.jq-selectbox__select 
-	position: relative
-	display: block
-	height: 30px
-	padding-left: 14px
-	line-height: 30px 
-	font-style: italic 
-	font-weight: bold
-	color: #959595  
-	cursor: pointer
+	outline: none
 	&:hover
-		.jq-selectbox__trigger
-			background: $red 
-.jq-selectbox__trigger
+		.selectBox-arrow
+			+s(ico-select-h)
+	&.selectBox-active
+		border-radius: 0 15px 0 0
+		.selectBox-arrow
+			+s(ico-select-h)
+	.selectBox-label
+		position: relative
+		display: block
+		height: 30px
+		padding-left: 14px
+		line-height: 30px 
+		font-style: italic 
+		font-weight: bold
+		color: #959595  
+		cursor: pointer		
+	.selectBox-arrow
+		position: absolute
+		top: 4px
+		right: 4px
+		+s(ico-select)
+.selectBox-dropdown-menu
 	position: absolute
-	top: 4px
-	right: 4px
-	background: #d2d2d2
-	border-radius: 50% 	
-.jq-selectbox__trigger-arrow
-	display: block
-	+s(ico-arr-d)
-.jq-selectbox__dropdown
-	top: 30px
-	left: -1px
-	right: -1px
+	top: -1px
+	z-index: 99999
 	border: 1px solid $brd
-	border-top: 1px solid #cacaca
+	border-width: 0 1px 1px 1px
 	background: #FFF
-.jq-selectbox li
-	padding: 3px 10px 3px 14px
-	font-style: italic
-	color: #959595
-	&.selected
-		color: #000
-	&:hover 
-		color: #000
+.selectBox-options 
+	a
+		display: block
+		padding: 3px 10px 3px 14px
+		font-style: italic
+		color: #959595		
+		cursor: pointer
+		&:hover 
+			color: #000
+	li
+		&.selectBox-selected
+			a
+				color: #000				
 .textarea
 	display: block
 	width: 410px
@@ -903,29 +906,12 @@ button
 	a
 		font-weight: bold
 //popup
-.overlay
-	display: none
-	position: fixed
-	top: 0
-	left: 0
-	right: 0
-	bottom: 0
-	background: rgba(0,0,0,.77)
-	z-index: 1000  
 .popup
 	display: none
-	position: fixed
-	top: 190px
-	left: 50%
-	background: #FFF 
-	z-index: 1500 
 .popup_enter
-	display: none
 	width: 520px
-	margin-left: -260px
 .popup_reg
 	width: 410px
-	margin-left: -205px
 .popup__title
 	position: relative
 	padding: 23px 0 23px 55px

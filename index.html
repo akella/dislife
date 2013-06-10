@@ -5,11 +5,13 @@
 	<meta charset="utf-8">
 	<title>Template</title>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<link rel="stylesheet" media="screen" href="css/jquery.fancybox.css" >
 	<!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
-	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-1.7.2.min.js"></script>
 	<script src="js/jquery.cycle2.min.js"></script>	
-	<script src="js/jquery.cycle2.carousel.min.js"></script>	
-	<script src="js/jquery.formstyler.js"></script>		
+	<script src="js/jquery.cycle2.carousel.min.js"></script>
+	<script src="js/jquery.selectBox.js"></script>	
+	<script src="js/jquery.fancybox.pack.js"></script>		
 	<script src="js/common.js"></script>
 </head>
 <body>
@@ -22,9 +24,9 @@
 			<h1 class="logo"><a href="#">DISLIFE</a></h1>
 			<a class="version" href="#">Версия для слабовидящих</a>
 			<div class="links">
-				<a class="links__enter js-enter" href="#">Вход<i></i></a>
+				<a class="links__enter js-fb" href="#popup-enter">Вход<i></i></a>
 				<span>или</span>
-				<a class="links__reg js-reg" href="#">Регистрация</a>
+				<a class="links__reg js-fb" href="#popup-reg">Регистрация</a>
 			</div>
 			<form class="header__search" action="/">
 				<input type="text" placeholder="поиск">
@@ -308,19 +310,19 @@
 						<!-- BEGIN .m-school -->
 						<div class="m-school">
 							<h3 class="h3 h3_blue">Выбери свой ВУЗ<i class="ico-arr-l"></i></h3>
-							<select>
+							<select class="select" style="width: 273px">
 							  <option>Город</option>
 							  <option>Пункт 1</option>
 							  <option>Пункт 2</option>
 							  <option>Пункт 3</option>
 							</select>
-							<select>
+							<select class="select" style="width: 273px">
 							  <option>Тип</option>
 							  <option>Пункт 1</option>
 							  <option>Пункт 2</option>
 							  <option>Пункт 3</option>
 							</select>
-							<select>
+							<select class="select" style="width: 273px">
 							  <option>Категория инвалидности</option>
 							  <option>Пункт 1</option>
 							  <option>Пункт 2</option>
@@ -593,19 +595,19 @@
 						<!-- BEGIN .m-work -->
 						<div class="m-work">
 							<h3 class="h3 h3_red">найди работу<i></i></h3>
-							<select>
+							<select class="select" style="width: 273px">
 							  <option>Город</option>
 							  <option>Пункт 1</option>
 							  <option>Пункт 2</option>
 							  <option>Пункт 3</option>
 							</select>
-							<select>
+							<select class="select" style="width: 273px">
 							  <option>Тип  занятости</option>
 							  <option>Пункт 1</option>
 							  <option>Пункт 2</option>
 							  <option>Пункт 3</option>
 							</select>
-							<select>
+							<select class="select" style="width: 273px">
 							  <option>Категория инвалидности</option>
 							  <option>Пункт 1</option>
 							  <option>Пункт 2</option>
@@ -690,7 +692,7 @@
 					<label class="radio"><input type="radio" name="vote"><i></i>Не пойду голосовать</label>
 					<label class="radio"><input type="radio" name="vote" checked><i></i>Голосуй не госуй, все равно получишь...</label>
 					<div class="btn">
-						<button class="btn__item">Голосовать<i><i class="ico-ok"></i></i></button>
+						<a class="btn__item js-fb" href="#vote-result">Голосовать<i><i class="ico-ok"></i></i></a>
 						<a class="link" href="#">воздержаться</a>
 					</div>
 				</form>
@@ -728,8 +730,7 @@
 </footer>
 <!-- END .footer -->
 <!-- BEGIN popup -->
-<div class="overlay"></div>
-<div class="popup popup_enter  js-popup-enter">	
+<div id="popup-enter" class="popup popup_enter  js-popup-enter">	
 	<div class="popup__title">Вход</div>
 	<form class="enter" action="/">
 		<div class="enter__social">
@@ -756,7 +757,7 @@
 		</div>
 	</form>
 </div>
-<div class="popup popup_reg js-popup-reg">	
+<div id="popup-reg" class="popup popup_reg js-popup-reg">	
 	<div class="popup__title">регистрация</div>
 	<form class="reg" action="/">
 		<fieldset class="fieldset">
@@ -771,6 +772,26 @@
 			<button class="btn__item">Зарегистрироваться<i><i class="ico-arr"></i></i></button>
 		</div>
 	</form>
+</div>
+<div id="vote-result" class="popup popup_vote">
+	<div class="vote-result">
+		<p>Как часто вы едите рыбу?</p>
+		<table>
+			<tbody><tr>
+				<td>25,25%<span>(28123)</span></td>
+				<td>Стараюсь каждый день – она же гораздо полезнее мяса</td>
+			</tr>
+			<tr>
+				<td>15,18%<span>(4524)</span></td>
+				<td>Несколько раз в месяц – уж очень дорогая</td>
+			</tr>
+			<tr>
+				<td>59,57%<span>(525414)</span></td>
+				<td>Вообще не ем, я что – кот?</td>
+			</tr>
+		</tbody></table>
+		<i>Проголосовало: 1. Воздержалось: 1</i>
+	</div>
 </div>
 <!-- END popup -->
 </body>

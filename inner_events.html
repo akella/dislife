@@ -4,11 +4,14 @@
 <head>
 	<meta charset="utf-8">
 	<title>Template</title>
-	<link rel="stylesheet" media="screen" href="css/screen.css" >	
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<link rel="stylesheet" media="screen" href="css/jquery.fancybox.css" >
 	<!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
-	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-1.7.2.min.js"></script>
 	<script src="js/jquery.cycle2.min.js"></script>	
-	<script src="js/jquery.cycle2.carousel.min.js"></script>	
+	<script src="js/jquery.cycle2.carousel.min.js"></script>
+	<script src="js/jquery.selectBox.js"></script>	
+	<script src="js/jquery.fancybox.pack.js"></script>		
 	<script src="js/common.js"></script>
 </head>
 <body>
@@ -54,9 +57,12 @@
 				<!-- BEGIN .cats -->
 				<div class="cats">
 					<div class="cats__select">
-						<div class="select">							
-							<span>Везде<i><i class="ico-arr-d"></i></i></span>
-						</div>
+						<select class="select" style="width: 273px">
+							<option>Везде</option>
+							<option>Пункт 1</option>
+							<option>Пункт 2</option>
+							<option>Пункт 3</option>
+						</select>
 						<a class="cats__arhive" href="#">Архив<i></i></a>
 					</div>
 					<h3 class="h3 h3_red">Выберите категорию<i></i></h3>
