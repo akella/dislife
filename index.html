@@ -682,17 +682,31 @@
 					</div>					
 				</div>
 				<!-- END .s-banner-1 -->
-				<!-- BEGIN .s-vote -->
-				<form class="s-vote" action="/">
+				<!-- BEGIN .vote -->
+				<form class="vote vote_s" action="/">
 					<h2 class="h2">Опрос</h2>
-					<p>За кого голосуем на выборах президента России?</p>
-					<label class="radio"><input type="radio" name="vote"><i></i>Путин Володька</label>
-					<label class="radio"><input type="radio" name="vote"><i></i>Медведев Димка</label>
-					<label class="radio"><input type="radio" name="vote"><i></i>Жириновский Вовка </label>
-					<label class="radio"><input type="radio" name="vote"><i></i>Не пойду голосовать</label>
-					<label class="radio"><input type="radio" name="vote" checked><i></i>Голосуй не госуй, все равно получишь...</label>
+					<div class="vote__info">
+						<p>За кого голосуем на выборах президента России?</p>
+						<label class="radio"><input type="radio" name="vote"><i></i>Путин Володька</label>
+						<label class="radio"><input type="radio" name="vote"><i></i>Медведев Димка</label>
+						<label class="radio"><input type="radio" name="vote"><i></i>Жириновский Вовка </label>
+						<label class="radio"><input type="radio" name="vote"><i></i>Не пойду голосовать</label>
+						<label class="radio"><input type="radio" name="vote" checked><i></i>Голосуй не госуй, все равно получишь...</label>
+					</div>
+					<div class="vote__result">
+						<p>Как часто вы едите рыбу?</p>
+						<dl>
+						  <dt>25,25%<span>(28123)</span></dt>
+						  <dd>Стараюсь каждый день – она же гораздо полезнее мяса</dd>
+						  <dt>25,25%<span>(28123)</span></dt>
+						  <dd>Стараюсь каждый день – она же гораздо полезнее мяса</dd>
+						  <dt>25,25%<span>(28123)</span></dt>
+						  <dd>Стараюсь каждый день – она же гораздо полезнее мяса</dd>
+						</dl>
+						<i>Проголосовало: 1. Воздержалось: 1</i>
+					</div>
 					<div class="btn">
-						<a class="btn__item js-fb" href="#vote-result">Голосовать<i><i class="ico-ok"></i></i></a>
+						<button class="btn__item">Голосовать<i><i class="ico-ok"></i></i></button>
 						<a class="link" href="#">воздержаться</a>
 					</div>
 				</form>
@@ -772,26 +786,6 @@
 			<button class="btn__item">Зарегистрироваться<i><i class="ico-arr"></i></i></button>
 		</div>
 	</form>
-</div>
-<div id="vote-result" class="popup popup_vote">
-	<div class="vote-result">
-		<p>Как часто вы едите рыбу?</p>
-		<table>
-			<tbody><tr>
-				<td>25,25%<span>(28123)</span></td>
-				<td>Стараюсь каждый день – она же гораздо полезнее мяса</td>
-			</tr>
-			<tr>
-				<td>15,18%<span>(4524)</span></td>
-				<td>Несколько раз в месяц – уж очень дорогая</td>
-			</tr>
-			<tr>
-				<td>59,57%<span>(525414)</span></td>
-				<td>Вообще не ем, я что – кот?</td>
-			</tr>
-		</tbody></table>
-		<i>Проголосовало: 1. Воздержалось: 1</i>
-	</div>
 </div>
 <!-- END popup -->
 </body>

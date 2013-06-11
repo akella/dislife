@@ -20,5 +20,4 @@ if ($('.js-fb').length > 0) {
 	$('.js-fb').fancybox();
 };
 
-
 });
