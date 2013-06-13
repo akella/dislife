@@ -1,0 +1,376 @@
+<!doctype html>
+<!--[if IE 8]><html lang="ru-RU" class="ie8"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="ru-RU"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<link rel="stylesheet" media="screen" href="css/jquery.fancybox.css" >
+	<!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
+	<script src="js/jquery-1.7.2.min.js"></script>
+	<script src="js/jquery.cycle2.min.js"></script>	
+	<script src="js/jquery.cycle2.carousel.min.js"></script>
+	<script src="js/jquery.selectBox.js"></script>	
+	<script src="js/jquery.fancybox.pack.js"></script>		
+	<script src="js/common.js"></script>
+</head>
+<body>
+<!-- BEGIN .wrap -->
+<section class="wrap">
+	<div class="wrap__in">
+		<div class="banner-top"><img src="img/banner-top.jpg" alt=""></div>
+		<!-- BEGIN .header -->
+		<header class="header">
+			<h1 class="logo"><a href="#">DISLIFE</a></h1>
+			<a class="version" href="#">Версия для слабовидящих</a>
+			<div class="links">
+				<a class="links__enter" href="#">Вход<i></i></a>
+				<span>или</span>
+				<a class="links__reg" href="#">Регистрация</a>
+			</div>
+			<form class="header__search" action="/">
+				<input type="text" placeholder="поиск">
+				<button type="submit"><i></i></button>
+			</form>			
+		</header>
+		<!-- END .header -->
+		<!-- BEGIN .nav -->
+		<nav class="nav nav_inner">
+			<ul>
+				<li><span>/</span><a href="#">Новости</a></li>
+				<li><span>/</span><a href="#">Статьи</a></li>
+				<li class="is-active"><span>/</span><a href="#">События</a></li>
+				<li><span>/</span><a href="#">Консультации</a></li>
+				<li><span>/</span><a href="#">Законодательство</a></li>
+				<li><span>/</span><a href="#">Работа</a></li>
+				<li><span>/</span><a href="#">Карта услуг</a></li>
+			</ul>
+		</nav>
+		<!-- END .nav -->
+		<!-- BEGIN .l -->
+		<div class="l">
+			<div class="l__col-1">
+				<!-- BEGIN .vacancy -->
+				<div class="vacancy">
+					<div class="back">
+						<a href="#">Работа<i><i class="ico-back"></i></i></a>
+					</div>
+					<div class="title title_mod">
+						<h2 class="h2">Вакансии</h2>
+						<a class="link-plus" href="#">Добавить вакансию<i><i class="ico-plus"></i></i></a>
+					</div>
+					<!-- BEGIN .filter -->
+					<form class="filter filter_vacancy" action="/">
+						<fieldset class="fieldset">
+							<div class="label filter__city">
+								<em>Город</em>
+								<select class="select" style="width: 215px">
+								  <option>Выбрать город</option>
+								  <option>Пункт 1</option>
+								  <option>Пункт 2</option>
+								  <option>Пункт 3</option>
+								</select>							
+							</div>
+							<div class="label filter__direction">
+								<em>Направление</em>
+								<select class="select" style="width: 260px">
+								  <option>Выбрать город</option>
+								  <option>Пункт 1</option>
+								  <option>Пункт 2</option>
+								  <option>Пункт 3</option>
+								</select>							
+							</div>
+						</fieldset>
+						<fieldset class="fieldset">
+							<div class="label filter__employment">
+								<em>Занятость</em>
+								<select class="select" style="width: 215px">
+								  <option>Пункт 1</option>
+								  <option>Пункт 2</option>
+								  <option>Пункт 3</option>
+								</select>							
+							</div>
+							<div class="label filter__age">
+								<em>Оклад</em>
+								<input class="input-text input-text_mod" type="text">
+								<em>—</em>
+								<input class="input-text" type="text">
+								<em>лет</em>
+							</div>
+						</fieldset>
+						<div class="filter__currency">
+							<strong>Валюта</strong>
+							<ul>
+								<li><label class="checkbox"><input type="checkbox" checked><i></i>Все</label></li>
+								<li><label class="checkbox"><input type="checkbox"><i></i>Рубли</label></li>
+								<li><label class="checkbox"><input type="checkbox"><i></i>Гривны</label></li>		
+							</ul>
+							<ul>
+								<li><label class="checkbox"><input type="checkbox" checked><i></i>Белорусские рубли</label></li>
+								<li><label class="checkbox"><input type="checkbox"><i></i>Тенге</label></li>
+								<li><label class="checkbox"><input type="checkbox"><i></i>USD</label></li>									
+							</ul>
+							<ul>
+								<li><label class="checkbox"><input type="checkbox"><i></i>EUR</label></li>
+							</ul>
+						</div>
+						<div class="btn">
+							<button class="btn__item">Найти<i><i class="ico-arr"></i></i></button>
+						</div>
+					</form>
+					<!-- END .filter -->					
+					<ul class="vacancy__list">
+						<li>
+							<div class="vacancy__name"><img src="img/pic15.png" alt=""><a href="#">Преподаватель для дошкольников на русском и казахском языках обучения</a><span>23 ноября 2012</span></div>
+							<div class="vacancy__salary">55000-120000 руб.</div>
+							<div class="vacancy__city">г. Севастополь<i></i></div>
+						</li>
+						<li>
+							<div class="vacancy__name"><a href="#">Преподаватель для дошкольников</a><span>23 ноября 2012</span></div>
+							<div class="vacancy__salary">120000 руб.</div>
+							<div class="vacancy__city">г. Севастополь<i></i></div>
+						</li>
+						<li>
+							<div class="vacancy__name"><a href="#">Преподаватель для дошкольников на русском и казахском языках обучения</a><span>23 ноября 2012</span></div>
+							<div class="vacancy__salary">55000-120000 руб.</div>
+							<div class="vacancy__city">г. Севастополь<i></i></div>
+						</li>
+						<li>
+							<div class="vacancy__name"><img src="img/pic15.png" alt=""><a href="#">Преподаватель для дошкольников на русском и казахском языках обучения</a><span>23 ноября 2012</span></div>
+							<div class="vacancy__salary">55000-120000 руб.</div>
+							<div class="vacancy__city">г. Севастополь<i></i></div>
+						</li>
+						<li>
+							<div class="vacancy__name"><a href="#">Преподаватель для дошкольников</a><span>23 ноября 2012</span></div>
+							<div class="vacancy__salary">120000 руб.</div>
+							<div class="vacancy__city">г. Севастополь<i></i></div>
+						</li>
+						<li>
+							<div class="vacancy__name"><a href="#">Преподаватель для дошкольников на русском и казахском языках обучения</a><span>23 ноября 2012</span></div>
+							<div class="vacancy__salary">55000-120000 руб.</div>
+							<div class="vacancy__city">г. Севастополь<i></i></div>
+						</li>
+						<li>
+							<div class="vacancy__name"><img src="img/pic15.png" alt=""><a href="#">Преподаватель для дошкольников на русском и казахском языках обучения</a><span>23 ноября 2012</span></div>
+							<div class="vacancy__salary">55000-120000 руб.</div>
+							<div class="vacancy__city">г. Севастополь<i></i></div>
+						</li>
+						<li>
+							<div class="vacancy__name"><a href="#">Преподаватель для дошкольников</a><span>23 ноября 2012</span></div>
+							<div class="vacancy__salary">120000 руб.</div>
+							<div class="vacancy__city">г. Севастополь<i></i></div>
+						</li>
+						<li>
+							<div class="vacancy__name"><a href="#">Преподаватель для дошкольников на русском и казахском языках обучения</a><span>23 ноября 2012</span></div>
+							<div class="vacancy__salary">55000-120000 руб.</div>
+							<div class="vacancy__city">г. Севастополь<i></i></div>
+						</li>
+						<li>
+							<div class="vacancy__name"><img src="img/pic15.png" alt=""><a href="#">Преподаватель для дошкольников на русском и казахском языках обучения</a><span>23 ноября 2012</span></div>
+							<div class="vacancy__salary">55000-120000 руб.</div>
+							<div class="vacancy__city">г. Севастополь<i></i></div>
+						</li>
+						<li>
+							<div class="vacancy__name"><a href="#">Преподаватель для дошкольников</a><span>23 ноября 2012</span></div>
+							<div class="vacancy__salary">120000 руб.</div>
+							<div class="vacancy__city">г. Севастополь<i></i></div>
+						</li>
+						<li>
+							<div class="vacancy__name"><a href="#">Преподаватель для дошкольников на русском и казахском языках обучения</a><span>23 ноября 2012</span></div>
+							<div class="vacancy__salary">55000-120000 руб.</div>
+							<div class="vacancy__city">г. Севастополь<i></i></div>
+						</li>
+						<li>
+							<div class="vacancy__name"><img src="img/pic15.png" alt=""><a href="#">Преподаватель для дошкольников на русском и казахском языках обучения</a><span>23 ноября 2012</span></div>
+							<div class="vacancy__salary">55000-120000 руб.</div>
+							<div class="vacancy__city">г. Севастополь<i></i></div>
+						</li>
+						<li>
+							<div class="vacancy__name"><a href="#">Преподаватель для дошкольников</a><span>23 ноября 2012</span></div>
+							<div class="vacancy__salary">120000 руб.</div>
+							<div class="vacancy__city">г. Севастополь<i></i></div>
+						</li>
+						<li>
+							<div class="vacancy__name"><a href="#">Преподаватель для дошкольников на русском и казахском языках обучения</a><span>23 ноября 2012</span></div>
+							<div class="vacancy__salary">55000-120000 руб.</div>
+							<div class="vacancy__city">г. Севастополь<i></i></div>
+						</li>
+					</ul>
+				</div>
+				<!-- END .vacancy -->
+				<!-- BEGIN .pagination -->
+				<div class="pagination">
+					<a class="pagination__prev" href="#">Предыдущая<i></i></a>
+					<div class="pagination__list">
+						<a href="#">1</a>
+						<a class="is-current" href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						<a href="#">5</a>
+						<a href="#">...</a>
+						<a href="#">255</a>
+					</div>
+					<a class="pagination__next" href="#">Следующая<i></i></a>
+				</div>
+				<!-- END .pagination -->
+			</div>
+			<div class="l__col-2">
+				<!-- BEGIN .s-community -->
+				<div class="s-community">
+					<h2 class="h2">Комьюнити</h2>
+					<ul class="s-community__links">
+						<li><a href="#">Знакомства</a></li>
+						<li><a href="#">Лица</a></li>
+						<li><a href="#">Друг другу</a></li>
+						<li><a href="#">Форум</a></li>
+						<li><a href="#">Блоги</a></li>
+					</ul>
+				</div>
+				<!-- END .s-community -->
+				<!-- BEGIN .s-banner -->
+				<div class="s-banner">
+					<div class="s-banner__in">
+						<img src="img/pic4.jpg" alt="">
+					</div>
+				</div>
+				<!-- END .s-banner -->
+				<!-- BEGIN .s-news -->
+				<div class="s-news">
+					<h3 class="h3 h3_red">Последние новости<i></i></h3>
+					<ul class="s-news__list">
+						<li>
+							<a href="#">В 2013 году на рынок труда выведут инвалидов и пенсионеров</a>
+							<div class="meta">
+								<span>23 ноября 2012</span>
+								<span><i class="ico-comm"></i>23</span>
+								<span><i class="ico-view"></i>2323</span>
+							</div>
+						</li>
+						<li>
+							<a href="#">В 2013 году на рынок труда выведут инвалидов и пенсионеров</a>
+							<div class="meta">
+								<span>23 ноября 2012</span>
+								<span><i class="ico-comm"></i>23</span>
+								<span><i class="ico-view"></i>2323</span>
+							</div>
+						</li>
+						<li>
+							<a href="#">В 2013 году на рынок труда выведут инвалидов и пенсионеров</a>
+							<div class="meta">
+								<span>23 ноября 2012</span>
+								<span><i class="ico-comm"></i>23</span>
+								<span><i class="ico-view"></i>2323</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- END .s-news -->
+				<!-- BEGIN .s-vacancy -->
+				<div class="s-vacancy">
+					<h3 class="h3 h3_red">Лучшие вакансии<i></i></h3>
+					<ul class="s-vacancy__list">
+						<li>
+							<a href="#">Заместитель главного бухгалтера<span>45000 руб.</span></a>						
+							<div class="meta">
+								<span>23 ноября 2012</span>
+							</div>
+						</li>
+						<li>
+							<a href="#">Программист 1С<span>30000 руб.</span></a>							
+							<div class="meta">
+								<span>23 ноября 2012</span>
+							</div>
+						</li>
+						<li>
+							<a href="#">Заместитель главного бухгалтера<span>от 45000 руб. до 50000 руб.</span></a>							
+							<div class="meta">
+								<span>23 ноября 2012</span>
+							</div>
+						</li>
+						<li>
+							<a href="#">Программист 1С<span>30000 руб.</span></a>							
+							<div class="meta">
+								<span>23 ноября 2012</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- END .s-vacancy -->
+				<!-- BEGIN .s-online -->
+				<div class="s-online">
+					<h3 class="h3 h3_red">прямой эфир<i></i></h3>
+					<div class="s-online__list">
+						<div class="wtf">
+							<a href="#">scher1956</a>
+							<span>пишет</span>
+							<strong>/</strong>
+							<em>мы бы все вышли))) на Хэллоуин,...</em>
+							<a class="link" href="#">Эндопротезирование тазобедренного сустава.</a>
+							<span>в разделе</span>
+							<a class="link" href="#">Эндопротезирование</a>
+							<i>31 октября 2012</i>							
+						</div>
+						<div class="wtf">
+							<a href="#">scher1956</a>
+							<span>пишет</span>
+							<strong>/</strong>
+							<em>мы бы все вышли))) на Хэллоуин,...</em>
+							<a class="link" href="#">Эндопротезирование тазобедренного сустава.</a>
+							<span>в разделе</span>
+							<a class="link" href="#">Эндопротезирование</a>
+							<i>31 октября 2012</i>							
+						</div>
+						<div class="wtf">
+							<a href="#">scher1956</a>
+							<span>пишет</span>
+							<strong>/</strong>
+							<em>мы бы все вышли))) на Хэллоуин,...</em>
+							<a class="link" href="#">Эндопротезирование тазобедренного сустава.</a>
+							<span>в разделе</span>
+							<a class="link" href="#">Эндопротезирование</a>
+							<i>31 октября 2012</i>							
+						</div>
+					</div>
+				</div>
+				<!-- END .s-online -->
+				<!-- BEGIN .s-banner -->
+				<div class="s-banner">
+					<div class="s-banner__in">
+						<img src="img/pic4.jpg" alt="">
+					</div>
+				</div>
+				<!-- END .s-banner -->
+			</div>
+		</div>
+		<!-- END .l -->
+	</div>
+	<div class="push"></div>
+</section>
+<!-- END .wrap -->
+<!-- BEGIN .footer -->
+<footer class="footer">
+	<div class="footer__in">
+		<div class="copyright">
+			<p>© 2008 - 2012  При поддержке Департамента семейной и молодежной политики города Москвы.</p>
+			<p>Свидетельство о регистрации СМИ № ФС77-46066, выдано Роскомнадзором.</p>
+		</div>
+		<ul class="footer__links">
+			<li><span>/</span><a href="#">Условия использования</a></li>
+			<li><span>/</span><a href="#">Ответы на вопросы</a></li>
+			<li><span>/</span><a href="#">Контакты</a></li>
+		</ul>
+		<div class="btn">
+			<button class="btn__item">Обратная связь<i><i class="ico-arr"></i></i></button>
+			<span>Сделано в <a href="#">Смарт-арт</a></span>
+		</div>
+		<div class="footer__social">
+			<span>Мы в сети:</span>
+			<a class="footer__vk" href="#"></a>
+			<a class="footer__ok" href="#"></a>
+		</div>
+		<div class="footer__18plus">18+</div>
+	</div>
+</footer>
+<!-- END .footer -->
+</body>
+</html>

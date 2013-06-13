@@ -80,6 +80,8 @@
 //s-news, s-vavancy, s-online, s-guides
 .s-news, .s-vavancy, .s-online, .s-guides
 	padding: 20px	
+.s-news
+	background: #FFF 
 .s-news, .s-online, .s-guides
 	border-left: 3px solid #f56c7c
 .s-vacancy
@@ -545,7 +547,6 @@
 	.checkbox
 		float: left
 		margin: 6px 0 0 17px
-		font-style: italic
 .comm__sum
 	float: right
 	margin-top: 8px
@@ -649,13 +650,17 @@
 			text-decoration: underline
 //profile
 .profile
-	margin-bottom: 45px
-	padding-left: 104px 
-.profile__name
+	padding-bottom: 45px
+.profile__in-l
+	margin-left: -20px	
+.profile__top
 	position: relative
-	margin-bottom: 55px
-	padding-right: 180px
+	margin-bottom: 22px
+	padding: 0 0 0 124px
+	@extend %clr
 	.h2
+		position: relative
+		float: left
 		margin-bottom: 4px
 		+font-c
 		font-size: 27px
@@ -666,13 +671,29 @@
 		position: absolute
 		top: 12px
 		right: 0
-	i
-		display: block
-		margin-bottom: 25px
-		font-size: 15px
-		color: #9f9f9f 
+		i
+			display: block
+			margin-bottom: 25px
+			font-size: 15px
+			color: #9f9f9f 
+	.btn
+		margin-bottom: 55px
+	.edit-album
+		position: absolute
+		top: 8px
+		right: -26px
+		+s(edit-album)
+	.link-plus, .link-setting
+		position: absolute
+		top: 10px
+		right: 0
+	.checkbox
+		position: absolute
+		top: 14px
+		right: 9px
+		font-weight: bold 		
 .profile__data
-	margin-left: -72px
+	margin-left: 52px
 	@extend %clr
 .profile__pics
 	position: relative
@@ -693,7 +714,7 @@
 	&.disabled
 		+s(arr-top-dis)
 .profile__pics-bottom
-	bottom: -37px
+	bottom: -27px
 	+s(arr-bottom)
 	&.disabled
 		+s(arr-bottom-dis)	
@@ -715,7 +736,343 @@
 		+font-c
 	i
 		color: #9f9f9f
-	p  
+.profile__tabs
+	overflow: hidden
+.profile__cnt
+	float: left
+	width: 710px
+	.profile__photo
+		float: right
+		margin-right: 0
+		em
+			display: block
+			margin-bottom: 10px
+			i
+				color: #9999a3
+.profile__nav
+	float: right
+	width: 270px
+	border-left: 1px solid #b9b9b9  
+	ul
+		padding: 20px 0 40px 0
+	li
+		&.is-active
+			position: relative
+			&:before, &:after
+				content: ""
+				position: absolute
+				top: 7px
+				width: 0px
+				height: 0px
+				border-style: solid		
+				border-width: 11px 10px 11px 0		
+			&:before
+				left: -10px				
+				border-color: transparent #b9b9b9 transparent transparent				
+			&:after
+				left: -9px
+				border-color: transparent #fff transparent transparent
+			a
+				color: $red 
+	a 
+		position: relative
+		display: block
+		padding: 10px 0 10px 45px
+		line-height: 1
+		font-size: 15px
+		font-weight: bold
+		font-style: italic
+		&:before
+			content: ""
+			position: absolute
+			top: 15px
+			left: 28px
+			width: 6px
+			height: 6px
+			background: $red
+			border-radius: 50%
+.profile__form
+	float: left
+	width: 470px
+	.label, .fieldset
+		margin-bottom: 27px 
+	.input-text
+		width: 280px
+		font-style: italic
+	.fieldset
+		.label
+			margin-bottom: 0
+	.label, .select
+		margin-right: 15px
+	.label
+		em
+			width: 115px
+			padding-right: 10px
+			text-align: right
+		i
+			color: #9999a3 
+		.label__lh
+			width: 100px
+			padding-left: 15px
+	.select
+		float: left
+	.profile__day
+		input
+			width: 30px 
+	.profile__year
+		input
+			width: 44px 
+	.textarea
+		width: 280px
+	.btn
+		padding-left: 125px	
+.profile__surely
+	padding: 20px 0 27px 125px
+	font-style: italic
+	i
+		color: #9999a3 
+.profile__block
+	position: absolute
+	top: 14px
+	right: 10px
+	padding-left: 16px
+	background: none
+	overflow: visible
+	font-size: 13px
+	font-style: italic
+	i
+		position: absolute
+		top: 0
+		left: 0
+		+s(block)
+	&:hover
+		color: $red 
+.profile__album 	
+	padding: 0 0 50px 124px
+	em
+		display: block
+		margin-bottom: 20px 
+		font-size: 17px
+	ul
+		overflow: hidden
+	li
+		position: relative
+		float: left
+		margin: 0 20px 20px 0
+		&:hover
+			button
+				display: block
+	button
+		display: none
+		position: absolute
+		right: 2px
+		background: rgba(255,255,255,.7)
+		border: 1px solid rgba(255,255,255,.9) 
+		i
+			display: block
+	.del-photo
+		top: 2px
+		i
+			+s(del)
+	.wtf-photo
+		top: 27px
+		i
+			+s(wtf)
+.profile__notices
+	li
+		position: relative
+		overflow: hidden
+		padding: 25px 10px
+		margin-left: 40px
+		border-top: 1px solid #d3d3d3 
+		&:hover
+			.btn-del
+				display: block
+.profile__pic
+	float: left
+	margin-right: 25px 
+.profile__date
+	float: left
+	width: 160px
+	font-style: italic
+	font-size: 13px
+	color: #9f9f9f
+	i
+		display: block 
+.profile__wtf
+	overflow: hidden
+	a
+		font-style: italic
+		font-weight: bold
+	p
+		margin-top: 5px
+	.link
+		padding-left: 14px
+		font-weight: normal
+		font-size: 17px
+		color: #2c2c2c  
+		&:before
+			top: 7px
+//messages and dialogs
+.mess__list, .dialogs__list
+	margin-left: 40px
+	li
+		position: relative
+		padding: 25px 20px
+		border-top: 1px solid #d3d3d3 
+		overflow: hidden
+		&:hover
+			.btn-del
+				display: block
+				margin-left: 40px
+.mess__list
+	width: 670px
+	max-height: 430px 
+	margin-bottom: 20px
+	border: 1px solid #d3d3d3 
+	border-width: 1px 0 1px 0
+	outline: none
+	overflow: auto 
+	li
+		&:first-child
+			border: none	
+.dialogs__list
+	margin-bottom: 40px
+	border-bottom: 1px solid #cacaca
+	li
+		padding: 25px 0
+.mess__user, .dialogs__user
+	float: left
+	width: 170px
+	margin-right: 10px
+	line-height: 1.2
+	img
+		float: left
+		margin-right: 10px
+		border: 1px solid #f5f5f5 
+	a
+		+font-c
+		font-weight: bold
+.mess__detail, .dialogs__detail
+	float: left
+	font-style: italic
+.mess__detail
+	width: 400px 	
+.dialogs__detail
+	width: 320px
+	margin-right: 30px		
+.mess__date, .dialogs__date
+	font-size: 13px
+	color: #9f9f9f 
+.dialogs__date
+	float: left
+	width: 100px 
+	font-style: italic 
+	span
+		display: block 
+.dialogs__count
+	float: right
+	width: 40px
+	text-align: center
+	a
+		display: inline-block
+		padding: 0 4px
+		background: #959595
+		+font-c
+		font-weight: bold
+		color: #fff  
+		line-height: 1.2
+.dialogs__count_red
+	a
+		background: $red 
+.mess__reply
+	background: #f9f9f9 
+	.mess__user, .mess__detail
+		float: right
+	.mess__user
+		margin: 0 0 0 30px
+	.mess__detail
+		text-align: right
+	.btn-del
+		background: #fdfdfd
+		border: 1px solid #fff 
+.mess__form
+	padding: 25px 0 30px 62px
+	background: #e7e7e7 
+.mess__enter
+	margin-bottom: 18px 
+	overflow: hidden
+	a
+		position: relative
+		float: left
+		margin-right: 10px
+		&:before, &:after
+			content: ""
+			position: absolute
+			top: 20px
+			width: 0px
+			height: 0px
+			border-style: solid
+			border-width: 8px 8px 8px 0			
+		&:before
+			right: -11px
+			border-color: transparent #bbb transparent transparent
+		&:after
+			right: -12px
+			border-color: transparent #fff transparent transparent
+		img
+			display: block
+			border: 1px solid #e7e7e7			
+	.textarea
+		float: left
+		width: 380px
+		height: 47px
+		margin-right: 14px 
+		border-color: #bbb
+		font-style: italic
+	.btn
+		float: left
+	.checkbox
+		margin-bottom: 8px
+		font-size: 13px
+		font-weight: normal
+.mess__file
+	padding-left: 69px
+	overflow: hidden
+	.input-text
+		float: left
+		width: 200px
+		height: 30px
+		margin-right: 14px
+		border-radius: 0
+		border-color: #bbb
+		font-style: italic
+	.btn
+		float: left  
+		.btn__del
+			float: left
+			margin-top: 9px
+			background: none 
+			text-decoration: underline
+			font-style: italic
+			font-size: 12px
+			&:hover
+				color: $red 
+.mess__write
+	.label
+		margin-bottom: 27px
+		em
+			width: 115px
+			padding-right: 10px
+	.textarea
+		width: 511px
+	.btn
+		position: relative
+		padding: 40px 0 40px 124px
+	.link-arr
+		position: absolute
+		top: 0
+		left: 124px
 //friends & activity & albums
 .friends, .activity, .albums
 	margin-bottom: 40px
@@ -939,8 +1296,9 @@
 			width: 60px
 	.textarea
 		height: 120px
+	.btn
+		padding: 0 0 30px 60px
 //dating
-.dating
 .dating__stats
 	margin-bottom: 20px
 	padding-left: 104px
@@ -1049,19 +1407,41 @@
 			float: left
 			margin: 6px 0 0 30px
 			font-weight: bold
-			font-style: italic
+.filter_vacancy
+	.label
+		em
+			width: 72px
+			font-size: 13px
+	.filter__age
+		em
+			width: auto
+			margin: 7px 10px 0 0
+		.input-text
+			margin-right: 10px
+	.filter__direction
+		margin-right: 0
+		em
+			width: auto
+	.btn
+		padding: 25px 0 0 82px
+.filter__city, .filter__employment
+	width: 300px
+.filter__direction
+	width: 370px
 .filter__family
 	float: left
 	width: 380px
 	.label
 		width: 380px
-.filter__target
+.filter__target, .profile__target, .filter__currency
 	overflow: hidden
 	font-style: italic
 	strong
 		display: block
 		margin-bottom: 2px
 		line-height: 1
+		i
+			color: #9999A3 
 	ul
 		float: left
 	li
@@ -1069,4 +1449,129 @@
 	.checkbox
 		margin-top: 5px
 		font-size: 13px
-
+.filter__currency
+	padding-left: 82px
+	margin-bottom: 20px
+	ul
+		min-width: 160px
+.profile__target
+	padding-left: 125px
+	margin-bottom: 27px
+//vacancy
+.vacancy__title	
+	.h2
+		margin-bottom: 10px
+		+font-c
+		font-size: 27px
+		text-transform: none
+		line-height: 1.2
+		span
+			margin-left: 15px
+			font-weight: normal
+			color: $red 
+.vacancy__desc 	
+	padding: 0 20px 0 104px
+	.btn
+		margin-bottom: 40px
+	.btn__item
+		margin-right: 20px
+.vacancy__about
+	font-style: italic
+	font-size: 15px
+	ul, dl
+		border-bottom: 1px solid #d3d3d3
+	ul
+		padding-bottom: 25px		
+		margin-bottom: 30px 
+		li
+			margin-bottom: 10px 
+		strong
+			margin-right: 5px
+	dl
+		margin-bottom: 10px		 
+		dd
+			margin-bottom: 25px
+		dt
+			font-weight: bold
+.vacancy__date
+	margin-bottom: 20px
+	font-style: italic
+	font-size: 13px
+	color: #9f9f9f 
+.vacancy__address
+	position: relative
+	margin-bottom: 30px
+	padding-right: 145px 
+	line-height: 1.2
+	span
+		padding-right: 12px
+		margin-right: 12px
+		border-right: 1px dashed #9f9f9f 
+		font-style: italic
+		font-size: 15px
+		color: #9f9f9f 
+	a
+		position: relative
+		padding-left: 15px
+		font-size: 12px
+		font-style: italic 
+		i
+			position: absolute
+			top: 1px
+			left: 0
+			+s(mark-small-red)
+.vacancy__views 
+	position: absolute
+	top: 0
+	right: 10px
+	padding-left: 22px
+	font-size: 12px
+	font-style: italic
+	color: #9f9f9f 
+	i
+		position: absolute
+		top: 1px
+		left: 0
+.vacancy__list
+	margin: 0 20px 60px 0
+	li
+		position: relative
+		padding: 20px 340px 20px 0
+		border-bottom: 1px solid #cacaca 
+		overflow: hidden
+		&:first-child
+			padding: 0 340px 20px 0
+.vacancy__name
+	+font-c
+	line-height: 1
+	img
+		float: left
+		margin-right: 15px 
+	a
+		font-size: 15px		
+		font-weight: bold
+	span
+		margin-left: 10px
+		font-size: 13px
+		font-style: italic
+		color: #9f9f9f 
+.vacancy__salary, .vacancy__city
+	position: absolute
+	top: 50%
+.vacancy__salary
+	left: 365px
+	margin-top: -10px
+	font-size: 15px
+	color: $red 		
+.vacancy__city
+	left: 520px
+	margin-top: -9px
+	padding-left: 17px
+	font-size: 13px
+	font-style: italic
+	color: #9f9f9f
+	i
+		position: absolute
+		top: 2px
+		left: 0
+		+s(mark-small)

@@ -1,0 +1,880 @@
+<!doctype html>
+<!--[if IE 8]><html lang="ru-RU" class="ie8"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="ru-RU"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<link rel="stylesheet" media="screen" href="css/jquery.fancybox.css" >
+	<!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
+	<script src="js/jquery-1.7.2.min.js"></script>
+	<script src="js/jquery.cycle2.min.js"></script>	
+	<script src="js/jquery.cycle2.carousel.min.js"></script>
+	<script src="js/jquery.selectBox.js"></script>	
+	<script src="js/jquery.fancybox.pack.js"></script>	
+	<script src="js/jquery.mousewheel.js"></script>		
+	<script src="js/jquery.jscrollpane.min.js"></script>		
+	<script src="js/common.js"></script>
+</head>
+<body>
+<!-- BEGIN .wrap -->
+<section class="wrap">
+	<div class="wrap__in">
+		<div class="banner-top"><img src="img/banner-top.jpg" alt=""></div>
+		<!-- BEGIN .header -->
+		<header class="header">
+			<h1 class="logo"><a href="#">DISLIFE</a></h1>
+			<a class="version" href="#">Версия для слабовидящих</a>
+			<div class="user">
+				<div class="user__stats">
+					<div class="user__notices">
+						<button class="js-popup"><span>7</span></button>
+						<div class="popup popup_notices">	
+							<div class="popup__title">уведомления</div>
+							<div class="popup__notices js-scrollbar">
+								<ul>
+									<li>пользователь <a href="#">Андрей</a> добавил новую публикацию  <a href="#">«Жилые дома Красноярска проверят на доступность для инвалидов и детских колясок»</a> в разделе <a href="#">«Статьи»</a><p>23 ноября 2012 21:15<i></i></p>
+									</li>
+									<li><a href="#"><img src="img/pic9.jpg" width="57" height="57" alt=""></a>пользователю <a href="#">Лебедева Галина</a> нравится Ваша <a href="#">фотография</a><p>23 ноября 2012 21:15<i></i></p>
+									</li>
+									<li>пользователь <a href="#">Андрей</a> добавил новую публикацию  <a href="#">«Жилые дома Красноярска проверят на доступность для инвалидов и детских колясок»</a> в разделе <a href="#">«Статьи»</a><p>23 ноября 2012 21:15<i></i></p>
+									</li>
+									<li><a href="#"><img src="img/pic9.jpg" width="57" height="57" alt=""></a>пользователю <a href="#">Лебедева Галина</a> нравится Ваша <a href="#">фотография</a><p>23 ноября 2012 21:15<i></i></p>
+									</li>
+								</ul>
+							</div>
+							<div class="popup__view-all">
+								<a class="link-arr" href="#">посмотреть все<i class="ico-arr-l"></i></a>
+							</div>
+						</div>
+					</div>					
+					<div class="user__mess">
+						<button class="js-popup"><span>9</span></button>
+						<div class="popup popup_notices">	
+							<div class="popup__title">Сообщения</div>
+							<div class="popup__mess js-scrollbar">
+								<ul>
+									<li>
+										<a href="#"><img src="img/pic9.jpg" width="57" height="57" alt=""></a>
+										<p>
+											<a href="#">Константин Эрнст</a>
+											<span>Почему нельзя делить на ноль?</span>
+											<i>23 ноября 21:15</i>
+										</p>
+									</li>
+									<li>
+										<a href="#"><img src="img/pic9.jpg" width="57" height="57" alt=""></a>
+										<p>
+											<a href="#">Константин Эрнст</a>
+											<span>Почему нельзя делить на ноль?</span>
+											<i>23 ноября 21:15</i>
+										</p>
+										<li>
+											<a href="#"><img src="img/pic9.jpg" width="57" height="57" alt=""></a>
+											<p>
+												<a href="#">Константин Эрнст</a>
+												<span>Почему нельзя делить на ноль?</span>
+												<i>23 ноября 21:15</i>
+											</p>
+										</li>
+										<li>
+											<a href="#"><img src="img/pic9.jpg" width="57" height="57" alt=""></a>
+											<p>
+												<a href="#">Константин Эрнст</a>
+												<span>Почему нельзя делить на ноль?</span>
+												<i>23 ноября 21:15</i>
+											</p>
+										</li>
+									</li>
+								</ul>
+							</div>
+							<div class="popup__view-all">
+								<a class="link-arr" href="#">посмотреть все<i class="ico-arr-l"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="user__links">
+					<a class="js-fb" href="#popup-subscribe">настройки</a>
+					<a href="#">профайл</a>
+				</div>
+				<div class="user__pic">
+					<a href="#"><img src="img/pic16.jpg" alt=""></a>
+				</div>
+				<button class="user__out"></button>
+			</div>
+			<form class="header__search" action="/">
+				<input type="text" placeholder="поиск">
+				<button type="submit"><i></i></button>
+			</form>			
+		</header>
+		<!-- END .header -->
+		<!-- BEGIN .nav -->
+		<nav class="nav">
+			<ul>
+				<li><span>/</span><a href="#">Новости</a></li>
+				<li><span>/</span><a href="#">Статьи</a></li>
+				<li><span>/</span><a href="#">События</a></li>
+				<li><span>/</span><a href="#">Консультации</a></li>
+				<li><span>/</span><a href="#">Законодательство</a></li>
+				<li><span>/</span><a href="#">Работа</a></li>
+				<li><span>/</span><a href="#">Карта услуг</a></li>
+			</ul>
+		</nav>
+		<!-- END .nav -->
+		<!-- BEGIN .slider -->
+		<div class="slider">
+			<button id="slider-prev" class="slider__prev"></button>
+			<button id="slider-next" class="slider__next"></button>
+			<div class="cycle-slideshow" data-cycle-fx="carousel" data-cycle-timeout="0" data-cycle-next="#slider-next" data-cycle-prev="#slider-prev" data-cycle-slides="> div" data-cycle-carousel-visible="1" data-allow-wrap="true">
+				<div class="slider__item">
+					<div class="slider__item-in">
+						<div class="slider__bg"></div>
+						<div class="slider__pic">
+							<a href="#"><img src="img/pic7.jpg" width="420" height="260" alt=""></a>
+						</div>
+						<div class="slider__detail">
+							<a href="#">Закон Димы Яковлева: обзор зарубежных СМИ</a>
+							<div class="meta">
+								<span>23 ноября 2012</span>
+								<span><i class="ico-comm"></i>23</span>
+								<span><i class="ico-view"></i>2323</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="slider__item">
+					<div class="slider__item-in">
+						<div class="slider__bg"></div>
+						<div class="slider__pic">
+							<a href="#"><img src="img/pic7.jpg" width="420" height="260" alt=""></a>
+						</div>
+						<div class="slider__detail">
+							<a href="#">Закон Димы Яковлева: обзор зарубежных СМИ</a>
+							<div class="meta">
+								<span>23 ноября 2012</span>
+								<span><i class="ico-comm"></i>23</span>
+								<span><i class="ico-view"></i>2323</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="slider__item">
+					<div class="slider__item-in">
+						<div class="slider__bg"></div>
+						<div class="slider__pic">
+							<a href="#"><img src="img/pic7.jpg" width="420" height="260" alt=""></a>
+						</div>
+						<div class="slider__detail">
+							<a href="#">Закон Димы Яковлева: обзор зарубежных СМИ</a>
+							<div class="meta">
+								<span>23 ноября 2012</span>
+								<span><i class="ico-comm"></i>23</span>
+								<span><i class="ico-view"></i>2323</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END .slider -->
+		<!-- BEGIN .l -->
+		<div class="l">
+			<div class="l__col-1">
+				<div class="l__col-3">
+					<div class="l__col-4">
+						<div class="title title_yellow">
+							<h2 class="h2">Безбарьерная среда</h2>
+							<a href="#">в раздел<i class="ico-arr-l"></i></a>
+						</div>
+						<!-- BEGIN .m-articles -->				
+						<div class="m-articles">
+							<a class="m-articles__main" href="#">
+								<div class="label-cat">Статьи</div>
+								<img src="img/pic1.jpg" alt="">
+								<div class="m-articles__data">
+									<p>Закон Димы Яковлева: обзор зарубежных СМИ</p>
+									<div class="meta meta_white">
+										<span>23 ноября 2012</span>
+										<span><i class="ico-comm"></i>23</span>
+										<span><i class="ico-view"></i>2323</span>
+									</div>
+								</div>
+							</a>
+							<ul class="m-articles__list">
+								<li>
+									<div class="m-articles__pic">
+										<a href="#"><img src="img/pic2.jpg" alt=""></a>
+										<a class="label-cat" href="#">Статьи</a>
+									</div>
+									<div class="m-articles__desc">
+										<a href="#">В 2013 году на рынок труда выведут инвалидов и пенсионеров</a>
+										<div class="meta">
+											<span>23 ноября 2012</span>
+											<span><i class="ico-comm"></i>23</span>
+											<span><i class="ico-view"></i>2323</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="m-articles__pic">
+										<a href="#"><img src="img/pic2.jpg" alt=""></a>
+										<a class="label-cat" href="#">Статьи</a>
+									</div>
+									<div class="m-articles__desc">
+										<a href="#">В 2013 году на рынок труда выведут инвалидов и пенсионеров</a>
+										<div class="meta">
+											<span>23 ноября 2012</span>
+											<span><i class="ico-comm"></i>23</span>
+											<span><i class="ico-view"></i>2323</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="m-articles__pic">
+										<a href="#"><img src="img/pic2.jpg" alt=""></a>
+										<a class="label-cat" href="#">Статьи</a>
+									</div>
+									<div class="m-articles__desc">
+										<a href="#">В 2013 году на рынок труда выведут инвалидов и пенсионеров</a>
+										<div class="meta">
+											<span>23 ноября 2012</span>
+											<span><i class="ico-comm"></i>23</span>
+											<span><i class="ico-view"></i>2323</span>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!-- END .articles -->
+						<!-- BEGIN .m-experts -->
+						<div class="m-experts">
+							<h3 class="h3 h3_yellow">эксперты раздела<i></i></h3>
+							<!-- BEGIN .experts-slider -->
+							<div class="experts-slider">
+								<button id="sl-prev-1" class="experts-slider__prev"><i></i></button>
+								<button id="sl-next-1" class="experts-slider__next"><i></i></button>
+								<div class="experts-slider__in cycle-slideshow" data-cycle-fx="carousel" data-cycle-timeout="0" data-cycle-next="#sl-next-1" data-cycle-prev="#sl-prev-1" data-cycle-slides="> div" data-allow-wrap="false">
+							   	<div class="experts-slider__item">
+										<a href="#"><img src="img/pic3.jpg" width="53" height="53" alt=""></a>
+										<a href="#">Василий Шевченко</a>
+										<span>знает все о безбарьерной среде</span>
+									</div>
+								</div>					
+							</div>
+							<!-- END .experts-slider -->
+						</div>
+						<!-- END .experts -->		
+						<!-- BEGIN .m-places -->
+						<div class="m-places">
+							<h3 class="h3 h3_yellow">Новые места<i></i><a class="link" href="#">на карте доступности</a></h3>
+							<ul class="m-places__list">
+								<li>
+									<a href="#">Шоколадница</a><span>кафе</span>
+									<p>Открытый мастер-класс по глиняной керамике Новогодний сувенир </p>
+								</li>
+								<li>
+									<a href="#">Алма-Атинская</a><span>метро</span>
+									<p>Открытый мастер-класс по глиняной керамике Новогодний сувенир </p>
+								</li>
+							</ul>
+							<div class="btn">
+								<a class="btn__item" href="#">Добавить объект<i><i class="ico-plus"></i></i></a>
+							</div>
+						</div>
+						<!-- END .m-places -->			
+					</div>
+					<div class="l__col-5">
+						<div class="title title_blue">
+							<h2 class="h2">образование</h2>
+							<a href="#">в раздел<i class="ico-arr-l"></i></a>
+						</div>
+						<!-- BEGIN .articles -->
+						<div class="m-articles">
+							<a class="m-articles__main" href="#">
+								<div class="label-cat">Статьи</div>
+								<img src="img/pic1.jpg" alt="">
+								<div class="m-articles__data">
+									<p>Закон Димы Яковлева: обзор зарубежных СМИ</p>
+									<div class="meta meta_white">
+										<span>23 ноября 2012</span>
+										<span><i class="ico-comm"></i>23</span>
+										<span><i class="ico-view"></i>2323</span>
+									</div>
+								</div>
+							</a>
+							<ul class="m-articles__list">
+								<li>
+									<div class="m-articles__pic">
+										<a href="#"><img src="img/pic2.jpg" alt=""></a>
+										<a class="label-cat" href="#">Статьи</a>
+									</div>
+									<div class="m-articles__desc">
+										<a href="#">В 2013 году на рынок труда выведут инвалидов и пенсионеров</a>
+										<div class="meta">
+											<span>23 ноября 2012</span>
+											<span><i class="ico-comm"></i>23</span>
+											<span><i class="ico-view"></i>2323</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="m-articles__pic">
+										<a href="#"><img src="img/pic2.jpg" alt=""></a>
+										<a class="label-cat" href="#">Статьи</a>
+									</div>
+									<div class="m-articles__desc">
+										<a href="#">В 2013 году на рынок труда выведут инвалидов и пенсионеров</a>
+										<div class="meta">
+											<span>23 ноября 2012</span>
+											<span><i class="ico-comm"></i>23</span>
+											<span><i class="ico-view"></i>2323</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="m-articles__pic">
+										<a href="#"><img src="img/pic2.jpg" alt=""></a>
+										<a class="label-cat" href="#">Статьи</a>
+									</div>
+									<div class="m-articles__desc">
+										<a href="#">В 2013 году на рынок труда выведут инвалидов и пенсионеров</a>
+										<div class="meta">
+											<span>23 ноября 2012</span>
+											<span><i class="ico-comm"></i>23</span>
+											<span><i class="ico-view"></i>2323</span>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!-- END .articles -->
+						<!-- BEGIN .m-experts -->
+						<div class="m-experts">
+							<h3 class="h3 h3_blue">эксперты раздела<i></i></h3>
+							<!-- BEGIN .experts-slider -->
+							<div class="experts-slider">
+								<button id="sl-prev-2" class="experts-slider__prev"><i></i></button>
+								<button id="sl-next-2" class="experts-slider__next"><i></i></button>
+								<div class="experts-slider__in cycle-slideshow" data-cycle-fx="carousel" data-cycle-timeout="0" data-cycle-next="#sl-next-2" data-cycle-prev="#sl-prev-2" data-cycle-slides="> div" data-allow-wrap="false">
+							   	<div class="experts-slider__item">
+										<a href="#"><img src="img/pic3.jpg" width="53" height="53" alt=""></a>
+										<a href="#">Василий Шевченко</a>
+										<span>знает все о безбарьерной среде</span>
+									</div>
+									<div class="experts-slider__item">
+										<a href="#"><img src="img/pic3.jpg" width="53" height="53" alt=""></a>
+										<a href="#">Василий Шевченко</a>
+										<span>знает все о безбарьерной среде</span>
+									</div>
+									<div class="experts-slider__item">
+										<a href="#"><img src="img/pic3.jpg" width="53" height="53" alt=""></a>
+										<a href="#">Василий Шевченко</a>
+										<span>знает все о безбарьерной среде</span>
+									</div>
+									<div class="experts-slider__item">
+										<a href="#"><img src="img/pic3.jpg" width="53" height="53" alt=""></a>
+										<a href="#">Василий Шевченко</a>
+										<span>знает все о безбарьерной среде</span>
+									</div>
+								</div>					
+							</div>
+							<!-- END .experts-slider -->
+						</div>
+						<!-- END .m-experts -->
+						<!-- BEGIN .m-school -->
+						<div class="m-school">
+							<h3 class="h3 h3_blue">Выбери свой ВУЗ<i class="ico-arr-l"></i></h3>
+							<select class="select" style="width: 273px">
+							  <option>Город</option>
+							  <option>Пункт 1</option>
+							  <option>Пункт 2</option>
+							  <option>Пункт 3</option>
+							</select>
+							<select class="select" style="width: 273px">
+							  <option>Тип</option>
+							  <option>Пункт 1</option>
+							  <option>Пункт 2</option>
+							  <option>Пункт 3</option>
+							</select>
+							<select class="select" style="width: 273px">
+							  <option>Категория инвалидности</option>
+							  <option>Пункт 1</option>
+							  <option>Пункт 2</option>
+							  <option>Пункт 3</option>
+							</select>
+							<div class="btn">
+								<button class="btn__item">Показать<i><i class="ico-arr"></i></i></button>
+								<a class="link" href="#">на карте доступности</a>
+							</div>
+						</div>
+						<!-- END .m-school -->
+					</div>					
+				</div>
+				<!-- BEGIN .m-m-talks -->
+				<div class="m-talks">
+					<div class="title">
+						<h2 class="h2">О чем говорят на портале</h2>
+						<a href="#">в раздел<i></i></a>
+					</div>
+					<ul class="m-talks__list">
+						<li>
+							<div class="m-talks__cat">
+								<a class="label-cat" href="#">статья</a>	
+							</div>													
+							<div class="m-talks__pic">
+								<a href="#">
+									<img src="img/pic3.jpg" alt="">
+								</a>								
+							</div>
+							<div class="wtf">
+								<a href="#">scher1956</a>
+								<span>пишет в тему</span>
+								<a class="link" href="#">Эндопротезирование тазобедренного сустава. Из личного опыта.</a>
+								<i>31 октября 2012</i>							
+							</div>
+						</li>
+						<li>
+							<div class="m-talks__cat">
+								<a class="label-cat" href="#">статья</a>	
+							</div>													
+							<div class="m-talks__pic">
+								<a href="#">
+									<img src="img/pic3.jpg" alt="">
+								</a>								
+							</div>
+							<div class="wtf">
+								<a href="#">scher1956</a>
+								<span>пишет</span>
+								<strong>/</strong>
+								<em>мы бы все вышли))) на Хэллоуин,...</em>
+								<a class="link" href="#">Эндопротезирование тазобедренного сустава.</a>
+								<span>в разделе</span>
+								<a class="link" href="#">Эндопротезирование</a>
+								<i>31 октября 2012</i>							
+							</div>
+						</li>
+						<li>
+							<div class="m-talks__cat">
+								<a class="label-cat" href="#">событие</a>	
+							</div>													
+							<div class="m-talks__pic">
+								<a href="#">
+									<img src="img/pic3.jpg" alt="">
+								</a>								
+							</div>
+							<div class="wtf">
+								<a href="#">scher1956</a>
+								<span>пишет в тему</span>
+								<a class="link" href="#">Эндопротезирование тазобедренного сустава. Из личного опыта.</a>
+								<i>31 октября 2012</i>							
+							</div>
+						</li>
+						<li>
+							<div class="m-talks__cat">
+								<a class="label-cat" href="#">законодательство</a>	
+							</div>													
+							<div class="m-talks__pic">
+								<a href="#">
+									<img src="img/pic3.jpg" alt="">
+								</a>								
+							</div>
+							<div class="wtf">
+								<a href="#">scher1956</a>
+								<span>пишет</span>
+								<strong>/</strong>
+								<em>мы бы все вышли))) на Хэллоуин,...</em>
+								<a class="link" href="#">Эндопротезирование тазобедренного сустава.</a>
+								<span>в разделе</span>
+								<a class="link" href="#">Эндопротезирование</a>
+								<i>31 октября 2012</i>							
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- END .m-m-talks -->
+				<div class="l__col-3">
+					<div class="l__col-4">
+						<div class="title title_green">
+							<h2 class="h2">Досуг</h2>
+							<a href="#">в раздел<i class="ico-arr-l"></i></a>
+						</div>
+						<!-- BEGIN .m-articles -->				
+						<div class="m-articles">
+							<ul class="m-articles__list">
+								<li>
+									<div class="m-articles__pic">
+										<a href="#"><img src="img/pic2.jpg" alt=""></a>
+										<a class="label-cat" href="#">Статьи</a>
+									</div>
+									<div class="m-articles__desc">
+										<a href="#">В 2013 году на рынок труда выведут инвалидов и пенсионеров</a>
+										<div class="meta">
+											<span>23 ноября 2012</span>
+											<span><i class="ico-comm"></i>23</span>
+											<span><i class="ico-view"></i>2323</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="m-articles__pic">
+										<a href="#"><img src="img/pic2.jpg" alt=""></a>
+										<a class="label-cat" href="#">Статьи</a>
+									</div>
+									<div class="m-articles__desc">
+										<a href="#">В 2013 году на рынок труда выведут инвалидов и пенсионеров</a>
+										<div class="meta">
+											<span>23 ноября 2012</span>
+											<span><i class="ico-comm"></i>23</span>
+											<span><i class="ico-view"></i>2323</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="m-articles__pic">
+										<a href="#"><img src="img/pic2.jpg" alt=""></a>
+										<a class="label-cat" href="#">Статьи</a>
+									</div>
+									<div class="m-articles__desc">
+										<a href="#">В 2013 году на рынок труда выведут инвалидов и пенсионеров</a>
+										<div class="meta">
+											<span>23 ноября 2012</span>
+											<span><i class="ico-comm"></i>23</span>
+											<span><i class="ico-view"></i>2323</span>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!-- END .articles -->
+						<!-- BEGIN .m-experts -->
+						<div class="m-experts">
+							<h3 class="h3 h3_green">эксперты раздела<i></i></h3>
+							<!-- BEGIN .experts-slider -->
+							<div class="experts-slider">
+								<button id="sl-prev-3" class="experts-slider__prev"><i></i></button>
+								<button id="sl-next-3" class="experts-slider__next"><i></i></button>
+								<div class="experts-slider__in cycle-slideshow" data-cycle-fx="carousel" data-cycle-timeout="0" data-cycle-next="#sl-next-3" data-cycle-prev="#sl-prev-3" data-cycle-slides="> div" data-allow-wrap="false">
+							   	<div class="experts-slider__item">
+										<a href="#"><img src="img/pic3.jpg" width="53" height="53" alt=""></a>
+										<a href="#">Василий Шевченко</a>
+										<span>знает все о безбарьерной среде</span>
+									</div>
+								</div>					
+							</div>
+							<!-- END .experts-slider -->
+						</div>
+						<!-- END .experts -->		
+						<!-- BEGIN .m-ivents -->
+						<div class="m-ivents">
+							<h3 class="h3 h3_green">Афиша<i></i><a class="link" href="#">все событие</a></h3>
+							<ul class="m-ivents__list">
+								<li>
+									<a href="#">Открытый мастер-класс по глиняной керамике Новогодний сувенир</a>
+									<p>26 декабря 2012, Россия, Москва и Московская обл., Москва</p>
+								</li>
+								<li>
+									<a href="#">Открытый мастер-класс по глиняной керамике Новогодний сувенир</a>
+									<p>26 декабря 2012, Россия, Москва и Московская обл., Москва</p>
+								</li>
+							</ul>
+						</div>
+						<!-- END .m-ivents -->			
+					</div>
+					<div class="l__col-5">
+						<div class="title title_red">
+							<h2 class="h2">работа</h2>
+							<a href="#">в раздел<i class="ico-arr-l"></i></a>
+						</div>
+						<!-- BEGIN .articles -->
+						<div class="m-articles">
+							<ul class="m-articles__list">
+								<li>
+									<div class="m-articles__pic">
+										<a href="#"><img src="img/pic2.jpg" alt=""></a>
+										<a class="label-cat" href="#">Статьи</a>
+									</div>
+									<div class="m-articles__desc">
+										<a href="#">В 2013 году на рынок труда выведут инвалидов и пенсионеров</a>
+										<div class="meta">
+											<span>23 ноября 2012</span>
+											<span><i class="ico-comm"></i>23</span>
+											<span><i class="ico-view"></i>2323</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="m-articles__pic">
+										<a href="#"><img src="img/pic2.jpg" alt=""></a>
+										<a class="label-cat" href="#">Статьи</a>
+									</div>
+									<div class="m-articles__desc">
+										<a href="#">В 2013 году на рынок труда выведут инвалидов и пенсионеров</a>
+										<div class="meta">
+											<span>23 ноября 2012</span>
+											<span><i class="ico-comm"></i>23</span>
+											<span><i class="ico-view"></i>2323</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="m-articles__pic">
+										<a href="#"><img src="img/pic2.jpg" alt=""></a>
+										<a class="label-cat" href="#">Статьи</a>
+									</div>
+									<div class="m-articles__desc">
+										<a href="#">В 2013 году на рынок труда выведут инвалидов и пенсионеров</a>
+										<div class="meta">
+											<span>23 ноября 2012</span>
+											<span><i class="ico-comm"></i>23</span>
+											<span><i class="ico-view"></i>2323</span>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!-- END .articles -->
+						<!-- BEGIN .m-experts -->
+						<div class="m-experts">
+							<h3 class="h3 h3_red">эксперты раздела<i></i></h3>
+							<!-- BEGIN .experts-slider -->
+							<div class="experts-slider">
+								<button id="sl-prev-4" class="experts-slider__prev"><i></i></button>
+								<button id="sl-next-4" class="experts-slider__next"><i></i></button>
+								<div class="experts-slider__in cycle-slideshow" data-cycle-fx="carousel" data-cycle-timeout="0" data-cycle-next="#sl-next-4" data-cycle-prev="#sl-prev-4" data-cycle-slides="> div" data-allow-wrap="false">
+							   	<div class="experts-slider__item">
+										<a href="#"><img src="img/pic3.jpg" width="53" height="53" alt=""></a>
+										<a href="#">Василий Шевченко</a>
+										<span>знает все о безбарьерной среде</span>
+									</div>
+									<div class="experts-slider__item">
+										<a href="#"><img src="img/pic3.jpg" width="53" height="53" alt=""></a>
+										<a href="#">Василий Шевченко</a>
+										<span>знает все о безбарьерной среде</span>
+									</div>
+									<div class="experts-slider__item">
+										<a href="#"><img src="img/pic3.jpg" width="53" height="53" alt=""></a>
+										<a href="#">Василий Шевченко</a>
+										<span>знает все о безбарьерной среде</span>
+									</div>
+									<div class="experts-slider__item">
+										<a href="#"><img src="img/pic3.jpg" width="53" height="53" alt=""></a>
+										<a href="#">Василий Шевченко</a>
+										<span>знает все о безбарьерной среде</span>
+									</div>
+								</div>					
+							</div>
+							<!-- END .experts-slider -->
+						</div>
+						<!-- END .m-experts -->
+						<!-- BEGIN .m-work -->
+						<div class="m-work">
+							<h3 class="h3 h3_red">найди работу<i></i></h3>
+							<select class="select" style="width: 273px">
+							  <option>Город</option>
+							  <option>Пункт 1</option>
+							  <option>Пункт 2</option>
+							  <option>Пункт 3</option>
+							</select>
+							<select class="select" style="width: 273px">
+							  <option>Тип  занятости</option>
+							  <option>Пункт 1</option>
+							  <option>Пункт 2</option>
+							  <option>Пункт 3</option>
+							</select>
+							<select class="select" style="width: 273px">
+							  <option>Категория инвалидности</option>
+							  <option>Пункт 1</option>
+							  <option>Пункт 2</option>
+							  <option>Пункт 3</option>
+							</select>
+							<div class="btn">
+								<button class="btn__item">Показать<i><i class="ico-arr"></i></i></button>
+								<a class="link" href="#">расширенный поиск</a>
+							</div>
+						</div>
+						<!-- END .m-work -->
+					</div>					
+				</div>
+			</div>
+			<div class="l__col-2">
+				<!-- BEGIN .s-community -->
+				<div class="s-community">
+					<h2 class="h2">Комьюнити</h2>
+					<ul class="s-community__links">
+						<li><a href="#">Знакомства</a></li>
+						<li><a href="#">Лица</a></li>
+						<li><a href="#">Друг другу</a></li>
+						<li><a href="#">Форум</a></li>
+						<li><a href="#">Блоги</a></li>
+					</ul>
+				</div>
+				<!-- END .s-community -->
+				<!-- BEGIN .s-banner -->
+				<div class="s-banner">
+					<div class="s-banner__in">
+						<img src="img/pic4.jpg" alt="">
+					</div>
+				</div>
+				<!-- END .s-banner -->
+				<!-- BEGIN .s-guides -->
+				<div class="s-guides">
+					<h2 class="h2">Гиды</h2>
+					<ul class="s-guides__list">
+						<li><a href="#">Как получить инвалидность<i class="ico-arr-l"></i></a></li>
+						<li><a href="#">Социальные выплаты и льготы<i class="ico-arr-l"></i></a></li>
+						<li><a href="#">ИПР и получение ТСР<i class="ico-arr-l"></i></a></li>
+						<li><a href="#">Транспорт для инвалидов<i class="ico-arr-l"></i></a></li>
+						<li><a href="#">Как найти работу<i class="ico-arr-l"></i></a></li>						
+					</ul>
+				</div>
+				<!-- END .s-guides -->
+				<!-- BEGIN .s-users -->
+				<div class="s-users">
+					<h3 class="h3 h3_red">Хотят познакомиться<i></i></h3>
+					<ul class="s-users__list">
+						<li><a href="#"><img src="img/pic5.jpg" alt=""></a></li>
+						<li><a href="#"><img src="img/pic5.jpg" alt=""></a></li>
+						<li><a href="#"><img src="img/pic5.jpg" alt=""></a></li>
+						<li><a href="#"><img src="img/pic5.jpg" alt=""></a></li>
+						<li><a href="#"><img src="img/pic5.jpg" alt=""></a></li>
+						<li><a href="#"><img src="img/pic5.jpg" alt=""></a></li>
+					</ul>
+					<div class="btn">
+						<a class="btn__item" href="#">Найти половинку<i><i class="ico-plus"></i></i></a>
+					</div>
+				</div>
+				<!-- END .s-users -->
+				<!-- BEGIN .s-vk -->
+				<div class="s-vk">
+					<img src="img/pic6.jpg" alt="">
+				</div>
+				<!-- END .s-vk -->
+				<!-- BEGIN .s-banner-1 -->
+				<div class="s-banner-1">
+					<div class="s-banner-1__in">
+						<img src="img/pic4.jpg" alt="">
+					</div>					
+				</div>
+				<!-- END .s-banner-1 -->
+				<!-- BEGIN .vote -->
+				<form class="vote vote_s" action="/">
+					<h2 class="h2">Опрос</h2>
+					<div class="vote__info">
+						<p>За кого голосуем на выборах президента России?</p>
+						<label class="radio"><input type="radio" name="vote"><i></i>Путин Володька</label>
+						<label class="radio"><input type="radio" name="vote"><i></i>Медведев Димка</label>
+						<label class="radio"><input type="radio" name="vote"><i></i>Жириновский Вовка </label>
+						<label class="radio"><input type="radio" name="vote"><i></i>Не пойду голосовать</label>
+						<label class="radio"><input type="radio" name="vote" checked><i></i>Голосуй не госуй, все равно получишь...</label>
+					</div>
+					<div class="vote__result">
+						<p>Как часто вы едите рыбу?</p>
+						<dl>
+						  <dt>25,25%<span>(28123)</span></dt>
+						  <dd>Стараюсь каждый день – она же гораздо полезнее мяса</dd>
+						  <dt>25,25%<span>(28123)</span></dt>
+						  <dd>Стараюсь каждый день – она же гораздо полезнее мяса</dd>
+						  <dt>25,25%<span>(28123)</span></dt>
+						  <dd>Стараюсь каждый день – она же гораздо полезнее мяса</dd>
+						</dl>
+						<i>Проголосовало: 1. Воздержалось: 1</i>
+					</div>
+					<div class="btn">
+						<button class="btn__item">Голосовать<i><i class="ico-ok"></i></i></button>
+						<a class="link" href="#">воздержаться</a>
+					</div>
+				</form>
+				<!-- END .s-vote -->
+			</div>
+		</div>
+		<!-- END .l -->
+	</div>
+	<div class="push"></div>
+</section>
+<!-- END .wrap -->
+<!-- BEGIN .footer -->
+<footer class="footer">
+	<div class="footer__in">
+		<div class="copyright">
+			<p>© 2008 - 2012  При поддержке Департамента семейной и молодежной политики города Москвы.</p>
+			<p>Свидетельство о регистрации СМИ № ФС77-46066, выдано Роскомнадзором.</p>
+		</div>
+		<ul class="footer__links">
+			<li><span>/</span><a href="#">Условия использования</a></li>
+			<li><span>/</span><a href="#">Ответы на вопросы</a></li>
+			<li><span>/</span><a href="#">Контакты</a></li>
+		</ul>
+		<div class="btn">
+			<button class="btn__item">Обратная связь<i><i class="ico-arr"></i></i></button>
+			<span>Сделано в <a href="#">Смарт-арт</a></span>
+		</div>
+		<div class="footer__social">
+			<span>Мы в сети:</span>
+			<a class="footer__vk" href="#"></a>
+			<a class="footer__ok" href="#"></a>
+		</div>
+		<div class="footer__18plus">18+</div>
+	</div>
+</footer>
+<!-- END .footer -->
+<!-- BEGIN popup -->
+<div id="popup-enter" class="popup popup_enter">	
+	<div class="popup__title">Вход</div>
+	<form class="enter" action="/">
+		<div class="enter__social">
+			<strong>Войти через социальные сети</strong>
+			<a class="enter__vk" href="#"></a>
+			<a class="enter__fb" href="#"></a>
+			<a class="enter__mr" href="#"></a>
+			<a class="enter__gg" href="#"></a>
+			<a class="enter__yr" href="#"></a>
+		</div>
+		<fieldset class="fieldset">
+			<div class="label">
+				<em>или</em>
+				<input class="input-text" type="text" placeholder="Логин">
+			</div>
+			<div class="label">
+				<input class="input-text" type="text" placeholder="пароль">
+				<label class="checkbox"><input type="checkbox" name="vote"><i></i>Запомнить меня</label>
+			</div>
+		</fieldset>
+		<div class="btn">
+			<button class="btn__item">Войти<i><i class="ico-arr"></i></i></button>
+			<a class="link" href="#">Забыли пароль</a>
+		</div>
+	</form>
+</div>
+<div id="popup-reg" class="popup popup_reg">	
+	<div class="popup__title">регистрация</div>
+	<form class="reg" action="/">
+		<fieldset class="fieldset">
+			<em>Заполните поля</em>
+			<input class="input-text" type="text" placeholder="логин">
+			<input class="input-text" type="text" placeholder="e-mail">
+			<input class="input-text" type="text" placeholder="пароль">
+			<input class="input-text" type="text" placeholder="повторите пароль">
+			<label class="checkbox"><input type="checkbox" name="vote"><i></i>Я принимаю <a href="#">пользовательское соглашение</a></label>
+		</fieldset>
+		<div class="btn">
+			<button class="btn__item">Зарегистрироваться<i><i class="ico-arr"></i></i></button>
+		</div>
+	</form>
+</div>
+<div id="popup-subscribe" class="popup popup_subscribe">	
+	<div class="popup__title">Уведомлять меня по e-mail:</div>
+	<form class="subscribe" action="/">
+		<label class="checkbox"><input type="checkbox" checked=""><i></i>О личных сообщениях</label>
+		<label class="checkbox"><input type="checkbox" checked=""><i></i>Об отметках "Нравится"</label>
+		<label class="checkbox"><input type="checkbox" checked=""><i></i>О комментариях к моим публикациям</label>
+		<label class="checkbox"><input type="checkbox" checked=""><i></i>Об ответах на мои комментарии</label>
+		<label class="checkbox"><input type="checkbox" checked=""><i></i>О запросах на добавление в друзья</label>
+		<div class="btn">
+			<button class="btn__item">Сохранить<i><i class="ico-arr"></i></i></button>
+		</div>		 
+	</form>
+</div>
+<!-- END popup -->
+</body>
+</html>
