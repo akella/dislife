@@ -643,7 +643,7 @@ button.btn__item { height: 32px; line-height: 1; overflow: visible; }
 .cats__tabs li.is-active:after { bottom: -25px; border-color: whitesmoke transparent transparent transparent; }
 
 .cats__list { padding: 0 0 0 20px; overflow: hidden; }
-.cats__list ul { float: left; max-width: 190px; margin-left: 60px; }
+.cats__list ul { float: left; max-width: 170px; margin-left: 60px; }
 .cats__list ul:first-child { margin: 0; }
 .cats__list li { margin-bottom: 10px; line-height: 1; }
 .cats__list li.is-active a { color: #e21b33; }
@@ -687,7 +687,7 @@ button.btn__item { height: 32px; line-height: 1; overflow: visible; }
 .articles-cats .h3 { padding-bottom: 15px; border-bottom: 3px solid #474747; }
 
 .articles-cats__list { padding: 10px 0 0 20px; overflow: hidden; }
-.articles-cats__list ul { float: left; max-width: 210px; margin-left: 60px; }
+.articles-cats__list ul { float: left; width: 170px; margin-left: 60px; }
 .articles-cats__list ul:first-child { margin: 0; }
 .articles-cats__list li { margin-bottom: 10px; line-height: 1; }
 .articles-cats__list li.is-active a { color: #e21b33; }
