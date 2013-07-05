@@ -283,6 +283,8 @@ table { border-spacing: 0; border-collapse: collapse; }
 .btn__item > i i { display: block; }
 .btn__item:hover { color: black; background: white; }
 
+.btn__item.not-active > i { background: #dadada; }
+
 button.btn__item { height: 32px; line-height: 1; overflow: visible; }
 
 .btn-del { display: none; position: absolute; right: 8px; bottom: 3px; background: white; }
@@ -687,7 +689,7 @@ button.btn__item { height: 32px; line-height: 1; overflow: visible; }
 .articles-cats .h3 { padding-bottom: 15px; border-bottom: 3px solid #474747; }
 
 .articles-cats__list { padding: 10px 0 0 20px; overflow: hidden; }
-.articles-cats__list ul { float: left; width: 170px; margin-left: 60px; }
+.articles-cats__list ul { float: left; width: 185px; margin-left: 40px; }
 .articles-cats__list ul:first-child { margin: 0; }
 .articles-cats__list li { margin-bottom: 10px; line-height: 1; }
 .articles-cats__list li.is-active a { color: #e21b33; }
@@ -720,6 +722,7 @@ button.btn__item { height: 32px; line-height: 1; overflow: visible; }
 .content p { margin-bottom: 20px; }
 .content a { color: #e21b33; }
 .content a:hover { text-decoration: underline; }
+.content img { max-width: 596px; height: inherit; }
 .content blockquote, .content q { margin: 30px 0 30px -104px; }
 .content blockquote { padding: 30px; border: 1px solid lightgrey; border-width: 1px 0; font-size: 18px; font-style: italic; font-weight: bold; color: #9f9f9f; }
 .content q { position: relative; display: block; padding: 30px 85px 30px 104px; background: #f4f4f4; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.24); font-family: Calibri, Cambria, Arial, Tahoma, sans-serif; font-size: 13px; font-style: italic; color: #505860; }
@@ -744,7 +747,7 @@ button.btn__item { height: 32px; line-height: 1; overflow: visible; }
 .vote { margin-bottom: 50px; padding-left: 104px; }
 .vote .h2 { margin-bottom: 20px; padding-bottom: 5px; border-bottom: 3px solid #dadada; }
 .vote p { padding-right: 80px; font-size: 17px; font-weight: bold; font-style: italic; color: #2c2c2c; }
-.vote .radio { margin-top: 10px; }
+.vote .radio, .vote .checkbox { margin-top: 10px; }
 .vote .input-text { float: none; width: 255px; height: 22px; margin-top: 10px; border: 1px solid #959595; padding: 0 5px; }
 .vote .btn { margin: 30px 0 40px 0; padding-top: 20px; border-top: 1px solid #dadada; }
 
@@ -760,15 +763,14 @@ button.btn__item { height: 32px; line-height: 1; overflow: visible; }
 .vote_s .vote__result dl dt span { margin-left: 5px; color: #9f9f9f; }
 .vote_s .vote__result dl dd { margin-bottom: 10px; line-height: 1.2; }
 
+.vote__result { padding-bottom: 40px; }
 .vote__result p { margin-bottom: 10px; font-size: 17px; font-weight: bold; font-style: italic; color: #2c2c2c; }
 .vote__result table { width: 100%; }
 .vote__result table td { padding: 5px; }
 .vote__result table td:first-child { font-style: italic; color: #2c2c2c; }
 .vote__result table td:first-child span { margin-left: 5px; color: #9f9f9f; }
-
 .vote__result i { display: block; margin-top: 20px; padding-top: 5px; border-top: 1px solid #dadada; font-size: 12px; }
 
-.comm { padding-left: 104px; }
 .comm .pagination { margin-bottom: 20px; padding: 0; }
 
 .comm__top { margin-bottom: 25px; overflow: hidden; }
@@ -777,11 +779,11 @@ button.btn__item { height: 32px; line-height: 1; overflow: visible; }
 
 .comm__sum { float: right; margin-top: 8px; font-size: 12px; font-style: italic; color: #9f9f9f; }
 
-.comm__post { position: relative; }
+.comm__post { position: relative; border-top: 1px solid #dadada; padding-top: 15px; }
 .comm__post:hover .comm__complains { display: block; }
 
 .comm__pic { position: relative; float: left; margin-right: 20px; }
-.comm__pic img { display: block; border: 1px solid whitesmoke; }
+.comm__pic img { display: block; border: 1px solid whitesmoke; width: 50px; }
 
 .comm__data { overflow: hidden; }
 
@@ -796,16 +798,15 @@ button.btn__item { height: 32px; line-height: 1; overflow: visible; }
 .comm__links a { margin-right: 15px; font-size: 12px; font-style: italic; }
 .comm__links a span { margin-left: 3px; color: #9f9f9f; }
 
-.comm__complains { display: none; position: absolute; top: 0; right: 0; }
-.comm__complains .ico-complains { display: block; }
+.comm__complains { display: none; position: absolute; top: -6px; right: 0; }
+.comm__complains .ico-complains { display: block; cursor: pointer; }
 .comm__complains ul { display: none; position: absolute; top: 5px; right: 13px; padding: 12px; border: 1px solid #e21b33; background: white; }
 .comm__complains li { padding: 0 0 0 10px; white-space: nowrap; font-style: italic; font-size: 13px; }
 .comm__complains li:first-child { padding: 0 0 5px 0; }
 .comm__complains li a { font-weight: bold; text-decoration: underline; }
 .comm__complains li a:hover { text-decoration: none; }
-.comm__complains:hover ul { display: block; }
 
-.comm__reply { padding-left: 79px; }
+.comm__reply { padding-left: 20px; }
 
 .comm__form { padding-bottom: 20px; }
 .comm__form .btn { padding-top: 17px; }
