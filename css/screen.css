@@ -115,7 +115,7 @@ table { border-spacing: 0; border-collapse: collapse; }
 .selectBox-dropdown .selectBox-label { position: relative; display: block; height: 30px; padding-left: 14px; line-height: 30px; font-style: italic; font-weight: bold; cursor: pointer; }
 .selectBox-dropdown .selectBox-arrow { position: absolute; top: 4px; right: 4px; background: url('../img/icons-s0b3b03bad2.png') 0 -779px no-repeat; width: 22px; height: 22px; }
 
-.selectBox-dropdown-menu { position: absolute; top: -1px; z-index: 99999; border: 1px solid #959595; border-width: 0 1px 1px 1px; background: white; }
+.selectBox-dropdown-menu { position: absolute; top: -1px; z-index: 99999; border: 1px solid #959595; border-width: 0 1px 1px 1px; background: white; max-height: 336px; overflow: auto; }
 
 .selectBox-options a { display: block; padding: 3px 10px 3px 14px; font-style: italic; color: #959595; cursor: pointer; }
 .selectBox-options a:hover { color: black; }
