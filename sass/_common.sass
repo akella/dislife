@@ -1,1226 +1,1229 @@
 @import "base"
 * 
-	margin: 0
-	padding: 0 
-	//-webkit-text-size-adjust: none
+    margin: 0
+    padding: 0
+    //-webkit-text-size-adjust: none
 html, body 
-	height: 100%
+    height: 100%
 body
-	background: url(../img/bg.jpg) 
-	font-family: Cambria, Colibri, Arial, Tahoma, sans-serif
-	font-weight: normal 
-	font-size: 14px
-	color: $font
-	line-height: 1.4
-	//-webkit-transform: translate3d(0,0,0);
-	//-weblit-backface-visibility: hidden;
+    background: url(../img/bg.jpg)
+    font-family: Cambria, Colibri, Arial, Tahoma, sans-serif
+    font-weight: normal
+    font-size: 14px
+    color: $font
+    line-height: 1.4
+    //-webkit-transform: translate3d(0,0,0);
+    //-weblit-backface-visibility: hidden;
 // resets
 a img, fieldset 
-	border: none
+    border: none
 a
-	color: #2c2c2c 
-	text-decoration: none
-	&:hover
-		color: $red 
+    color: #2c2c2c
+    text-decoration: none
+    &:hover
+        color: $red
 p
-	line-height: 1.2
+    line-height: 1.2
 li 
-	list-style: none
+    list-style: none
 textarea, button, select, input
-	border: none
-	outline: none
-	font-family: Cambria, Colibri, Arial, Tahoma, sans-serif
+    border: none
+    outline: none
+    font-family: Cambria, Colibri, Arial, Tahoma, sans-serif
 button 
-	line-height: 1
-	cursor: pointer
-	&::-moz-focus-inner
-		padding: 0
-		border: 0
+    line-height: 1
+    cursor: pointer
+    &::-moz-focus-inner
+        padding: 0
+        border: 0
 table 
-	border-spacing: 0
-	border-collapse: collapse
+    border-spacing: 0
+    border-collapse: collapse
 // common styles
 .wrap
-	min-height: 100%
-	height: auto !important
-	height: 100%
-	margin: 0 auto -225px
+    min-height: 100%
+    height: auto !important
+    height: 100%
+    margin: 0 auto -225px
 .wrap__in
-	position: relative
-	width: 1020px
-	margin: 0 auto
-	padding-top: 35px
-	background: #FFF 
-	box-shadow: 0 0 5px rgba(0,0,0,.2)
-	z-index: 10 
+    position: relative
+    width: 1020px
+    margin: 0 auto
+    padding-top: 35px
+    background: #FFF
+    box-shadow: 0 0 5px rgba(0,0,0,.2)
+    z-index: 10
 .push
-	height: 225px
-	clear: both
+    height: 225px
+    clear: both
 .h2
-	font-size: 22px
+    font-size: 22px
 .h3
-	font-size: 17px
+    font-size: 17px
 .h2, .h3
-	margin-bottom: 15px
-	+font
-	text-transform: uppercase
+    margin-bottom: 15px
+    +font
+    text-transform: uppercase
 .h3_yellow, .h3_blue, .h3_green, .h3_red, .h3_red-big
-	position: relative
-	padding-left: 20px
-	overflow: hidden
-	i
-		position: absolute
-		top: 2px
-		left: 3px
-	.link
-		float: right
-		margin-top: 3px
-		text-transform: lowercase
-		font-weight: normal
+    position: relative
+    padding-left: 20px
+    overflow: hidden
+    i
+        position: absolute
+        top: 2px
+        left: 3px
+    .link
+        float: right
+        margin-top: 3px
+        text-transform: lowercase
+        font-weight: normal
 .h3_yellow
-	i
-		+s(h2-yellow)
+    i
+        +s(h2-yellow)
 .h3_blue
-	i
-		+s(h2-blue)
+    i
+        +s(h2-blue)
 .h3_green
-	i
-		+s(h2-green) 
+    i
+        +s(h2-green)
 .h3_red
-	i
-		+s(h2-red)		
+    i
+        +s(h2-red)
 .h3_red-big
-	margin-bottom: 30px
-	padding: 0 0 10px 30px
-	border-bottom: 3px solid #4d4d4d 
-	font-size: 22px
-	i
-		top: 6px
-		left: 10px
-		+s(h2-red)
-	span
-		margin-left: 5px
-		color: $red 
+    margin-bottom: 30px
+    padding: 0 0 10px 30px
+    border-bottom: 3px solid #4d4d4d
+    font-size: 22px
+    i
+        top: 6px
+        left: 10px
+        +s(h2-red)
+    span
+        margin-left: 5px
+        color: $red
 .title
-	margin-bottom: 20px
-	padding: 17px 0 14px 0
-	+font	
-	text-transform: uppercase
-	.h2
-		display: block
-		margin-bottom: 0
-		font-size: 22px
-	a
-		position: relative
-		padding-left: 20px 
-		font-size: 12px
-		font-weight: bold
-		color: $red 
-		.ico-arr-l
-			position: absolute
-			top: -1px
-			left: 0
-		&:hover
-			text-decoration: underline
+    margin-bottom: 20px
+    padding: 17px 0 14px 0
+    +font
+    text-transform: uppercase
+    .h2
+        display: block
+        margin-bottom: 0
+        font-size: 22px
+    a
+        position: relative
+        padding-left: 20px
+        font-size: 12px
+        font-weight: bold
+        color: $red
+        .ico-arr-l
+            position: absolute
+            top: -1px
+            left: 0
+        &:hover
+            text-decoration: underline
 .title_mod
-	position: relative
-	padding: 0 0 0 104px
-	text-transform: none
-	.h2		
-		font-size: 27px	
-		text-transform: none
-	.link-plus
-		position: absolute
-		top: 10px
-		right: 0
-		padding-left: 30px
-		font-size: 14px
+    position: relative
+    padding: 0 0 0 104px
+    text-transform: none
+    .h2
+        font-size: 27px
+        text-transform: none
+    .link-plus
+        position: absolute
+        top: 10px
+        right: 0
+        padding-left: 30px
+        font-size: 14px
 .title_yellow
-	border-bottom: 3px solid #f7c706
+    border-bottom: 3px solid #f7c706
 .title_blue
-	border-bottom: 3px solid #18b7df
+    border-bottom: 3px solid #18b7df
 .title_green
-	border-bottom: 3px solid #8dc11c
+    border-bottom: 3px solid #8dc11c
 .title_red
-	border-bottom: 3px solid #ff6b3d
+    border-bottom: 3px solid #ff6b3d
 .title-big
-	position: relative
-	padding: 0 0 0 104px
-	.h2
-		margin-bottom: 20px
-		+font	
-		text-transform: uppercase
-		font-size: 45px 
-		line-height: 1
-	a
-		position: absolute
-		top: 14px
-		right: 0		
+    position: relative
+    padding: 0 0 0 104px
+    .h2
+        margin-bottom: 20px
+        +font
+        text-transform: uppercase
+        font-size: 45px
+        line-height: 1
+    a
+        position: absolute
+        top: 14px
+        right: 0
 .label-cat
-	display: block
-	min-width: 50px	
-	padding: 0 5px
-	background: #f56c7c 
-	text-align: center
-	font-size: 10px
-	font-weight: bold 
-	color: #FFF  
-	text-transform: uppercase
-	&:hover
-		color: #FFF
+    display: block
+    min-width: 50px
+    padding: 0 5px
+    background: #f56c7c
+    text-align: center
+    font-size: 10px
+    font-weight: bold
+    color: #FFF
+    text-transform: uppercase
+    &:hover
+        color: #FFF
 .label-count
-	+font
-	font-size: 16px
-	font-weight: bold
-	text-transform: uppercase
-	color: #434343 
-	span
-		margin-left: 3px
-		font-size: 14px
-		color: $red
+    +font
+    font-size: 16px
+    font-weight: bold
+    text-transform: uppercase
+    color: #434343
+    span
+        margin-left: 3px
+        font-size: 14px
+        color: $red
 //forms
 .radio, .checkbox
-	position: relative
-	display: block
-	padding-left: 25px	
-	+no-select
-	input, i
-		position: absolute
-		top: 1px
-		left: 0
-		width: 14px
-		height: 14px		
-		border: 1px solid #989898
-	i
-		background: #FFF 
-	input
-		opacity: 0
-	input[type="radio"]:checked + i, input[type="checkbox"]:checked + i
-		&:after
-			content: "" 
-			position: absolute
-			top: 2px
-			left: 2px
-			right: 2px
-			bottom: 2px			
-			background: $red 
+    position: relative
+    display: block
+    padding-left: 25px
+    +no-select
+    input, i
+        position: absolute
+        top: 1px
+        left: 0
+        width: 14px
+        height: 14px
+        border: 1px solid #989898
+    i
+        background: #FFF
+    input
+        opacity: 0
+    input[type="radio"]:checked + i, input[type="checkbox"]:checked + i
+        &:after
+            content: ""
+            position: absolute
+            top: 2px
+            left: 2px
+            right: 2px
+            bottom: 2px
+            background: $red
 .checkbox
-	font-style: italic
+    font-style: italic
 .radio
-	input, i
-		border-radius: 50%
-	input[type="radio"]:checked + i
-		&:after
-			border-radius: 50%
+    input, i
+        border-radius: 50%
+    input[type="radio"]:checked + i
+        &:after
+            border-radius: 50%
 .fieldset
-	@extend %clr
-	.label, .checkbox, .radio
-		float: left
-		margin-right: 25px
-	.checkbox, .radio
-		margin-top: 7px
-		font-style: italic
+    @extend %clr
+    .label, .checkbox, .radio
+        float: left
+        margin-right: 25px
+    .checkbox, .radio
+        margin-top: 7px
+        font-style: italic
 .label
-	display: block
-	@extend %clr
-	em
-		float: left
-		margin-top: 7px
-		text-align: right
-		font-style: italic
-		&.label__lh
-			margin-top: 2px
-			line-height: 1
-	.selectBox-dropdown
-		float: left
-		span
-			font-weight: normal
+    display: block
+    @extend %clr
+    em
+        float: left
+        margin-top: 7px
+        text-align: right
+        font-style: italic
+        &.label__lh
+            margin-top: 2px
+            line-height: 1
+    .selectBox-dropdown
+        float: left
+        span
+            font-weight: normal
 .input-text
-	float: left
-	height: 30px
-	padding: 0 7px
-	border: 1px solid $brd
-	border-radius: 0 15px 15px 0
-	font-size: 14px
+    float: left
+    height: 30px
+    padding: 0 7px
+    border: 1px solid $brd
+    border-radius: 0 15px 15px 0
+    font-size: 14px
 .input-text_mod
-	border-radius: 15px 0 0 15px
+    border-radius: 15px 0 0 15px
 .selectBox-dropdown
-	position: relative
-	width: 273px
-	background: #FFF 
-	border: 1px solid $brd
-	border-radius: 0 15px 15px 0
-	outline: none
-	&:hover
-		.selectBox-arrow
-			+s(ico-select-h)
-	&.selectBox-active
-		border-radius: 0 15px 0 0
-		.selectBox-arrow
-			+s(ico-select-h)
-	.selectBox-label
-		position: relative
-		display: block
-		height: 30px
-		padding-left: 14px
-		line-height: 30px 
-		font-style: italic 
-		font-weight: bold
-		//color: #959595  
-		cursor: pointer		
-	.selectBox-arrow
-		position: absolute
-		top: 4px
-		right: 4px
-		+s(ico-select)
+    position: relative
+    width: 273px
+    background: #FFF
+    border: 1px solid $brd
+    border-radius: 0 15px 15px 0
+    outline: none
+    &:hover
+        .selectBox-arrow
+            +s(ico-select-h)
+    &.selectBox-active
+        border-radius: 0 15px 0 0
+        .selectBox-arrow
+            +s(ico-select-h)
+    .selectBox-label
+        position: relative
+        display: block
+        height: 30px
+        padding-left: 14px
+        line-height: 30px
+        font-style: italic
+        font-weight: bold
+        //color: #959595
+        cursor: pointer
+    .selectBox-arrow
+        position: absolute
+        top: 4px
+        right: 4px
+        +s(ico-select)
 .selectBox-dropdown-menu
-	position: absolute
-	top: -1px
-	z-index: 99999
-	border: 1px solid $brd
-	border-width: 0 1px 1px 1px
-	background: #FFF
+    position: absolute
+    top: -1px
+    z-index: 99999
+    border: 1px solid $brd
+    border-width: 0 1px 1px 1px
+    background: #FFF
 .selectBox-options 
-	a
-		display: block
-		padding: 3px 10px 3px 14px
-		font-style: italic
-		color: #959595		
-		cursor: pointer
-		&:hover 
-			color: #000
-	li
-		&.selectBox-selected
-			a
-				color: #000				
+    a
+        display: block
+        padding: 3px 10px 3px 14px
+        font-style: italic
+        color: #959595
+        cursor: pointer
+        &:hover
+            color: #000
+    li
+        &.selectBox-selected
+            a
+                color: #000
 .textarea
-	display: block
-	width: 410px
-	height: 70px
-	padding: 5px 7px 
-	border: 1px solid $brd
-	resize: vertical
-	font-size: 14px	
+    display: block
+    width: 410px
+    height: 70px
+    padding: 5px 7px
+    border: 1px solid $brd
+    resize: vertical
+    font-size: 14px
 //meta
 .meta
-	padding-top: 10px
-	overflow: hidden
-	color: #9f9f9f 
-	span
-		float: left
-		margin-left: 10px
-		font-size: 12px
-		font-style: italic 	
-		&:first-child
-			margin: 0
-	i
-		float: left
-		margin: 2px 3px 0 0
+    padding-top: 10px
+    overflow: hidden
+    color: #9f9f9f
+    span
+        float: left
+        margin-left: 10px
+        font-size: 12px
+        font-style: italic
+        &:first-child
+            margin: 0
+    i
+        float: left
+        margin: 2px 3px 0 0
 .meta_white
-	color: #FFF
-	.ico-comm
-		+s(comm-white)
-	.ico-view
-		+s(view-white)
+    color: #FFF
+    .ico-comm
+        +s(comm-white)
+    .ico-view
+        +s(view-white)
 //icons
 .ico-comm
-	+s(comm-gray)
+    +s(comm-gray)
 .ico-view
-	+s(view-gray)
+    +s(view-gray)
 .ico-plus
-	+s(ico-plus)
+    +s(ico-plus)
 .ico-setting
-	+s(ico-setting)
+    +s(ico-setting)
 .ico-ok
-	+s(ico-ok)
+    +s(ico-ok)
 .ico-arr
-	+s(ico-arr)
+    +s(ico-arr)
 .ico-arr-d
-	+s(ico-arr-d)
+    +s(ico-arr-d)
 .ico-arr-l
-	+s(ico-arr-l)
+    +s(ico-arr-l)
 .arr-left
-	+s(arr-left)
+    +s(arr-left)
 .ico-question
-	+s(ico-question)
+    +s(ico-question)
 .ico-back
-	+s(ico-back)
+    +s(ico-back)
 .ico-complains
-	+s(ico-complains)
+    +s(ico-complains)
 .ico-arr-top
-	+s(ico-arr-top)
+    +s(ico-arr-top)
 //wtf
 .wtf
-	overflow: hidden
-	font-size: 14px
-	color: #9f9f9f 
-	line-height: 1.3
-	& > a			
-		+font-c
-		color: #343434 
-		&:hover
-			color: $red
-			text-decoration: none 
-	a, span, em, strong
-		margin-right: 5px
-	a	
-		font-weight: bold
-	span
-		+font-c
-	i
-		font-size: 12px
-	em
-		color: #2c2c2c
-	strong
-		color: $red  
-	.link
-		font-size: 14px
-		&:before
-			top: 5px
+    overflow: hidden
+    font-size: 14px
+    color: #9f9f9f
+    line-height: 1.3
+    & > a
+        +font-c
+        color: #343434
+        &:hover
+            color: $red
+            text-decoration: none
+    a, span, em, strong
+        margin-right: 5px
+    a
+        font-weight: bold
+    span
+        +font-c
+    i
+        font-size: 12px
+    em
+        color: #2c2c2c
+    strong
+        color: $red
+    .link
+        font-size: 14px
+        &:before
+            top: 5px
 //rating
 .rating
-	float: left
-	button, span
-		float: left
-	button
-		border-radius: 50%
-		background: #2c2c2c
-		&:hover, &.is-voted
-			background: $red 
-	span
-		padding: 0 6px
-		color: #9f9f9f 
-	i
-		display: block
+    float: left
+    button, span
+        float: left
+    button
+        border-radius: 50%
+        background: #2c2c2c
+        &:hover, &.is-voted
+            background: $red
+    span
+        padding: 0 6px
+        color: #9f9f9f
+    i
+        display: block
 .rating__up
-	i
-		+s(btn-up)
+    i
+        +s(btn-up)
 .rating__down
-	i
-		+s(btn-down)
+    i
+        +s(btn-down)
 //experts-slider
 .experts-slider
-	height: 81px
-	background: url(../img/bg-dark.jpg) 
-	overflow: hidden
-	button
-		position: relative
-		width: 40px
-		height: 81px
-		background: none
-		overflow: visible 
-		i
-			position: absolute
-			top: 50%
-			left: 50%
-			margin: -13px 0 0 -13px 
-		&:hover
-			background: $red
-			&.disabled
-				background: none
-				cursor: default 
+    height: 81px
+    background: url(../img/bg-dark.jpg)
+    overflow: hidden
+    button
+        position: relative
+        width: 40px
+        height: 81px
+        background: none
+        overflow: visible
+        i
+            position: absolute
+            top: 50%
+            left: 50%
+            margin: -13px 0 0 -13px
+        &:hover
+            background: $red
+            &.disabled
+                background: none
+                cursor: default
 .experts-slider__prev
-	float: left
-	border-right: 1px solid #413f3f
-	i
-		+s(arr-prev)
-	&.disabled
-		i
-			+s(arr-prev-dis)
+    float: left
+    border-right: 1px solid #413f3f
+    i
+        +s(arr-prev)
+    &.disabled
+        i
+            +s(arr-prev-dis)
 .experts-slider__next
-	float: right
-	border-left: 1px solid #413f3f 
-	i
-		+s(arr-next)
-	&.disabled
-		i
-			+s(arr-next-dis)
+    float: right
+    border-left: 1px solid #413f3f
+    i
+        +s(arr-next)
+    &.disabled
+        i
+            +s(arr-next-dis)
 .experts-slider__in
-	width: 230px
+    width: 230px
 .experts-slider__item
-	padding: 13px
-	white-space: normal
-	img
-		float: left
-		margin-right: 12px 
-		border: 1px solid #413f3f 
-	a
-		+font-c
-		font-size: 16px
-		color: #FFF
-		&:hover
-			text-decoration: underline
-	span
-		display: block
-		font-size: 12px 
-		color: #acacac
-		font-style: italic  
+    padding: 13px
+    white-space: normal
+    img
+        float: left
+        margin-right: 12px
+        border: 1px solid #413f3f
+    a
+        +font-c
+        font-size: 16px
+        color: #FFF
+        &:hover
+            text-decoration: underline
+    span
+        display: block
+        font-size: 12px
+        color: #acacac
+        font-style: italic
 //header
 .header
-	position: relative
-	width: 772px
-	height: 120px
-	margin: 0 auto	
-	z-index: 1000 
+    position: relative
+    width: 772px
+    height: 120px
+    margin: 0 auto
+    z-index: 1000
 .logo
-	position: absolute
-	top: 44px
-	left: 3px
-	a
-		display: block
-		+s(logo)
-		@extend %ht
+    position: absolute
+    top: 44px
+    left: 3px
+    a
+        display: block
+        +s(logo)
+        @extend %ht
 .version
-	position: absolute
-	top: 68px
-	left: 270px
-	font-style: italic
-	text-decoration: underline  
-	font-size: 13px
-	color: $font 
-	&:hover
-		text-decoration: none
+    position: absolute
+    top: 68px
+    left: 270px
+    font-style: italic
+    text-decoration: underline
+    font-size: 13px
+    color: $font
+    &:hover
+        text-decoration: none
 .links
-	position: absolute
-	top: 7px
-	right: 5px
-	a, span
-		float: left
-	a
-		font-weight: bold
-		text-decoration: underline
-		&:hover
-			text-decoration: none
-	span
-		margin: 1px 6px 0 6px
-		font-size: 13px
-		font-style: italic 
-		color: #a2a2a2
+    position: absolute
+    top: 7px
+    right: 5px
+    a, span
+        float: left
+    a
+        font-weight: bold
+        text-decoration: underline
+        &:hover
+            text-decoration: none
+    span
+        margin: 1px 6px 0 6px
+        font-size: 13px
+        font-style: italic
+        color: #a2a2a2
 .links__enter
-	position: relative
-	padding-left: 17px  
-	i
-		position: absolute
-		top: 3px
-		left: 0
-		+s(enter)
+    position: relative
+    padding-left: 17px
+    i
+        position: absolute
+        top: 3px
+        left: 0
+        +s(enter)
 .header__search
-	position: absolute
-	top: 58px
-	right: 0
-	border: 1px solid $brd
-	border-radius: 0 13px 13px 0
-	input, button
-		float: left
-	input
-		width: 115px
-		height: 26px
-		padding: 0 10px
-		font-style: italic 
-	button
-		margin: 3px
-		background: $red
-		border-radius: 50%
-		i
-			display: block
-			+s(search)
+    position: absolute
+    top: 58px
+    right: 0
+    border: 1px solid $brd
+    border-radius: 0 13px 13px 0
+    input, button
+        float: left
+    input
+        width: 115px
+        height: 26px
+        padding: 0 10px
+        font-style: italic
+    button
+        margin: 3px
+        background: $red
+        border-radius: 50%
+        i
+            display: block
+            +s(search)
 //nav
 .nav	
-	max-width: 940px
-	margin: 0 auto	
-	text-align: center
-	font-size: 0	
-	ul, li	
-		display: inline-block
-		vertical-align: top
-	ul
-		min-width: 772px
-		border-top: 3px solid $red 
-	li		
-		padding: 24px 0				
-		&:first-child
-			span
-				display: none
-		&.is-active
-			a
-				color: $red 
-	a
-		+font
-		font-size: 15px
-		font-weight: bold
-		text-transform: uppercase
-	span
-		padding: 0 13px
-		font-size: 14px
-		font-weight: bold
-		color: $red 
+    max-width: 940px
+    margin: 0 auto
+    text-align: center
+    font-size: 0
+    ul, li
+        display: inline-block
+        vertical-align: top
+    ul
+        min-width: 772px
+        border-top: 3px solid $red
+    li
+        padding: 24px 0
+        &:first-child
+            span
+                display: none
+        &.is-active
+            a
+                color: $red
+    a
+        +font
+        font-size: 15px
+        font-weight: bold
+        text-transform: uppercase
+    span
+        padding: 0 13px
+        font-size: 14px
+        font-weight: bold
+        color: $red
 .nav_inner
-	margin-bottom: 35px 
-	ul
-		border-bottom: 1px solid #b6b6b6 
+    margin-bottom: 35px
+    ul
+        border-bottom: 1px solid #b6b6b6
 //link
 .link, .link-plus, .link-setting
-	position: relative
-	font-style: italic
-	color: $red 	 
-	&:hover
-		text-decoration: underline 
+    position: relative
+    font-style: italic
+    color: $red
+    &:hover
+        text-decoration: underline
 .link	
-	padding-left: 10px 
-	font-size: 13px	
-	&:before
-		content: ""
-		position: absolute
-		left: 0
-		top: 6px		
-		+s(arr-link)		
+    padding-left: 10px
+    font-size: 13px
+    &:before
+        content: ""
+        position: absolute
+        left: 0
+        top: 6px
+        +s(arr-link)
 .link-plus, .link-setting
-	padding-left: 30px
-	font-size: 14px
-	font-weight: bold
-	& > i
-		position: absolute
-		top: -3px
-		left: 0
-		background: $red
-		border-radius: 50% 
-		i
-			display: block
+    padding-left: 30px
+    font-size: 14px
+    font-weight: bold
+    & > i
+        position: absolute
+        top: -3px
+        left: 0
+        background: $red
+        border-radius: 50%
+        i
+            display: block
 .link-arr
-	position: relative
-	padding-left: 20px
-	font-style: italic
-	.ico-arr-l
-		position: absolute
-		top: 1px
-		left: 0
+    position: relative
+    padding-left: 20px
+    font-style: italic
+    .ico-arr-l
+        position: absolute
+        top: 1px
+        left: 0
 //footer
 .footer
-	width: 1020px
-	height: 225px
-	margin: 0 auto
-	background: #FFF 
-	box-shadow: 0 0 5px rgba(0,0,0,.2)
+    width: 1020px
+    height: 225px
+    margin: 0 auto
+    background: #FFF
+    box-shadow: 0 0 5px rgba(0,0,0,.2)
 .footer__in
-	position: relative
-	padding: 40px
-	.btn
-		.btn__item
-			margin-right: 25px
-		span
-			float: left
-			margin-top: 6px
-			font-style: italic
-			color: #959595 
+    position: relative
+    padding: 40px
+    .btn
+        .btn__item
+            margin-right: 25px
+        span
+            float: left
+            margin-top: 6px
+            font-style: italic
+            color: #959595
 .copyright
-	margin-bottom: 15px
-	font-size: 13px
-	color: #959595 
-	line-height: 1.3
+    margin-bottom: 15px
+    font-size: 13px
+    color: #959595
+    line-height: 1.3
 .footer__links
-	margin-bottom: 20px
-	overflow: hidden
-	li
-		float: left
-		font-style: italic
-		&:first-child
-			span
-				display: none
-	span
-		margin: 0 5px
+    margin-bottom: 20px
+    overflow: hidden
+    li
+        float: left
+        font-style: italic
+        &:first-child
+            span
+                display: none
+    span
+        margin: 0 5px
 .footer__social
-	position: absolute
-	top: 40px
-	right: 40px
-	z-index: 5 
-	span, a
-		float: left
-	span
-		margin: 2px 5px 0 0
-	a
-		margin-left: 6px
+    position: absolute
+    top: 40px
+    right: 40px
+    z-index: 5
+    span, a
+        float: left
+    span
+        margin: 2px 5px 0 0
+    a
+        margin-left: 6px
 .footer__vk
-	+s(soc-vk)
+    +s(soc-vk)
 .footer__ok
-	+s(soc-ok)
+    +s(soc-ok)
 .footer__18plus
-	position: absolute
-	top: 55px
-	right: 40px
-	font-size: 82px 
-	font-weight: bold
-	letter-spacing: -4px
-	color: #ececec 
+    position: absolute
+    top: 55px
+    right: 40px
+    font-size: 82px
+    font-weight: bold
+    letter-spacing: -4px
+    color: #ececec
 //btn
 .btn
-	overflow: hidden
-	.link, .link-arr
-		float: left
-		margin-top: 6px
+    overflow: hidden
+    .link, .link-arr
+        float: left
+        margin-top: 6px
 .btn__item
-	position: relative
-	float: left
-	height: 28px
-	margin-right: 10px
-	padding: 0 40px 0 15px
-	background: #2c2c2c 
-	border-radius: 0 16px 16px 0
-	border: 1px solid #2c2c2c
-	line-height: 28px
-	font-style: italic 
-	font-weight: bold
-	color: #FFF 
-	& > i		
-		position: absolute
-		top: 3px
-		right: 3px
-		width: 24px
-		height: 24px
-		background: $red
-		border-radius: 50% 
-		i
-			display: block
-	&:hover
-		color: #000
-		background: #FFF 
+    position: relative
+    float: left
+    height: 28px
+    margin-right: 10px
+    padding: 0 40px 0 15px
+    background: #2c2c2c
+    border-radius: 0 16px 16px 0
+    border: 1px solid #2c2c2c
+    line-height: 28px
+    font-style: italic
+    font-weight: bold
+    color: #FFF
+    & > i
+        position: absolute
+        top: 3px
+        right: 3px
+        width: 24px
+        height: 24px
+        background: $red
+        border-radius: 50%
+        i
+            display: block
+    &:hover
+        color: #000
+        background: #FFF
+.btn__item.not-active
+    & > i
+        background: #dadada
 button	
-	&.btn__item
-		height: 32px
-		line-height: 1
-		overflow: visible
+    &.btn__item
+        height: 32px
+        line-height: 1
+        overflow: visible
 .btn-del
-	display: none
-	position: absolute
-	right: 8px
-	bottom: 3px
-	background: #FFF 
-	i
-		display: block
-		+s(del)
+    display: none
+    position: absolute
+    right: 8px
+    bottom: 3px
+    background: #FFF
+    i
+        display: block
+        +s(del)
 //banners
 .banner-top
-	width: 940px
-	height: 85px
-	margin: 0 auto
+    width: 940px
+    height: 85px
+    margin: 0 auto
 //back
 .back
-	margin-bottom: 20px
-	padding-left: 75px
-	a
-		position: relative
-		font-weight: bold
-		font-style: italic
-		padding-left: 30px 
-		& > i
-			position: absolute
-			top: -4px
-			left: 0
-			background: $red
-			border-radius: 50% 
-	.ico-back
-		display: block
+    margin-bottom: 20px
+    padding-left: 75px
+    a
+        position: relative
+        font-weight: bold
+        font-style: italic
+        padding-left: 30px
+        & > i
+            position: absolute
+            top: -4px
+            left: 0
+            background: $red
+            border-radius: 50%
+    .ico-back
+        display: block
 //slider
 .slider
-	position: relative
-	margin-bottom: 30px
+    position: relative
+    margin-bottom: 30px
 .slider__item
-	width: 1020px
+    width: 1020px
 .slider__item-in
-	position: relative
-	overflow: hidden
+    position: relative
+    overflow: hidden
 .slider__bg, .slider__detail
-	background: url(../img/bg-dark.jpg) 
+    background: url(../img/bg-dark.jpg)
 .slider__bg
-	float: left
-	width: 125px
-	height: 180px	
-	margin-top: 40px
+    float: left
+    width: 125px
+    height: 180px
+    margin-top: 40px
 .slider__pic
-	float: left
-	img
-		display: block
+    float: left
+    img
+        display: block
 .slider__detail
-	position: absolute
-	top: 40px
-	right: 0
-	width: 310px
-	height: 150px 
-	padding: 30px 140px 0 65px
-	a
-		position: relative
-		display: block
-		min-height: 100px
-		border-bottom: 1px solid #404148 
-		white-space: normal
-		font-size: 22px
-		font-style: italic
-		font-weight: bold 
-		color: #FFF
-		&:before
-			content: ""
-			position: absolute
-			top: 2px
-			left: -35px
-			+s(arr-next-red) 
-		&:hover
-			&:before
-				+s(arr-next) 
-	.meta
-		padding-top: 14px
-		opacity: .5
+    position: absolute
+    top: 40px
+    right: 0
+    width: 310px
+    height: 150px
+    padding: 30px 140px 0 65px
+    a
+        position: relative
+        display: block
+        min-height: 100px
+        border-bottom: 1px solid #404148
+        white-space: normal
+        font-size: 22px
+        font-style: italic
+        font-weight: bold
+        color: #FFF
+        &:before
+            content: ""
+            position: absolute
+            top: 2px
+            left: -35px
+            +s(arr-next-red)
+        &:hover
+            &:before
+                +s(arr-next)
+    .meta
+        padding-top: 14px
+        opacity: .5
 .slider__prev, .slider__next
-	position: absolute
-	top: 150px
-	z-index: 10 
+    position: absolute
+    top: 150px
+    z-index: 10
 .slider__prev
-	right: 90px
-	+s(arr-prev-big)
-	&:hover
-		+s(arr-prev-big-h)
+    right: 90px
+    +s(arr-prev-big)
+    &:hover
+        +s(arr-prev-big-h)
 .slider__next
-	right: 40px
-	+s(arr-next-big)
-	&:hover
-		+s(arr-next-big-h)
+    right: 40px
+    +s(arr-next-big)
+    &:hover
+        +s(arr-next-big-h)
 .slider__count
-	position: absolute
-	top: 157px
-	right: 5px
-	z-index: 10
-	font-size: 18px
-	font-style: italic
-	color: #767676 		
-	span
-		color: #2c2c2c 
+    position: absolute
+    top: 157px
+    right: 5px
+    z-index: 10
+    font-size: 18px
+    font-style: italic
+    color: #767676
+    span
+        color: #2c2c2c
 .slider_inner
-	margin: 0 0 50px -20px 
-	.slider__prev
-		right: 110px
-		+s(arr-prev-big-b)
-		&:hover
-			+s(arr-prev-big-h)
-	.slider__next 
-		right: 60px
-		+s(arr-next-big-b)
-		&:hover
-			+s(arr-next-big-h)
-	.slider__bg, .slider__detail
-		background: rgba(245,245,245,.9)
-	.slider__detail
-		width: 140px 
-		padding: 30px 310px 0 65px
-		white-space: normal
-		line-height: 1
-		em
-			font-size: 12px		
+    margin: 0 0 50px -20px
+    .slider__prev
+        right: 110px
+        +s(arr-prev-big-b)
+        &:hover
+            +s(arr-prev-big-h)
+    .slider__next
+        right: 60px
+        +s(arr-next-big-b)
+        &:hover
+            +s(arr-next-big-h)
+    .slider__bg, .slider__detail
+        background: rgba(245,245,245,.9)
+    .slider__detail
+        width: 140px
+        padding: 30px 310px 0 65px
+        white-space: normal
+        line-height: 1
+        em
+            font-size: 12px
 //share
 .share
-	position: relative
-	i
-		display: block
-		+s(share)
-	&:hover
-		.share__up
-			display: block
+    position: relative
+    i
+        display: block
+        +s(share)
+    &:hover
+        .share__up
+            display: block
 .share__up
-	display: none
-	position: absolute
-	bottom: 0
-	left: 0	
-	padding-bottom: 25px
-	a
-		display: block
+    display: none
+    position: absolute
+    bottom: 0
+    left: 0
+    padding-bottom: 25px
+    a
+        display: block
 .share__tw
-	+s(tw)
-	&:hover
-		+s(tw-h)
+    +s(tw)
+    &:hover
+        +s(tw-h)
 .share__vk
-	+s(vk)
-	&:hover
-		+s(vk-h)
+    +s(vk)
+    &:hover
+        +s(vk-h)
 .share__fb
-	+s(fb)
-	&:hover
-		+s(fb-h)
+    +s(fb)
+    &:hover
+        +s(fb-h)
 //star
 .star
-	i
-		display: block
-		+s(star)
-	&:hover, &.is-active
-		i
-			+s(star-h)
+    i
+        display: block
+        +s(star)
+    &:hover, &.is-active
+        i
+            +s(star-h)
 //cube
 .cube
-	position: absolute
-	top: 1px
-	right: 1px
-	width: 7px
-	height: 7px
-	background: #FFF
-	border: 2px solid $red 
+    position: absolute
+    top: 1px
+    right: 1px
+    width: 7px
+    height: 7px
+    background: #FFF
+    border: 2px solid $red
 //breadcrumbs
 .breadcrumbs
-	margin-bottom: 5px
-	a, span
-		+font-c
-		font-size: 27px 
-		font-weight: bold
-	a
-		position: relative
-		padding-right: 30px
-		i
-			position: absolute
-			top: 13px
-			right: 8px
-			+s(arr-bc)
+    margin-bottom: 5px
+    a, span
+        +font-c
+        font-size: 27px
+        font-weight: bold
+    a
+        position: relative
+        padding-right: 30px
+        i
+            position: absolute
+            top: 13px
+            right: 8px
+            +s(arr-bc)
 //was-online
 .was-online
-	clear: both
-	margin-bottom: 25px
-	font-size: 15px
-	font-style: italic
-	color: #9f9f9f 
+    clear: both
+    margin-bottom: 25px
+    font-size: 15px
+    font-style: italic
+    color: #9f9f9f
 //source
 .source
-	padding: 0 0 50px 104px
-	font-style: italic
-	strong
-		font-size: 17px
-		font-weight: normal
-		color: #9f9f9f 
-	p
-		font-weight: bold
-		font-size: 13px 
-		color: #9f9f9f 
-		a
-			margin-left: 3px
+    padding: 0 0 50px 104px
+    font-style: italic
+    strong
+        font-size: 17px
+        font-weight: normal
+        color: #9f9f9f
+    p
+        font-weight: bold
+        font-size: 13px
+        color: #9f9f9f
+        a
+            margin-left: 3px
 //details
 .details 
-	padding-left: 104px	
-	margin-bottom: 55px
+    padding-left: 104px
+    margin-bottom: 55px
 .details__tags
-	position: relative
-	margin-bottom: 20px
-	padding-left: 34px
-	a
-		font-style: italic
-	i
-		position: absolute
-		top: -2px
-		left: 0
-		+s(tag)
+    position: relative
+    margin-bottom: 20px
+    padding-left: 34px
+    a
+        font-style: italic
+    i
+        position: absolute
+        top: -2px
+        left: 0
+        +s(tag)
 .details__list
-	padding-bottom: 10px
-	border-bottom: 1px solid #d3d3d3 
-	@extend %clr
-	.meta, .rating
-		float: left
-	.meta
-		padding-top: 0
-	.share, .star
-		float: right
-	.star
-		padding-left: 12px
-		margin-left: 12px
-		border-left: 1px dashed #c2c2c2 		
+    padding-bottom: 10px
+    border-bottom: 1px solid #d3d3d3
+    @extend %clr
+    .meta, .rating
+        float: left
+    .meta
+        padding-top: 0
+    .share, .star
+        float: right
+    .star
+        padding-left: 12px
+        margin-left: 12px
+        border-left: 1px dashed #c2c2c2
 .details__posted
-	float: left
-	padding: 0 10px
-	margin: 1px 10px 0 0
-	border-right: 1px dashed #c2c2c2 
-	line-height: 1
-	+font-c
-	color: #9f9f9f 
-	a
-		font-weight: bold
+    float: left
+    padding: 0 10px
+    margin: 1px 10px 0 0
+    border-right: 1px dashed #c2c2c2
+    line-height: 1
+    +font-c
+    color: #9f9f9f
+    a
+        font-weight: bold
 //popup
 .popup
-	display: none
+    display: none
 .popup_enter
-	width: 520px
+    width: 520px
 .popup_reg
-	width: 410px
+    width: 410px
 .popup_notices, .popup_mess
-	display: block
-	position: absolute
-	top: 27px	
-	left: -5000px 
-	width: 330px
-	margin-left: -165px
-	box-shadow: 0 5px 32px rgba(0,0,0,.7)
-	.popup__title
-		padding: 12px 0 12px 33px
-		font-size: 18px
-		&:before
-			top: 16px
-			left: 18px
-	&:before
-		content: ""
-		position: absolute
-		top: -10px
-		left: 50%
-		width: 0px
-		height: 0px
-		margin-left: -10px
-		border-style: solid
-		border-width: 0 10px 10px 10px
-		border-color: transparent transparent #f3f3f3 transparent
+    display: block
+    position: absolute
+    top: 27px
+    left: -5000px
+    width: 330px
+    margin-left: -165px
+    box-shadow: 0 5px 32px rgba(0,0,0,.7)
+    .popup__title
+        padding: 12px 0 12px 33px
+        font-size: 18px
+        &:before
+            top: 16px
+            left: 18px
+    &:before
+        content: ""
+        position: absolute
+        top: -10px
+        left: 50%
+        width: 0px
+        height: 0px
+        margin-left: -10px
+        border-style: solid
+        border-width: 0 10px 10px 10px
+        border-color: transparent transparent #f3f3f3 transparent
 .popup__view-all
-	padding: 12px 20px
-	background: #FFF
+    padding: 12px 20px
+    background: #FFF
 .popup__title
-	position: relative
-	padding: 23px 0 23px 55px
-	background: #f3f3f3 
-	+font-c
-	font-size: 27px
-	text-transform: uppercase
-	font-weight: bold
-	&:before
-		content: ""
-		position: absolute
-		top: 34px
-		left: 38px
-		+s(h2-red)
+    position: relative
+    padding: 23px 0 23px 55px
+    background: #f3f3f3
+    +font-c
+    font-size: 27px
+    text-transform: uppercase
+    font-weight: bold
+    &:before
+        content: ""
+        position: absolute
+        top: 34px
+        left: 38px
+        +s(h2-red)
 .popup__notices, .popup__mess	
-	height: 260px
-	background: #FFF 
-	border: 1px solid #d3d3d3
-	border-width: 1px 0 1px 0
-	outline: none 
-	li
-		padding: 20px 25px
-		border-top: 1px solid #e9e9e9
-		&:first-child
-			border: none
-		&:nth-child(2n)
-			background: #f3f3f3  
+    height: 260px
+    background: #FFF
+    border: 1px solid #d3d3d3
+    border-width: 1px 0 1px 0
+    outline: none
+    li
+        padding: 20px 25px
+        border-top: 1px solid #e9e9e9
+        &:first-child
+            border: none
+        &:nth-child(2n)
+            background: #f3f3f3
 .popup__notices
-	li		
-		+font-c
-		font-size: 12px	
-		color: #9f9f9f 
-		line-height: 1.2	
-		overflow: hidden		
-		a, p
-			font-family: Cambria, Colibri, Arial, Tahoma, sans-serif
-		a
-			font-weight: bold
-			font-style: italic
-		p
-			position: relative
-			margin-top: 10px
-			padding-left: 24px 
-			clear: both
-			font-style: italic
-			font-size: 12px 
-			color: #9f9f9f
-			i
-				position: absolute
-				top: 1px
-				left: 0
-				+s(pp-comm) 
-		img
-			float: left 
-			margin: 0 8px 12px 0
+    li
+        +font-c
+        font-size: 12px
+        color: #9f9f9f
+        line-height: 1.2
+        overflow: hidden
+        a, p
+            font-family: Cambria, Colibri, Arial, Tahoma, sans-serif
+        a
+            font-weight: bold
+            font-style: italic
+        p
+            position: relative
+            margin-top: 10px
+            padding-left: 24px
+            clear: both
+            font-style: italic
+            font-size: 12px
+            color: #9f9f9f
+            i
+                position: absolute
+                top: 1px
+                left: 0
+                +s(pp-comm)
+        img
+            float: left
+            margin: 0 8px 12px 0
 .popup__mess 	
-	li
-		line-height: 1
-		img
-			float: left
-			margin-right: 12px		
-		p
-			overflow: hidden
-		a
-			+font-c
-			font-size: 13px
-			font-weight: bold
-		span
-			display: block
-			margin: 9px 0 3px 0
-			font-style: italic
-		i
-			font-size: 12px
-			color: #9f9f9f 
+    li
+        line-height: 1
+        img
+            float: left
+            margin-right: 12px
+        p
+            overflow: hidden
+        a
+            +font-c
+            font-size: 13px
+            font-weight: bold
+        span
+            display: block
+            margin: 9px 0 3px 0
+            font-style: italic
+        i
+            font-size: 12px
+            color: #9f9f9f
 .popup_subscribe
-	width: 410px
-	.popup__title
-		padding: 23px 0 23px 57px
-		font-size: 21px
-		&:before
-			top: 30px
+    width: 410px
+    .popup__title
+        padding: 23px 0 23px 57px
+        font-size: 21px
+        &:before
+            top: 30px
 .subscribe
-	padding: 30px 0 30px 55px
-	.checkbox
-		margin-bottom: 15px
-	.btn
-		margin-top: 40px 
+    padding: 30px 0 30px 55px
+    .checkbox
+        margin-bottom: 15px
+    .btn
+        margin-top: 40px
 .enter
-	.fieldset
-		padding: 30px 0 10px 35px
-		.label
-			float: left
-			margin-right: 30px
-		.input-text
-			width: 160px 
-			margin-bottom: 3px
-			font-style: italic
-		em
-			margin-right: 20px
-			font-weight: bold
-		.checkbox
-			float: none
-			margin: 0
-			padding-top: 1px
-			font-size: 12px
-			clear: both
-	.btn
-		padding: 0 0 40px 79px
-		.link
-			position: absolute
-			right: 20px
-			bottom: 20px
+    .fieldset
+        padding: 30px 0 10px 35px
+        .label
+            float: left
+            margin-right: 30px
+        .input-text
+            width: 160px
+            margin-bottom: 3px
+            font-style: italic
+        em
+            margin-right: 20px
+            font-weight: bold
+        .checkbox
+            float: none
+            margin: 0
+            padding-top: 1px
+            font-size: 12px
+            clear: both
+    .btn
+        padding: 0 0 40px 79px
+        .link
+            position: absolute
+            right: 20px
+            bottom: 20px
 .enter__social
-	padding: 23px 0 27px 40px
-	border-bottom: 1px solid #e0e0e0 
-	overflow: hidden
-	strong, a
-		float: left
-	strong
-		width: 145px
-		margin-top: 7px
-		font-size: 16px
-		font-style: italic
-		line-height: 1
-	a
-		margin-right: 10px
+    padding: 23px 0 27px 40px
+    border-bottom: 1px solid #e0e0e0
+    overflow: hidden
+    strong, a
+        float: left
+    strong
+        width: 145px
+        margin-top: 7px
+        font-size: 16px
+        font-style: italic
+        line-height: 1
+    a
+        margin-right: 10px
 .enter__vk
-	+s(e-vk)
+    +s(e-vk)
 .enter__fb
-	+s(e-fb)
+    +s(e-fb)
 .enter__mr
-	+s(e-mr)
+    +s(e-mr)
 .enter__gg
-	+s(e-gg)
+    +s(e-gg)
 .enter__yr
-	+s(e-yr)
+    +s(e-yr)
 .reg
-	padding: 20px 0 45px 85px
-	.fieldset
-		em
-			float: none
-			display: block
-			margin: 0 0 20px -30px			
-			font-size: 16px
-			font-weight: bold
-	.input-text
-		float: none
-		width: 219px
-		margin-bottom: 15px
-		font-style: italic
-	.checkbox
-		margin-top: 0
-		padding: 3px 70px 30px 25px
-		font-size: 12px
-		line-height: 1
-		color: #7a7a7a  
-	.btn__item
-		font-size: 17px
+    padding: 20px 0 45px 85px
+    .fieldset
+        em
+            float: none
+            display: block
+            margin: 0 0 20px -30px
+            font-size: 16px
+            font-weight: bold
+    .input-text
+        float: none
+        width: 219px
+        margin-bottom: 15px
+        font-style: italic
+    .checkbox
+        margin-top: 0
+        padding: 3px 70px 30px 25px
+        font-size: 12px
+        line-height: 1
+        color: #7a7a7a
+    .btn__item
+        font-size: 17px
 //fancybox
 .fancybox-close
-	position: absolute
-	top: -30px
-	right: -30px
-	+s(close)
-	cursor: pointer
-	z-index: 8040
+    position: absolute
+    top: -30px
+    right: -30px
+    +s(close)
+    cursor: pointer
+    z-index: 8040
 //user
 .user
-	position: absolute
-	top: 10px
-	right: -22px
-	z-index: 10 
+    position: absolute
+    top: 10px
+    right: -22px
+    z-index: 10
 .user__stats
-	float: left	
+    float: left
 .user__notices, .user__mess
-	position: relative 
-	float: left
-	button
-		position: relative
-		float: left
-		overflow: visible
-		span
-			position: absolute
-			top: -5px
-			right: -5px
-			padding: 3px 4px 1px 4px
-			background: $red
-			border-radius: 50%
-			font-family: Arial
-			font-size: 9px
-			color: #FFF 
+    position: relative
+    float: left
+    button
+        position: relative
+        float: left
+        overflow: visible
+        span
+            position: absolute
+            top: -5px
+            right: -5px
+            padding: 3px 4px 1px 4px
+            background: $red
+            border-radius: 50%
+            font-family: Arial
+            font-size: 9px
+            color: #FFF
 .user__notices
-	margin-right: 10px
-	button		
-		+s(user-notices)
+    margin-right: 10px
+    button
+        +s(user-notices)
 .user__mess
-	button
-		+s(user-mess)
+    button
+        +s(user-mess)
 .user__links
-	float: left
-	margin-right: 20px
-	a
-		float: left
-		padding-left: 11px
-		margin-left: 11px 
-		border-left: 1px dashed #c1c1c1 
-		line-height: 1
-		font-size: 13px
-		font-style: italic
+    float: left
+    margin-right: 20px
+    a
+        float: left
+        padding-left: 11px
+        margin-left: 11px
+        border-left: 1px dashed #c1c1c1
+        line-height: 1
+        font-size: 13px
+        font-style: italic
 .user__pic 
-	float: left
-	margin-right: 6px
-	img
-		display: block
+    float: left
+    margin-right: 6px
+    img
+        display: block
 .user__out
-	float: left
-	+s(log-out)
+    float: left
+    +s(log-out)
 //scrollbar
 .jspContainer
-	overflow: hidden
-	position: relative
+    overflow: hidden
+    position: relative
 .jspPane
-	position: absolute
+    position: absolute
 .jspVerticalBar
-	position: absolute
-	top: 0
-	right: 0
-	width: 21px
-	height: 100%	
-	background: #d2d2d2 
+    position: absolute
+    top: 0
+    right: 0
+    width: 21px
+    height: 100%
+    background: #d2d2d2
 .jspTrack
-	width: 9px
-	margin-left: 6px
-	background: #fafafa
-	box-shadow: 0 0 0 1px #b8b8b8 inset
-	border-radius: 4px
+    width: 9px
+    margin-left: 6px
+    background: #fafafa
+    box-shadow: 0 0 0 1px #b8b8b8 inset
+    border-radius: 4px
 .jspCap
-	display: none
+    display: none
 .jspDrag
-	background: #f0f0f0
-	position: relative
-	top: 0px
-	left: 0px
-	width: 9px
-	box-shadow: 0 0 0 1px #868686 inset
-	border-radius: 4px
-	cursor: pointer
+    background: #f0f0f0
+    position: relative
+    top: 0px
+    left: 0px
+    width: 9px
+    box-shadow: 0 0 0 1px #868686 inset
+    border-radius: 4px
+    cursor: pointer
 .jspHorizontalBar .jspTrack,
 .jspHorizontalBar .jspDrag
-	float: left
-	height: 100%
+    float: left
+    height: 100%
 .jspVerticalBar .jspArrow
-	display: block
-	height: 10px
+    display: block
+    height: 10px
 
