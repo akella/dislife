@@ -102,7 +102,7 @@ table { border-spacing: 0; border-collapse: collapse; }
 .label em { float: left; margin-top: 7px; text-align: right; font-style: italic; }
 .label em.label__lh { margin-top: 2px; line-height: 1; }
 .label .selectBox-dropdown { float: left; }
-.label .selectBox-dropdown span { font-weight: normal; }
+.label .selectBox-dropdown span { font-weight: normal; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
 
 .input-text { float: left; height: 30px; padding: 0 7px; border: 1px solid #959595; border-radius: 0 15px 15px 0; font-size: 14px; }
 
@@ -287,6 +287,8 @@ table { border-spacing: 0; border-collapse: collapse; }
 
 button.btn__item { height: 32px; line-height: 1; overflow: visible; }
 
+a.btn__item { height: 30px; font-size: 11px; }
+
 .btn-del { display: none; position: absolute; right: 8px; bottom: 3px; background: white; }
 .btn-del i { display: block; background: url('../img/icons-s0b3b03bad2.png') 0 -1385px no-repeat; width: 21px; height: 21px; }
 
@@ -352,7 +354,7 @@ button.btn__item { height: 32px; line-height: 1; overflow: visible; }
 .share__fb { background: url('../img/icons-s0b3b03bad2.png') 0 -2071px no-repeat; width: 18px; height: 18px; }
 .share__fb:hover { background: url('../img/icons-s0b3b03bad2.png') 0 -1895px no-repeat; width: 18px; height: 18px; }
 
-.star i { display: block; background: url('../img/icons-s0b3b03bad2.png') 0 -2127px no-repeat; width: 19px; height: 18px; }
+.star i { cursor: pointer; display: block; background: url('../img/icons-s0b3b03bad2.png') 0 -2127px no-repeat; width: 19px; height: 18px; }
 .star:hover i, .star.is-active i { background: url('../img/icons-s0b3b03bad2.png') 0 -2099px no-repeat; width: 19px; height: 18px; }
 
 .cube { position: absolute; top: 1px; right: 1px; width: 7px; height: 7px; background: white; border: 2px solid #e21b33; }
@@ -399,6 +401,12 @@ button.btn__item { height: 32px; line-height: 1; overflow: visible; }
 
 .popup__title { position: relative; padding: 23px 0 23px 55px; background: #f3f3f3; font-family: Calibri, Cambria, Arial, Tahoma, sans-serif; font-size: 27px; text-transform: uppercase; font-weight: bold; }
 .popup__title:before { content: ""; position: absolute; top: 34px; left: 38px; background: url('../img/icons-s0b3b03bad2.png') 0 -1185px no-repeat; width: 11px; height: 17px; }
+
+.popup__form .fieldset { padding: 10px; }
+.popup__form .fieldset .textarea { width: 96%; }
+.popup__form .btn { padding: 10px; }
+
+.popup__body { padding: 20px; }
 
 .popup__notices, .popup__mess { height: 260px; background: white; border: 1px solid lightgrey; border-width: 1px 0 1px 0; outline: none; }
 .popup__notices li, .popup__mess li { padding: 20px 25px; border-top: 1px solid #e9e9e9; }
@@ -626,7 +634,7 @@ button.btn__item { height: 32px; line-height: 1; overflow: visible; }
 .s-online .wtf { margin-top: 20px; font-size: 12px; }
 .s-online .wtf .link { font-size: 12px; }
 
-.cats { margin-bottom: 45px; padding: 30px 20px; border-top: 1px solid #dfdfdf; background: whitesmoke; }
+.cats { margin-bottom: 45px; padding: 30px 20px 0 20px; border-top: 1px solid #dfdfdf; background: whitesmoke; }
 .cats .h3 { padding: 0 0 15px 20px; border-bottom: 1px solid #e0e0e0; }
 
 .cats_tabs .h3 { padding: 0 0 0 20px; border: none; }
@@ -640,6 +648,7 @@ button.btn__item { height: 32px; line-height: 1; overflow: visible; }
 .cats__tabs { margin-bottom: 30px; padding: 5px 20px 20px 20px; border-bottom: 1px solid #d6d6d6; }
 .cats__tabs li { position: relative; float: left; margin-right: 30px; font-size: 14px; font-style: italic; cursor: pointer; }
 .cats__tabs li:hover, .cats__tabs li.is-active { color: #e21b33; }
+.cats__tabs li.is-active a { color: #e21b33; }
 .cats__tabs li.is-active:before, .cats__tabs li.is-active:after { content: ""; position: absolute; left: 50%; width: 0px; height: 0px; border-style: solid; margin-left: -6px; border-width: 6px 6px 0 6px; }
 .cats__tabs li.is-active:before { bottom: -26px; border-color: silver transparent transparent transparent; }
 .cats__tabs li.is-active:after { bottom: -25px; border-color: whitesmoke transparent transparent transparent; }
@@ -1058,7 +1067,7 @@ button.btn__item { height: 32px; line-height: 1; overflow: visible; }
 .ask blockquote { position: relative; padding-left: 20px; font-style: italic; }
 .ask blockquote:before { content: ""; position: absolute; top: 0; left: 0; background: url('../img/icons-s0b3b03bad2.png') 0 -1185px no-repeat; width: 11px; height: 17px; }
 .ask .label { margin-bottom: 20px; }
-.ask .label em { width: 50px; padding-right: 10px; }
+.ask .label em { width: 70px; padding-right: 10px; }
 .ask .jq-selectbox { width: 304px; }
 .ask .input-text { width: 290px; }
 .ask .label_60 .input-text { width: 60px; }
@@ -1095,18 +1104,22 @@ button.btn__item { height: 32px; line-height: 1; overflow: visible; }
 .filter .label { margin-bottom: 20px; }
 .filter .label em { width: 95px; padding-right: 10px; }
 .filter .filter__sex { width: 230px; margin-right: 30px; }
-.filter .filter__age { width: 347px; }
+.filter .filter__age { display: block; }
 .filter .filter__age em { padding: 0; margin: 7px 10px 0 10px; width: auto; }
 .filter .filter__age .input-text { width: 40px; }
 .filter .btn { margin-top: 5px; padding: 25px 0 0 105px; border-top: 1px solid #dfdfdf; }
 .filter .btn .checkbox { float: left; margin: 6px 0 0 30px; font-weight: bold; }
 
-.filter_vacancy .label em { width: 72px; font-size: 13px; }
-.filter_vacancy .filter__age em { width: auto; margin: 7px 10px 0 0; }
-.filter_vacancy .filter__age .input-text { margin-right: 10px; }
-.filter_vacancy .filter__direction { margin-right: 0; }
-.filter_vacancy .filter__direction em { width: auto; }
-.filter_vacancy .btn { padding: 25px 0 0 82px; }
+.filter_vacancy .label em, .filter_education .label em { width: 72px; font-size: 13px; }
+.filter_vacancy .filter__age em, .filter_education .filter__age em { width: auto; margin: 7px 10px 0 0; }
+.filter_vacancy .filter__age .input-text, .filter_education .filter__age .input-text { margin-right: 10px; }
+.filter_vacancy .filter__direction, .filter_education .filter__direction { margin-right: 0; }
+.filter_vacancy .filter__direction em, .filter_education .filter__direction em { width: auto; }
+.filter_vacancy .btn, .filter_education .btn { padding: 25px 0 0 82px; }
+
+.filter_vacancy .filter__age { width: 350px; }
+
+.filter_education .filter__city { width: 95%; }
 
 .filter__city, .filter__employment { width: 300px; }
 
@@ -1115,15 +1128,17 @@ button.btn__item { height: 32px; line-height: 1; overflow: visible; }
 .filter__family { float: left; width: 380px; }
 .filter__family .label { width: 380px; }
 
-.filter__target, .profile__target, .filter__currency { overflow: hidden; font-style: italic; }
-.filter__target strong, .profile__target strong, .filter__currency strong { display: block; margin-bottom: 2px; line-height: 1; }
-.filter__target strong i, .profile__target strong i, .filter__currency strong i { color: #9999a3; }
-.filter__target ul, .profile__target ul, .filter__currency ul { float: left; }
-.filter__target li, .profile__target li, .filter__currency li { overflow: hidden; }
-.filter__target .checkbox, .profile__target .checkbox, .filter__currency .checkbox { margin-top: 5px; font-size: 13px; }
+.filter__target, .profile__target, .filter__currency, .filter__education { overflow: hidden; font-style: italic; }
+.filter__target strong, .profile__target strong, .filter__currency strong, .filter__education strong { display: block; margin-bottom: 2px; line-height: 1; }
+.filter__target strong i, .profile__target strong i, .filter__currency strong i, .filter__education strong i { color: #9999a3; }
+.filter__target ul, .profile__target ul, .filter__currency ul, .filter__education ul { float: left; }
+.filter__target li, .profile__target li, .filter__currency li, .filter__education li { overflow: hidden; }
+.filter__target .checkbox, .profile__target .checkbox, .filter__currency .checkbox, .filter__education .checkbox { margin-top: 5px; font-size: 13px; }
 
-.filter__currency { padding-left: 82px; margin-bottom: 20px; }
-.filter__currency ul { min-width: 160px; }
+.filter__currency, .filter__education { padding-left: 82px; margin-bottom: 20px; }
+.filter__currency ul, .filter__education ul { min-width: 160px; }
+
+.filter__education { padding-left: 50px; }
 
 .profile__target { padding-left: 125px; margin-bottom: 27px; }
 

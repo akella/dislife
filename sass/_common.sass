@@ -30,7 +30,7 @@ textarea, button, select, input
     border: none
     outline: none
     font-family: Cambria, Colibri, Arial, Tahoma, sans-serif
-button 
+button
     line-height: 1
     cursor: pointer
     &::-moz-focus-inner
@@ -235,6 +235,9 @@ table
         float: left
         span
             font-weight: normal
+            overflow: hidden
+            white-space: nowrap
+            text-overflow: ellipsis
 .input-text
     float: left
     height: 30px
@@ -688,11 +691,14 @@ table
 .btn__item.not-active
     & > i
         background: #dadada
-button	
+button
     &.btn__item
         height: 32px
         line-height: 1
         overflow: visible
+a.btn__item
+    height: 30px
+    font-size: 11px
 .btn-del
     display: none
     position: absolute
@@ -850,6 +856,7 @@ button
 //star
 .star
     i
+        cursor: pointer
         display: block
         +s(star)
     &:hover, &.is-active
@@ -988,6 +995,15 @@ button
         top: 34px
         left: 38px
         +s(h2-red)
+.popup__form
+    .fieldset
+        padding: 10px
+        .textarea
+            width: 96%
+    .btn
+        padding: 10px
+.popup__body
+    padding: 20px
 .popup__notices, .popup__mess	
     height: 260px
     background: #FFF

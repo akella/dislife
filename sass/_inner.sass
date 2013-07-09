@@ -115,7 +115,7 @@
 //cats
 .cats
     margin-bottom: 45px
-    padding: 30px 20px
+    padding: 30px 20px 0 20px
     border-top: 1px solid #dfdfdf
     background: #f5f5f5
     .h3
@@ -156,6 +156,9 @@
         cursor: pointer
         &:hover, &.is-active
             color: $red
+        &.is-active
+            a
+                color: $red
         &.is-active
             &:before, &:after
                 content: ""
@@ -1290,7 +1293,7 @@
     .label
         margin-bottom: 20px
         em
-            width: 50px
+            width: 70px
             padding-right: 10px
     .jq-selectbox
         width: 304px
@@ -1398,7 +1401,7 @@
         width: 230px
         margin-right: 30px
     .filter__age
-        width: 347px
+        display: block
         em
             padding: 0
             margin: 7px 10px 0 10px
@@ -1413,7 +1416,7 @@
             float: left
             margin: 6px 0 0 30px
             font-weight: bold
-.filter_vacancy
+.filter_vacancy, .filter_education
     .label
         em
             width: 72px
@@ -1430,6 +1433,12 @@
             width: auto
     .btn
         padding: 25px 0 0 82px
+.filter_vacancy
+    .filter__age
+        width: 350px
+.filter_education
+    .filter__city
+        width: 95%
 .filter__city, .filter__employment
     width: 300px
 .filter__direction
@@ -1439,7 +1448,7 @@
     width: 380px
     .label
         width: 380px
-.filter__target, .profile__target, .filter__currency
+.filter__target, .profile__target, .filter__currency, .filter__education
     overflow: hidden
     font-style: italic
     strong
@@ -1455,11 +1464,13 @@
     .checkbox
         margin-top: 5px
         font-size: 13px
-.filter__currency
+.filter__currency, .filter__education
     padding-left: 82px
     margin-bottom: 20px
     ul
         min-width: 160px
+.filter__education
+    padding-left: 50px
 .profile__target
     padding-left: 125px
     margin-bottom: 27px
